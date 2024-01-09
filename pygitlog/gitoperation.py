@@ -65,7 +65,7 @@ def get_commit_body(hash):
 
 #获取某个commit的修改文件
 def get_commit_diff_files(hash_commit):
-    cmd = "git log" + " " + hash_commit + " -2 --oneline  --pretty=format:'%h'"
+    cmd = "git log" + " " + hash_commit + " -2 --oneline  --pretty=format:'%H'"
     hash = []
     multiline_str = os.popen(cmd)
     for line in multiline_str.readlines():
@@ -74,4 +74,9 @@ def get_commit_diff_files(hash_commit):
     process = os.popen(cmd)
     preprocessed = process.read()
     process.close()
+    if preprocessed == "":
+        cmd = "git log -m " + hash_commit + " -1 --name-only --pretty='format:'"
+        process = os.popen(cmd)
+        preprocessed = process.read()
+        process.close()
     return preprocessed
