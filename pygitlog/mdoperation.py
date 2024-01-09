@@ -41,6 +41,6 @@ def add_commit_info(filename,hash):
         file.write("| " + get_commit_email(hash) + " ")
         file.write("| " + format(get_commit_body(hash)) + " ")
         file.write("| " + get_commit_type(get_commit_body(hash)) + "<br> ")
-        file.write("| " + get_commit_keyword(get_commit_abbr(hash)) + "<br> ")
+        file.write("| " + get_commit_keyword(get_commit_abbr(hash),hash) + "<br> ")
         file.write("| " + format(get_commit_diff_files(hash)) + " |\n")
     file.close()
