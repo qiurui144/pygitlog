@@ -2,3 +2,8 @@ md
 atm
 ext4
 avb
+scsi
+block
+crypto
+tty
+gsm
