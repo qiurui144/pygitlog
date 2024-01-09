@@ -12,10 +12,6 @@ def mkdir(path):
     # 判断结果
     if not isExists:
         os.makedirs(path) 
-        print (path + " 创建成功")
-    else:
-        # 如果目录存在则不创建，并提示目录已存在
-        print (path + " 目录已存在")
 
 #初始化kernel log summary的markdown文件
 def initmd(version1,version2,source):

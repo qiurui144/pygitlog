@@ -15,13 +15,13 @@ def get_wikipage(keywords):
     PARAMS['search'] = key
     R = S.get(url=URL, params=PARAMS)
     DATA = R.json()
-    print(DATA)
-    print(DATA[3][0])
+    #print(DATA)
+    #print(DATA[3][0])
     return DATA[3][0]
 
 #获取commit的关键词，如ext4
 def get_commit_kerywords(abbr):
-    print(abbr.split())
+    #print(abbr.split())
     for abb in abbr.split():
         if abb.endswith(":"):
             keywords = abb.replace(':','')
@@ -30,12 +30,11 @@ def get_commit_kerywords(abbr):
 
 #获取commit的类型，如
 def get_commit_type(body):
-    for line in body:
+    for line in body.split("\n"):
         #print(line)
         if line.startswith("category"):
             return line.replace('category:','')
-        else:
-            return ""
+    return ""
 
 def get_CVE_code(body):
     return ""
