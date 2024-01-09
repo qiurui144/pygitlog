@@ -1,14 +1,32 @@
 from  pygitlog.gitoperation import *
+import sys
+
+def mkdir(path):
+    # 去除首位空格
+    path=path.strip()
+    # 去除尾部 \ 符号
+    path=path.rstrip("\\")
+    # 判断路径是否存在
+    isExists=os.path.exists(path)
+    # 判断结果
+    if not isExists:
+        os.makedirs(path) 
+        print (path + " 创建成功")
+    else:
+        # 如果目录存在则不创建，并提示目录已存在
+        print (path + " 目录已存在")
 
 def initmd(version1,version2,source):
-    filename = source + version1 + "_" + version2 + ".md"
+    dir = os.getcwd() + "/output/"
+    mkdir(dir)
+    filename = dir + source + version1 + "_" + version2 + ".md"
     with open(filename,mode="w") as file:
         file.write("# kernel log summary\n")
         file.write("## " + source + " from " + version1 + " to " + version2 + "\n")
         file.write("|  hash  |  time  |  editor |  email |  body | type  |  keywords |  diff-files  | \n")
         file.write("|  :---- | :----  |  :----  |  :---- |  :--- | :---- |  :------- |  :---------  | \n")
     os.chmod(filename,448)
-    return  os.getcwd() + "/" + filename
+    return  filename
 
 
 def format(str):

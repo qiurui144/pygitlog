@@ -16,7 +16,7 @@ def get_commits_commit_count(commit1,commit2):
 
 #获取两个commit之间的hash列表
 def get_commit_hash(commit1,commit2):
-    cmd = "git log" + " '" + commit1 + "'.." + commit2 + " --oneline  --pretty=format:'%h'"
+    cmd = "git log" + " " + commit1 + ".." + commit2 + " --oneline  --pretty=format:'%h'"
     hash = []
     multiline_str = os.popen(cmd)
     for line in multiline_str.readlines():
@@ -56,8 +56,12 @@ def get_commit_body(hash):
     return preprocessed
 
 #获取某个commit的修改文件
-def get_commit_diff_files(hash_list,hash_commit):
-    num = list.index(hash_list)
+def get_commit_diff_files(hash_commit):
+    cmd = "git log" + " " + hash_commit + " -2 --oneline  --pretty=format:'%h'"
+    hash = []
+    multiline_str = os.popen(cmd)
+    for line in multiline_str.readlines():
+        hash.append(line.replace('\n',''))
     cmd = "git diff" + " --name-only " + hash[1] + " "  + hash[0]
     process = os.popen(cmd)
     preprocessed = process.read()
