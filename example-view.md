@@ -1,0 +1,6 @@
+# kernel log summary
+## upstream
+|  hash  |  time  |  editor |  email |  body | type  |  keywords |  diff-files  | 
+|  :----  | :----  |   :----  |  :----  |  :---- |  :------  |  :------  |   :------  |
+| 2af9b20dbb39  | Sat Oct 28 08:15:07 2023 -1000 | Linus Torvalds | torvalds@linux-foundation.org |Merge tag 'x86-urgent-2023-10-28' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip<br> Pull misc x86 fixes from Ingo Molnar<br> - Fix a possible CPU hotplug deadlock bug caused by the new TSC synchronization code<br> - Fix a legacy PIC discovery bug that results in device troubles on affected systems, such as non-working keybards, etc<br> - Add a new Intel CPU model number to <asm/intel-family.h><br> * tag 'x86-urgent-2023-10-28' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip:<br> &emsp;x86/tsc: Defer marking TSC unstable to a worker<br> &emsp;x86/i8259: Skip probing when ACPI/MADT advertises PCAT compatibility<br> &emsp;x86/cpu: Add model number for Intel Arrow Lake mobile processor |fix<br> add model| X86 CPU | arch/x86/include/asm/i8259.h<br> arch/x86/include/asm/intel-family.h<br> arch/x86/kernel/acpi/boot.c<br> arch/x86/kernel/i8259.c<br>  arch/x86/kernel/tsc_sync.c<br>
+| 单元格  | 单元格 |
