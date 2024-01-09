@@ -1,5 +1,5 @@
+##执行git操作并返回结果
 import os
-import subprocess
 
 #切换到工作目录
 def get_repo(repopath):
@@ -42,6 +42,14 @@ def get_commit_author(hash):
 #获取某个commit的email
 def get_commit_email(hash):
     cmd = "git log" + " " + hash + " -1 --pretty=format:'%ae'"
+    process = os.popen(cmd)
+    preprocessed = process.read()
+    process.close()
+    return preprocessed
+
+#获取某个commit的abbr
+def get_commit_abbr(hash):
+    cmd = "git log" + " " + hash + " -1 --pretty=format:'%s'"
     process = os.popen(cmd)
     preprocessed = process.read()
     process.close()
