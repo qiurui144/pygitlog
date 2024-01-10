@@ -1,0 +1,46 @@
+2c85ebc57b3e (HEAD, tag: v5.10) Linux 5.10
+ec6f5e0e5ca0 Merge tag 'x86-urgent-2020-12-13' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip
+d2360a398f0b Merge tag 'block-5.10-2020-12-12' of git://git.kernel.dk/linux-block
+6bff9bb8a292 Merge tag 'scsi-fixes' of git://git.kernel.org/pub/scm/linux/kernel/git/jejb/scsi
+5ee595d9079b Merge branch 'i2c/for-current' of git://git.kernel.org/pub/scm/linux/kernel/git/wsa/linux
+7b1b868e1d91 Merge tag 'for-linus' of git://git.kernel.org/pub/scm/virt/kvm/kvm
+b53966ffd4c0 Merge tag 'for-linus-5.10c-rc8-tag' of git://git.kernel.org/pub/scm/linux/kernel/git/xen/tip
+b01deddb8d3c Merge tag 'riscv-for-linus-5.10-rc8' of git://git.kernel.org/pub/scm/linux/kernel/git/riscv/linux
+31d00f6eb1f2 Merge tag 'io_uring-5.10-2020-12-11' of git://git.kernel.dk/linux-block
+643e69aff89a Merge branch 'for-linus' of git://git.kernel.org/pub/scm/linux/kernel/git/dtor/input
+6ffeb1c3f822 md: change mddev 'chunk_sectors' from int to unsigned
+0d07c0ec4381 x86/kprobes: Fix optprobe to detect INT3 padding correctly
+cffdd6d90482 Input: goodix - add upside-down quirk for Teclast X98 Pro tablet
+111d0bda8eeb tools/kvm_stat: Exempt time-based counters
+34c0f6f2695a KVM: mmu: Fix SPTE encoding of MMIO generation upper half
+7f376f1917d7 Merge tag 'mtd/fixes-for-5.10-rc8' of git://git.kernel.org/pub/scm/linux/kernel/git/mtd/linux
+1de5d12b7690 Merge tag 'mmc-v5.10-rc4-2' of git://git.kernel.org/pub/scm/linux/kernel/git/ulfh/mmc
+e977aaf899a6 Merge tag 'at24-fixes-for-v5.10' of git://git.kernel.org/pub/scm/linux/kernel/git/brgl/linux into i2c/for-current
+782598ecea73 Merge tag 'zonefs-5.10-rc7' of git://git.kernel.org/pub/scm/linux/kernel/git/dlemoal/zonefs
+b7906b70a233 bpf: Fix enum names for bpf_this_cpu_ptr() and bpf_per_cpu_ptr() helpers
+a06caa4a68ce Merge branch 'akpm' (patches from Andrew)
+ba9c1201beaa mm/hugetlb: clear compound_nr before freeing gigantic pages
+6c82d45c7f03 kasan: fix object remaining in offline per-cpu quarantine
+6e7b64b9dd6d elfcore: fix building with clang
+55d5b7dd6451 initramfs: fix clang build failure
+14dc3983b5df kbuild: avoid static_assert for genksyms
+84edc2eff827 selftest/fpu: avoid clang warning
+40d6366e9d86 proc: use untagged_addr() for pagemap_read addresses
+16c0cc0ce305 revert "mm/filemap: add static for function __add_to_page_cache_locked"
+82e060904732 Input: cm109 - do not stomp on control URB
+33d974e76e21 mtd: rawnand: xway: Do not force a particular software ECC engine
+cf75f00fc802 mtd: rawnand: socrates: Do not force a particular software ECC engine
+148b4f16159f mtd: rawnand: plat_nand: Do not force a particular software ECC engine
+9506ab943db4 mtd: rawnand: pasemi: Do not force a particular software ECC engine
+f87b720a2164 mtd: rawnand: orion: Do not force a particular software ECC engine
+f49bde9fe25c mtd: rawnand: mpc5121: Do not force a particular software ECC engine
+bd47fa451315 mtd: rawnand: gpio: Do not force a particular software ECC engine
+52277269c406 mtd: rawnand: au1550: Do not force a particular software ECC engine
+249a9599c912 mtd: rawnand: ams-delta: Do not force a particular software ECC engine
+94801e5c6d46 Merge tag 'pinctrl-v5.10-3' of git://git.kernel.org/pub/scm/linux/kernel/git/linusw/linux-pinctrl
+6d47cdecaa45 Merge tag 'v5.10-3' of git://git.kernel.org/pub/scm/linux/kernel/git/linusw/linux-gpio
+c1cea11227cb Merge tag 'clk-fixes-for-linus' of git://git.kernel.org/pub/scm/linux/kernel/git/clk/linux
+4da3a54f5a02 Revert "scsi: storvsc: Validate length of incoming packet in storvsc_on_channel_callback()"
+059fe8296e0f Merge tag 'drm-fixes-2020-12-11' of git://anongit.freedesktop.org/drm/drm
+ccbbfd1cbf36 RISC-V: Define get_cycles64() regardless of M-mode
+33dc9614dc20 Merge tag 'ktest-v5.10-rc6' of git://git.kernel.org/pub/scm/linux/kernel/git/rostedt/linux-ktest
