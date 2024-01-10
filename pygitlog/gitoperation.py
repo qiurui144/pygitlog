@@ -49,11 +49,12 @@ def get_commit_email(hash):
 
 #获取某个commit的abbr
 def get_commit_abbr(hash):
-    cmd = "git log" + " " + hash + " -1 --pretty=format:'%s'"
+    cmd = "git show" + " " + hash + " --name-only --pretty=format:'%s'"
     process = os.popen(cmd)
     preprocessed = process.read()
     process.close()
-    return preprocessed
+    for line in preprocessed.split("\n"):
+        return line
 
 #获取某个commit的body
 def get_commit_body(hash):
@@ -61,22 +62,31 @@ def get_commit_body(hash):
     process = os.popen(cmd)
     preprocessed = process.read()
     process.close()
-    return preprocessed
+    if preprocessed.count("\n") > 30:
+        return ""
+    else:
+        return preprocessed
 
 #获取某个commit的修改文件
 def get_commit_diff_files(hash_commit):
-    cmd = "git log" + " " + hash_commit + " -2 --oneline  --pretty=format:'%H'"
-    hash = []
-    multiline_str = os.popen(cmd)
-    for line in multiline_str.readlines():
-        hash.append(line.replace('\n',''))
-    cmd = "git diff" + " --name-only " + hash[1] + " "  + hash[0]
+    cmd = "git show" + " " + hash_commit + " --name-only --pretty=format:''"
     process = os.popen(cmd)
     preprocessed = process.read()
     process.close()
     if preprocessed == "":
-        cmd = "git log -m " + hash_commit + " -1 --name-only --pretty='format:'"
+        cmd = "git log" + " " + hash_commit + " -2 --oneline  --pretty=format:'%H'"
+        hash = []
+        multiline_str = os.popen(cmd)
+        for line in multiline_str.readlines():
+            hash.append(line.replace('\n',''))
+        cmd = "git diff" + " --name-only " + hash[1] + " "  + hash[0]
+        process = os.popen(cmd)
+        preprocessed = process.read()
+        process.close()
+    if preprocessed == "":
+        cmd = "git log -m " + hash_commit + " -1 --name-only --pretty=format:''"
         process = os.popen(cmd)
         preprocessed = process.read()
         process.close()
     return preprocessed
+
