@@ -43,6 +43,8 @@ def get_true_keyword(keywords,hash):
         keyword = "Device Mapper"
     elif "avb" in keywords :
         keyword = "Audio Video Bridging"
+    elif "nand" in keywords :
+        keyword = "nand"
     elif "gsm" in keywords :
         keyword = "gsm"
     elif keywords.startswith("PR"): 
