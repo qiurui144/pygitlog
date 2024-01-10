@@ -26,8 +26,28 @@ def initmd(version1,version2,source):
     os.chmod(filename,448)
     return  filename
 
-def format(str):
-    return str.replace('\n','<br>')
+##实现body的展开功能（attr为summary）
+def format(str1,str2):
+    list = "<details><summary>" + str1 + "</summary> " 
+    list = list + str2.replace('\n','<br>')+"</details>"
+    return list
+
+##实现文件差别的展开功能（首行summary）
+def format_diff(str):
+    a = 0
+    if str.count('\n') > 1:
+        for line in str.split('\n'):
+            if a == 0:
+                #防止首行为空，其实没必要
+                if line != '':
+                    list = "<details><summary>" + line + "</summary> "
+                    a = 1  
+            else:
+                list = list + line + '<br>'
+        return list + "</details>"
+    else:
+        return str.replace('\n','')
+
 
 #参考格式
 #| 2af9b20dbb39  | Sat Oct 28 08:15:07 2023 -1000 | Linus Torvalds | torvalds@linux-foundation.org 
@@ -39,8 +59,8 @@ def add_commit_info(filename,hash):
         file.write("| " + get_commit_time(hash) + " ")
         file.write("| " + get_commit_author(hash) + " ")
         file.write("| " + get_commit_email(hash) + " ")
-        file.write("| " + format(get_commit_body(hash)) + " ")
+        file.write("| " + format(get_commit_abbr(hash),get_commit_body(hash)) + " ")
         file.write("| " + get_commit_type(get_commit_body(hash)) + "<br> ")
         file.write("| " + get_commit_keyword(get_commit_abbr(hash),hash) + "<br> ")
-        file.write("| " + format(get_commit_diff_files(hash)) + " |\n")
+        file.write("| " + format_diff(get_commit_diff_files(hash)) + " |\n")
     file.close()
