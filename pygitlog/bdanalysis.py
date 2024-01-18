@@ -8,11 +8,28 @@ def get_wikipage(keyword):
     URL = "https://en.wikipedia.org/w/api.php"
     PARAMS = {"action": "opensearch","namespace": "0","search": "","limit": "1","format": "json"}
     PARAMS['search'] = keyword
-    R = S.get(url=URL, params=PARAMS)
-    DATA = R.json()
-    print(DATA)
-    #print(DATA[3][0])
-    return DATA[3][0]
+    if keyword == "":
+        print("keyword is null")
+        return ""
+    else:
+        print(keyword)
+        R = S.get(url=URL, params=PARAMS)
+        DATA = R.json()
+        if len(DATA) == 0 :
+            print("no search result")
+            return ""
+        else:
+            print("DATA=",DATA)
+            #print(type(DATA))
+            #print("DATA[0]=",DATA[0])
+            #print(type(DATA[0]))
+            #print("DATA[3]=",DATA[3])
+            #print(type(DATA[3]))
+            if len(DATA[3]) == 0:
+                print("no match result")
+                return ""
+            else:
+                return DATA[3][0]
 
 #处理abbr没有keyword的特殊情况
 def deal_spec_abbr(hash,keywords):
