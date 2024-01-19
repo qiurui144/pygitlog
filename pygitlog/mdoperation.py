@@ -51,7 +51,7 @@ def add_commit_info(filename,wiki_file_name,hash,hash_list):
         file.write("| " + get_commit_author(hash) + " ")
         file.write("| " + get_commit_email(hash) + " ")
         file.write("| " + format(get_commit_abbr(hash),get_commit_body(hash)) + " ")
-        file.write("| " + get_commit_type(get_commit_body(hash)) + "<br> ")
+        file.write("| " + get_commit_type(get_commit_body(hash),get_commit_abbr(hash)) + "<br> ")
         file.write("| " + get_commit_keyword(get_commit_abbr(hash),hash,wiki_file_name) + "<br> ")
         file.write("| " + format_diff(get_commit_diff_files(hash)) + " |\n")
 
@@ -68,7 +68,7 @@ def add_commit_info_threads(lock,filename,wiki_file_name,hash,hash_list):
         file.write("| " + get_commit_author(hash) + " ")
         file.write("| " + get_commit_email(hash) + " ")
         file.write("| " + format(get_commit_abbr(hash),get_commit_body(hash)) + " ")
-        file.write("| " + get_commit_type(get_commit_body(hash)) + "<br> ")
+        file.write("| " + get_commit_type(get_commit_body(hash),get_commit_abbr(hash)) + "<br> ")
         file.write("| " + get_commit_keyword(get_commit_abbr(hash),hash,wiki_file_name) + "<br> ")
         file.write("| " + format_diff(get_commit_diff_files(hash)) + " |\n")
     lock.release()

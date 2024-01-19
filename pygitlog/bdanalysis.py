@@ -1,6 +1,5 @@
 ##对git日志的body进行解析
 import requests
-import fcntl
 from requests.adapters import HTTPAdapter
 from  pygitlog.gitoperation import *
 from  pygitlog.mdoperation import *
@@ -69,13 +68,15 @@ def get_commit_keyword(abbr,hash,wiki_file_name):
             return "[" + key + "](" + get_wikipage(key,wiki_file_name) + ")"
 
 #获取commit的类型，如
-def get_commit_type(body):
+def get_commit_type(body,abbr):
     for line in body.split("\n"):
         #print(line)
-        if "fix" in line:
-            return "bugfix"
         if line.startswith("category"):
             return line.replace('category:','')
+    if "fix" in abbr.lower():#bug修复
+        return "bugfix"
+    if "add" in abbr.lower():#增强
+        return "enhance"
     return ""
 
 def get_CVE_code(body):
