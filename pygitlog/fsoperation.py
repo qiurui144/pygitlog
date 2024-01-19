@@ -40,3 +40,31 @@ def format_diff(str):
         return list + "</details>"
     else:
         return str.replace('\n','')
+    
+def get_wiki_list(wiki_file_name):
+    with open(wiki_file_name,mode="r") as file:
+        lines = file.readlines()  # 读取所有行
+        wiki_lines = lines[3:]
+        wiki_list = []
+        a = 0
+        for line in wiki_lines:
+            for word in line.split("|"):
+                a = a + 1
+                if a == 2:
+                    word = word.replace(" ","")
+                    wiki_list.append(word)
+                    a = 0
+                    break
+    return wiki_list
+
+def get_wiki_list_url(index,wiki_file_name):
+    with open(wiki_file_name,mode="r") as file:
+        lines = file.readlines()  # 读取所有行
+        wiki_line = lines[3 + index]
+        a = 0
+        for word in wiki_line.split("|"):
+            a = a + 1
+            if a == 3:
+                word = word.replace(" ","")
+                return word
+    
