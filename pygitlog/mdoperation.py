@@ -42,8 +42,8 @@ def initwikimd():
 #| fix<br> add model| X86 CPU | arch/x86/include/asm/i8259.h<br> arch/x86/include/asm/intel-family.h<br> arch/x86/kernel/acpi/boot.c<br> arch/x86/kernel/i8259.c<br>  arch/x86/kernel/tsc_sync.c<br>
 def add_commit_info(filename,wiki_file_name,hash,hash_list):
     count = hash_list.index(hash)
-    print(hash)
-    print(count)
+    #print(hash)
+    #print(count)
     with open(filename,mode="a+") as file:
         file.write("| " + str(count) + " ")
         file.write("| " + hash + " ")
@@ -59,8 +59,8 @@ def add_commit_info(filename,wiki_file_name,hash,hash_list):
 def add_commit_info_threads(lock,filename,wiki_file_name,hash,hash_list):
     lock.acquire()
     count = hash_list.index(hash)
-    print(hash)
-    print(count)
+    #print(hash)
+    #print(count)
     with open(filename,mode="a+") as file:
         file.write("| " + str(count) + " ")
         file.write("| " + hash + " ")
