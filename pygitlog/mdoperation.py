@@ -1,53 +1,24 @@
 ##markdown操作函数
 from  pygitlog.gitoperation import *
 from pygitlog.bdanalysis import *
-
-def mkdir(path):
-    # 去除首位空格
-    path=path.strip()
-    # 去除尾部 \ 符号
-    path=path.rstrip("\\")
-    # 判断路径是否存在
-    isExists=os.path.exists(path)
-    # 判断结果
-    if not isExists:
-        os.makedirs(path) 
+from pygitlog.fsoperation import *
 
 #初始化kernel log summary的markdown文件
 def initmd(version1,version2,source):
     dir = os.getcwd() + "/output/"
     mkdir(dir)
     filename = dir + source + version1 + "_" + version2 + ".md"
-    with open(filename,mode="w") as file:
-        file.write("# kernel log summary\n")
-        file.write("## " + source + " from " + version1 + " to " + version2 + "\n")
-        file.write("|number |  hash  |  time  |  editor |  email |  body | type  |  keywords |  diff-files  | \n")
-        file.write("| :---- |  :---- | :----  |  :----  |  :---- |  :--- | :---- |  :------- |  :---------  | \n")
-    os.chmod(filename,448)
-    return  filename
-
-##实现body的展开功能（attr为summary）
-def format(str1,str2):
-    list = "<details><summary>" + str1 + "</summary> " 
-    list = list + str2.replace('\n','<br>')+"</details>"
-    return list
-
-##实现文件差别的展开功能（首行summary）
-def format_diff(str):
-    a = 0
-    if str.count('\n') > 1:
-        for line in str.split('\n'):
-            if a == 0:
-                #防止首行为空，其实没必要
-                if line != '':
-                    list = "<details><summary>" + line + "</summary> "
-                    a = 1  
-            else:
-                list = list + line + '<br>'
-        return list + "</details>"
+    if os.path.exists(filename):
+        os.chmod(filename,448)
+        return  filename
     else:
-        return str.replace('\n','')
-
+        with open(filename,mode="w") as file:
+            file.write("# kernel log summary\n")
+            file.write("## " + source + " from " + version1 + " to " + version2 + "\n")
+            file.write("|number |  hash  |  time  |  editor |  email |  body | type  |  keywords |  diff-files  | \n")
+            file.write("| :---- |  :---- | :----  |  :----  |  :---- |  :--- | :---- |  :------- |  :---------  | \n")
+        os.chmod(filename,448)
+        return  filename
 
 #参考格式
 #| 2af9b20dbb39  | Sat Oct 28 08:15:07 2023 -1000 | Linus Torvalds | torvalds@linux-foundation.org 
@@ -68,6 +39,7 @@ def add_commit_info(filename,hash,hash_list):
         file.write("| " + get_commit_keyword(get_commit_abbr(hash),hash) + "<br> ")
         file.write("| " + format_diff(get_commit_diff_files(hash)) + " |\n")
 
+#add_commit_info多线程版本
 def add_commit_info_threads(lock,filename,hash,hash_list):
     lock.acquire()
     count = hash_list.index(hash)
@@ -84,3 +56,38 @@ def add_commit_info_threads(lock,filename,hash,hash_list):
         file.write("| " + get_commit_keyword(get_commit_abbr(hash),hash) + "<br> ")
         file.write("| " + format_diff(get_commit_diff_files(hash)) + " |\n")
     lock.release()
+
+#获取文档第一行在对应hash_list的位置，-1为无实际内容
+def get_first_commit_count(file_name,hash_list):
+    with open(file_name,mode="r") as file:
+        lines = file.readlines()  # 读取所有行
+        if len(lines) < 5:
+            return -1 ##无实际内容
+        else:
+            first_line = lines[5]  # 取日志相关的首行
+            a = 0
+            for word in first_line.split("|"):
+                a = a + 1
+                if a == 3:
+                    word = word.replace(" ","")
+                    return hash_list.index(word)
+
+#获取文档最后一行在对应hash_list的位置
+def get_last_commit_count(file_name,hash_list):
+    with open(file_name,mode="r") as file:
+        lines = file.readlines()  # 读取所有行
+        last_line = lines[-1]  # 取最后一行
+        a = 0
+        for word in last_line.split("|"):
+            a = a + 1
+            if a == 3:
+                word = word.replace(" ","")
+                return hash_list.index(word)
+
+#获取实际要操作的hash_list
+#假如源文件有实际内容，避免最后一行为不完整行，对源文件进行最后一行删除处理
+def get_operation_hash_list(index,hash_list,file_name):
+    operation_hash_list = hash_list[index:-1]
+    if index != 0:
+        delete_lines(file_name,0,1)
+    return operation_hash_list
