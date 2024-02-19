@@ -1,0 +1,74 @@
+#继承4.18.0-80.1.1.el8_0，并分支，添加4.18.0-80.2.1.el8_0、4.18.0-80.3.1.el8_0、4.18.0-80.4.1.el8_0、4.18.0-80.4.2.el8_0
+
+* Mon Jul 01 2019 Johnny Hughes <johnny@centos.org>
+- Manual CentOS Debranding
+
+* Mon Jun 17 2019 CentOS Sources <bugs@centos.org> - 4.18.0-80.4.2.el8.centos
+- Apply debranding changes
+
+* Fri Jun 14 2019 Frantisek Hrbata <fhrbata@redhat.com> [4.18.0-80.4.2.el8_0]
+- [net] tcp: enforce tcp_min_snd_mss in tcp_mtu_probing() (Florian Westphal) [1719922 1719923] {CVE-2019-11479}
+- [net] tcp: add tcp_min_snd_mss sysctl (Florian Westphal) [1719922 1719923] {CVE-2019-11479}
+- [net] tcp: tcp_fragment() should apply sane memory limits (Florian Westphal) [1719857 1719858] {CVE-2019-11478}
+- [net] tcp: limit payload size of sacked skbs (Florian Westphal) [1719602 1719603] {CVE-2019-11477}
+
+* Thu May 16 2019 Frantisek Hrbata <fhrbata@redhat.com> [4.18.0-80.4.1.el8_0]
+- [netdrv] ice: Do autoneg based on VSI state (Jonathan Toppins) [1709433 1687903]
+- [arm64] arm64: apply workaround on A64FX v1r0 (Mark Langsdorf) [1700901 1692306]
+- [arm64] arm64/speculation: Support 'mitigations=' cmdline option (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [s390] s390/speculation: Support 'mitigations=' cmdline option (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [powerpc] powerpc/speculation: Support 'mitigations=' cmdline option (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [powerpc] powerpc/64: Disable the speculation barrier from the command line (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation/mds: Add 'mitigations=' support for MDS (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation: Support 'mitigations=' cmdline option (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [kernel] cpu/speculation: Add 'mitigations=' cmdline option (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation/mds: Print SMT vulnerable on MSBDS with mitigations off (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation/mds: Fix comment (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation/mds: Add SMT warning message (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation: Move arch_smt_update() call to after mitigation decisions (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation/mds: Add mds=full, nosmt cmdline option (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [documentation] Documentation: Add MDS vulnerability documentation (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [documentation] Documentation: Move L1TF to separate directory (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation/mds: Add mitigation mode VMWERV (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation/mds: Add sysfs reporting for MDS (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation/mds: Add mitigation control for MDS (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation/mds: Conditionally clear CPU buffers on idle entry (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/kvm/vmx: Add MDS protection when L1D Flush is not active (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation/mds: Clear CPU buffers on exit to user (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation/mds: Add mds_clear_cpu_buffers() (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [kvm] x86/kvm: Expose X86_FEATURE_MD_CLEAR to guests (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation/mds: Add BUG_MSBDS_ONLY (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation/mds: Add basic bug infrastructure for MDS (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation: Consolidate CPU whitelists (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/msr-index: Cleanup bit defines (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/speculation: Cast ~SPEC_CTRL_STIBP atomic value to int (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [x86] x86/cpu: Sanitize FAM6_ATOM naming (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [include] locking/atomics, asm-generic: Move some macros from <linux/bitops.h> to a new <linux/bits.h> file (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+- [tools] tools include: Adopt linux/bits.h (Josh Poimboeuf) [1698809 1698896 1699001 1705836 1690338 1690360 1690351 1705312] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126 CVE-2019-11091}
+
+* Tue May 14 2019 Frantisek Hrbata <fhrbata@redhat.com> [4.18.0-80.3.1.el8_0]
+- [mm] mm: enforce min addr even if capable() in expand_downwards() (Rafael Aquini) [1708829 1687667] {CVE-2019-9213}
+- [powerpc] powerpc/radix: Fix kernel crash with mremap() (Steve Best) [1708617 1674186]
+- [powerpc] powerpc/security: Fix spectre_v2 reporting (Gustavo Duarte) [1708112 1694456]
+- [powerpc] powerpc/powernv: Query firmware for count cache flush settings (Gustavo Duarte) [1708112 1694456]
+- [powerpc] powerpc/pseries: Query hypervisor for count cache flush settings (Gustavo Duarte) [1708112 1694456]
+- [powerpc] powerpc/64s: Add support for software count cache flush (Gustavo Duarte) [1708112 1694456]
+- [powerpc] powerpc/64s: Add new security feature flags for count cache flush (Gustavo Duarte) [1708112 1694456]
+- [powerpc] powerpc/asm: Add a patch_site macro & helpers for patching instructions (Gustavo Duarte) [1708112 1694456]
+- [powerpc] powerpc/64: Call setup_barrier_nospec() from setup_arch() (Gustavo Duarte) [1708112 1694456]
+- [powerpc] powerpc/64: Add CONFIG_PPC_BARRIER_NOSPEC (Gustavo Duarte) [1708112 1694456]
+- [powerpc] powerpc64s: Show ori31 availability in spectre_v1 sysfs file not v2 (Gustavo Duarte) [1708112 1694456]
+- [of] of: __of_detach_node() - remove node from phandle cache (Steve Best) [1708102 1669198]
+- [of] of: of_node_get()/of_node_put() nodes held in phandle cache (Steve Best) [1708102 1669198]
+- [fs] debugfs: Fix EPERM regression from kernel lockdown check (Lenny Szubowicz) [1708100 1686755]
+- [block] nvme: lock NS list changes while handling command effects (David Milburn) [1701140 1672759]
+
+* Fri May 10 2019 Frantisek Hrbata <fhrbata@redhat.com> [4.18.0-80.2.1.el8_0]
+- [netdrv] qed: Fix qed_mcp_halt|resume() (Manish Chopra) [1704184 1697310]
+- [cpufreq] cpufreq: intel_pstate: Also use CPPC nominal_perf for base_frequency (Prarit Bhargava) [1706739 1696131]
+- [acpi] ACPI / CPPC: Fix guaranteed performance handling (Prarit Bhargava) [1706739 1696131]
+- [arm64] arm64: Add workaround for Fujitsu A64FX erratum 010001 (Mark Langsdorf) [1700902 1666951]
+- [s390] vfio_ap: link the vfio_ap devices to the vfio_ap bus subsystem (Cornelia Huck) [1700290 1686044]
+- [netdrv] net/mlx4_en: Force CHECKSUM_NONE for short ethernet frames (Alaa Hleihel) [1700289 1651509]
+- [netdrv] net/mlx5e: Force CHECKSUM_UNNECESSARY for short ethernet frames (Alaa Hleihel) [1700289 1651509]
+- [pci] PCI: pciehp: Fix re-enabling the slot marked for safe removal (Myron Stowe) [1700288 1695922]

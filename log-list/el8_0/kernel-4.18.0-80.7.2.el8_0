@@ -1,0 +1,12 @@
+#继承4.18.0-80.7.1.el8_0，并分支，添加4.18.0-80.7.2.el8_0
+
+* Wed Aug 07 2019 CentOS Sources <bugs@centos.org> - 4.18.0-80.7.2.el8.centos
+- Apply debranding changes
+
+* Fri Jul 26 2019 Frantisek Hrbata <fhrbata@redhat.com> [4.18.0-80.7.2.el8_0]
+- [x86] x86/entry/64: Use JMP instead of JMPQ (Josh Poimboeuf) [1724500 1724501] {CVE-2019-1125}
+- [x86] x86/speculation: Enable Spectre v1 swapgs mitigations (Josh Poimboeuf) [1724500 1724501] {CVE-2019-1125}
+- [x86] x86/speculation: Prepare entry code for Spectre v1 swapgs mitigations (Josh Poimboeuf) [1724500 1724501] {CVE-2019-1125}
+- [x86] x86/cpufeatures: Combine word 11 and 12 into a new scattered features word (Josh Poimboeuf) [1724500 1724501] {CVE-2019-1125}
+- [x86] x86/cpufeatures: Carve out CQM features retrieval (Josh Poimboeuf) [1724500 1724501] {CVE-2019-1125}
+- [kernel] ptrace: Fix ->ptracer_cred handling for PTRACE_TRACEME (Aristeu Rozanski) [1730958 1730959] {CVE-2019-13272}

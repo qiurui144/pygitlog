@@ -1,0 +1,183 @@
+* Tue Apr 12 2022 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.23.1.el8_5]
+- gfs2: dequeue iopen holder in gfs2_inode_lookup error (Bob Peterson) [2069750 2061665]
+
+* Tue Apr 05 2022 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.22.1.el8_5]
+- scsi: lpfc: Fix non-recovery of remote ports following an unsolicited LOGO (Dick Kennedy) [2058193 2027558]
+- cifs: check all path components in resolved dfs target (Ronnie Sahlberg) [2056329 2030880]
+- RDMA/cma: Do not change route.addr.src_addr.ss_family (Kamal Heib) [2032073 2032074] {CVE-2021-4028}
+
+* Tue Mar 22 2022 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.21.1.el8_5]
+- netfilter: nf_queue: handle socket prefetch (Florian Westphal) [2061446 2009786]
+- netfilter: nf_queue: fix possible use-after-free (Florian Westphal) [2061446 2009786]
+- selftests: netfilter: add nfqueue TCP_NEW_SYN_RECV socket race test (Florian Westphal) [2061446 2009786]
+- netfilter: nf_queue: don't assume sk is full socket (Florian Westphal) [2061446 2009786]
+- netfilter: nf_tables_offload: incorrect flow offload action array size (Florian Westphal) [2056867 2056728] {CVE-2022-25636}
+- netfilter: nftables_offload: KASAN slab-out-of-bounds Read in nft_flow_rule_create (Florian Westphal) [2056867 2056728] {CVE-2022-25636}
+
+* Tue Mar 08 2022 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.20.1.el8_5]
+- lib/iov_iter: initialize "flags" in new pipe_buffer (Jan Stancek) [2060874 2060875] {CVE-2022-0847}
+
+* Mon Feb 28 2022 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.19.1.el8_5]
+- tipc: improve size validations for received domain records (Xin Long) [2048970 2048971] {CVE-2022-0435}
+- smb3: do not error on fsync when readonly (Ronnie Sahlberg) [2055824 2037811]
+- security: implement sctp_assoc_established hook in selinux (Ondrej Mosnacek) [2054112 2054117 2015525 2048251]
+- security: add sctp_assoc_established hook (Ondrej Mosnacek) [2054112 2054117 2015525 2048251]
+- security: call security_sctp_assoc_request in sctp_sf_do_5_1D_ce (Ondrej Mosnacek) [2054112 2054117 2015525 2048251]
+- security: pass asoc to sctp_assoc_request and sctp_sk_clone (Bruno Meneguele) [2054112 2054117 2015525 2048251]
+- net: sctp: Fix some typos (Ondrej Mosnacek) [2054112 2054117 2015525 2048251]
+- RDMA/bnxt_re: Fix stats counters (Selvin Xavier) [2049684 2001893]
+- net: check skb sec_path when re-initializing slow_gro in gro_list_prepare (Xin Long) [2047427 2030476]
+- cpufreq: intel_pstate: Add Icelake servers support in no-HWP mode (David Arcari) [2036888 2003695]
+
+* Tue Feb 22 2022 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.18.1.el8_5]
+- selftests: kvm: Check whether SIDA memop fails for normal guests (Thomas Huth) [2050806 2050807] {CVE-2022-0516}
+- KVM: s390: Return error on SIDA memop on normal guest (Thomas Huth) [2050806 2050807] {CVE-2022-0516}
+- iommu/amd: Remove iommu_init_ga() (Jerry Snitselaar) [2030854 1998265]
+- iommu/amd: Relocate GAMSup check to early_enable_iommus (Jerry Snitselaar) [2030854 1998265]
+
+* Tue Feb 15 2022 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.17.1.el8_5]
+- vfs: check dentry is still valid in get_link() (Ian Kent) [2052558 2014846]
+- xfs: don't expose internal symlink metadata buffers to the vfs (Brian Foster) [2052558 2014846]
+- CI: Use appropriate zstream builder (Veronika Kabatova)
+- CI: Enable baseline realtime checks (Veronika Kabatova)
+- CI: Rename pipelines to include release names (Veronika Kabatova)
+- cgroup-v1: Require capabilities to set release_agent (Waiman Long) [2052166 2052167] {CVE-2022-0492}
+- ice: Remove boolean vlan_promisc flag from function (Jonathan Toppins) [2051951 2030400]
+- ceph: put the requests/sessions when it fails to alloc memory (Jeffrey Layton) [2053725 2017796]
+- ceph: fix off by one bugs in unsafe_request_wait() (Jeffrey Layton) [2053725 2017796]
+- ceph: flush the mdlog before waiting on unsafe reqs (Jeffrey Layton) [2053725 2017796]
+- ceph: flush mdlog before umounting (Jeffrey Layton) [2053725 2017796]
+- ceph: make iterate_sessions a global symbol (Jeffrey Layton) [2053725 2017796]
+- ceph: make ceph_create_session_msg a global symbol (Jeffrey Layton) [2053725 2017796]
+- xfs: check sb_meta_uuid for dabuf buffer recovery (Bill O'Donnell) [2049292 2020764]
+- drm/i915: Flush TLBs before releasing backing store (Patrick Talbert) [2044328 2044329] {CVE-2022-0330}
+- hugetlb: fix hugetlb cgroup refcounting during vma split (Waiman Long) [2039015 2032811]
+- hugetlb_cgroup: fix imbalanced css_get and css_put pair for shared mappings (Waiman Long) [2039015 2032811]
+- mm/hugetlb: change hugetlb_reserve_pages() to type bool (Waiman Long) [2039015 2032811]
+- hugetlb: fix an error code in hugetlb_reserve_pages() (Waiman Long) [2039015 2032811]
+- hugetlb_cgroup: fix offline of hugetlb cgroup with reservations (Waiman Long) [2039015 2032811]
+- hugetlb_cgroup: fix reservation accounting (Waiman Long) [2039015 2032811]
+- mm/hugetlb: narrow the hugetlb_lock protection area during preparing huge page (Waiman Long) [2039015 2032811]
+- mm/hugetlb: a page from buddy is not on any list (Waiman Long) [2039015 2032811]
+- mm/hugetlb: not necessary to coalesce regions recursively (Waiman Long) [2039015 2032811]
+- selftests/vm/write_to_hugetlbfs.c: fix unused variable warning (Waiman Long) [2039015 2032811]
+- hugetlb_cgroup: add hugetlb_cgroup reservation tests (Waiman Long) [2039015 2032811]
+- hugetlb: support file_region coalescing again (Waiman Long) [2039015 2032811]
+- hugetlb_cgroup: support noreserve mappings (Waiman Long) [2039015 2032811]
+- hugetlb_cgroup: add accounting for shared mappings (Waiman Long) [2039015 2032811]
+- hugetlb: disable region_add file_region coalescing (Waiman Long) [2039015 2032811]
+- hugetlb_cgroup: add reservation accounting for private mappings (Waiman Long) [2039015 2032811]
+- mm/hugetlb_cgroup: fix hugetlb_cgroup migration (Waiman Long) [2039015 2032811]
+- hugetlb_cgroup: add interface for charge/uncharge hugetlb reservations (Waiman Long) [2039015 2032811]
+- hugetlb_cgroup: add hugetlb_cgroup reservation counter (Waiman Long) [2039015 2032811]
+- hugetlb: remove duplicated code (Waiman Long) [2039015 2032811]
+- hugetlb: region_chg provides only cache entry (Waiman Long) [2039015 2032811]
+- hugetlbfs: always use address space in inode for resv_map pointer (Waiman Long) [2039015 2032811]
+- hugetlbfs: fix potential over/underflow setting node specific nr_hugepages (Waiman Long) [2039015 2032811]
+- hugetlb: allow to free gigantic pages regardless of the configuration (Waiman Long) [2039015 2032811]
+- powerpc/pseries: Fix update of LPAR security flavor after LPM (Steve Best) [2027448 1997294]
+
+* Tue Feb 08 2022 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.16.1.el8_5]
+- drm/vmwgfx: Fix stale file descriptors on failed usercopy (Dave Airlie) [2047601 2047602] {CVE-2022-22942}
+- net: openvswitch: Fix ct_state nat flags for conns arriving from tc (Marcelo Ricardo Leitner) [2043548 2040334]
+- net: openvswitch: Fix matching zone id for invalid conns arriving from tc (Marcelo Ricardo Leitner) [2043550 2040452]
+- net/sched: flow_dissector: Fix matching on zone id for invalid conns (Marcelo Ricardo Leitner) [2043550 2040452]
+- net/sched: Extend qdisc control block with tc control block (Marcelo Ricardo Leitner) [2043550 2040452]
+
+* Tue Feb 01 2022 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.15.1.el8_5]
+- net/mlx5: DR, Use FW API when updating FW-owned flow table (Michal Schmidt) [2042663 2042651]
+- KVM: x86: Wait for IPIs to be delivered when handling Hyper-V TLB flush hypercall (Vitaly Kuznetsov) [2043237 1868572]
+- drm/mgag200: Select clock in PLL update functions (Bruno Meneguele) [2034949 1953926]
+- drm/i915: Fix HAS_LSPCON macro for platforms between GEN9 and GEN10 (Bruno Meneguele) [2027335 2005586]
+- crypto: qat - power up 4xxx device (Vladis Dronov) [2016437 1960307]
+- RDMA/core: Fix a double free in add_port error flow (Kamal Heib) [2038724 2008555]
+- powerpc/iommu: Report the correct most efficient DMA mask for PCI devices (Steve Best) [2018928 2007425]
+- powerpc/dma: Fix dma_map_ops::get_required_mask (Steve Best) [2018928 2007425]
+
+* Wed Jan 26 2022 Frantisek Hrbata <fhrbata@redhat.com> [4.18.0-348.14.1.el8_5]
+- tcp: fix page frag corruption on page fault (Paolo Abeni) [2041529 1996074]
+- net: fix sk_page_frag() recursion from memory reclaim (Paolo Abeni) [2041529 1996074]
+- KVM: s390: index kvm->arch.idle_mask by vcpu_idx (Thomas Huth) [2040769 2026230]
+- redhat: set LC_ALL=C before sorting config content (Frantisek Hrbata)
+
+* Tue Jan 18 2022 Frantisek Hrbata <fhrbata@redhat.com> [4.18.0-348.13.1.el8_5]
+- vfs: Out-of-bounds write of heap buffer in fs_context.c (Frantisek Hrbata) [2040585 2040586] {CVE-2022-0185}
+- xfs: map unwritten blocks in XFS_IOC_{ALLOC,FREE}SP just like fallocate (Bruno Meneguele) [2034864 2034865] {CVE-2021-4155}
+- af_unix: fix garbage collect vs MSG_PEEK (Patrick Talbert) [2031974 2031975] {CVE-2021-0920}
+- cgroup: verify that source is a string (Waiman Long) [2034608 2034609] {CVE-2021-4154}
+
+* Wed Jan 12 2022 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.12.1.el8_5]
+- tcp: don't free a FIN sk_buff in tcp_remove_empty_skb() (Guillaume Nault) [2021574 2016210]
+- kernel.spec: Add support to use vmlinux.h (Jiri Olsa) [2031053 1989087]
+- spec: Add vmlinux.h to kernel-devel package (Jiri Olsa) [2031053 1989087]
+- x86/mce: Avoid infinite loop for copy from user recovery (Prarit Bhargava) [2008789 1999550]
+- x86/mce: Rename kill_it to kill_current_task (Prarit Bhargava) [2008789 1999550]
+- x86/mce: Recover from poison found while copying from user space (Prarit Bhargava) [2008789 1999550]
+- x86/mce: Delay clearing IA32_MCG_STATUS to the end of do_machine_check() (Prarit Bhargava) [2008789 1999550]
+- x86/mce: Send #MC singal from task work (Prarit Bhargava) [2008789 1999550]
+
+* Tue Jan 04 2022 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.11.1.el8_5]
+- blk-mq: avoid to iterate over stale request (Ming Lei) [2034396 1997338]
+- rcu: Tighten rcu_advance_cbs_nowake() checks (Daniel Vacek) [2032579 2013408]
+
+* Wed Dec 29 2021 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.10.1.el8_5]
+- selftests: add a test case for mirred egress to ingress (Xin Long) [2024411 1983894]
+- net: sched: act_mirred: drop dst for the direction from egress to ingress (Xin Long) [2024411 1983894]
+
+* Mon Dec 20 2021 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.9.1.el8_5]
+- ixgbe: Revert "bpf, devmap: Move drop error path to devmap for XDP_REDIRECT" (Ken Cox) [2029845 2024240]
+- i40e: Revert "bpf, devmap: Move drop error path to devmap for XDP_REDIRECT" (Stefan Assmann) [2029845 2024225]
+- rcu/nocb: Perform deferred wake up before last idle's need_resched() check (Waiman Long) [2029449 2008340]
+
+* Tue Dec 14 2021 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.8.1.el8_5]
+- ice: Fix VF true promiscuous mode (Jonathan Toppins) [2026698 1970643]
+- ice: Remove toggling of antispoof for VF trusted promiscuous mode (Jonathan Toppins) [2026698 1970643]
+- ice: Fix replacing VF hardware MAC to existing MAC filter (Jonathan Toppins) [2026698 1970643]
+- ice: Fix not stopping Tx queues for VFs (Jonathan Toppins) [2026698 1970643]
+- ice: Fix race conditions between virtchnl handling and VF ndo ops (Jonathan Toppins) [2026698 1970643]
+- net/netif_receive_skb_core: Use migrate_disable() (Luis Claudio R. Goncalves) [2027689 2024168]
+- crypto: jitter - consider 32 LSB for APT (Herbert Xu) [2029365 1994390]
+- xfs: fix I_DONTCACHE (Carlos Maiolino) [2028534 2024969]
+
+* Wed Dec 08 2021 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.7.1.el8_5]
+- sched: Fix CPU hotplug / tighten is_per_cpu_kthread() (Waiman Long) [2026450 2024869]
+- sched: Prepare to use balance_push in ttwu() (Waiman Long) [2026450 2024869]
+- sched: Don't run cpu-online with balance_push() enabled (Waiman Long) [2026450 2024869]
+- workqueue: Tag bound workers with KTHREAD_IS_PER_CPU (Waiman Long) [2026450 2024869]
+- workqueue: Use cpu_possible_mask instead of cpu_active_mask to break affinity (Waiman Long) [2026450 2024869]
+- sched: Fix hotplug vs CPU bandwidth control (Waiman Long) [2026450 2024869]
+- workqueue: Manually break affinity on hotplug (Waiman Long) [2026450 2024869]
+- sched/hotplug: Consolidate task migration on CPU unplug (Waiman Long) [2026450 2024869]
+- sched/core: Wait for tasks being pushed away on hotplug (Waiman Long) [2026450 2024869]
+
+* Tue Dec 07 2021 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.6.1.el8_5]
+- x86/Kconfig: Do not enable AMD_MEM_ENCRYPT_ACTIVE_BY_DEFAULT automatically (Prarit Bhargava) [2024678 2021219]
+
+* Tue Nov 30 2021 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.5.1.el8_5]
+- blk-mq: still set q->make_request_fn for blk-mq (Ming Lei) [2016384 1999728]
+
+* Tue Nov 23 2021 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.4.1.el8_5]
+- [RHEL8.6 BZ 1849234] cifs: report error instead of invalid when revalidating a dentry fails (Ronnie Sahlberg) [2017177 1849234]
+- kthread: Fix PF_KTHREAD vs to_kthread() race (Waiman Long) [2010333 2001497]
+- sched/fair: Ignore percpu threads for imbalance pulls (Waiman Long) [2010333 2001497]
+- kthread: Extract KTHREAD_IS_PER_CPU (Waiman Long) [2010333 2001497]
+- sched: Optimize finish_lock_switch() (Waiman Long) [2010333 2001497]
+- sched/hotplug: Ensure only per-cpu kthreads run during hotplug (Waiman Long) [2010333 2001497]
+- sched: Fix balance_callback() (Waiman Long) [2010333 2001497]
+
+* Tue Nov 16 2021 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.3.1.el8_5]
+- net-sysfs: try not to restart the syscall if it will fail eventually (Antoine Tenart) [2021165 2016005]
+- ovl: fix missing negative dentry check in ovl_rename() (Miklos Szeredi) [2016378 2010887 2013318] {CVE-2021-20321}
+
+* Mon Nov 08 2021 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.2.1.el8_5]
+- tipc: fix size validations for the MSG_CRYPTO type (Bruno Meneguele) [2020506 2020507] {CVE-2021-43267}
+- net: Fix skb->csum update in inet_proto_csum_replace16(). (Balazs Nemeth) [2005981 1975193]
+
+* Wed Nov 03 2021 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-348.1.1.el8_5]
+- lib/timerqueue: Rely on rbtree semantics for next timer (Phil Auld) [2014677 2007099] {CVE-2021-20317}
+- mm/hmm: make HMM_MIRROR an implicit option (Rafael Aquini) [2017519 1998534]
+- mm/hmm: allow HMM_MIRROR on all architectures with MMU (Rafael Aquini) [2017519 1998534]
+- mm: don't select MIGRATE_VMA_HELPER from HMM_MIRROR (Rafael Aquini) [2017519 1998534]
+- mm: sort out the DEVICE_PRIVATE Kconfig mess (Rafael Aquini) [2017519 1998534]
+- ceph: skip existing superblocks that are blocklisted or shut down when mounting (Jeffrey Layton) [2017071 2011462]
+- redhat: switch release to zstream (Bruno Meneguele)

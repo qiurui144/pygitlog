@@ -1,0 +1,698 @@
+* Fri Oct 07 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.32.1.el8_6]
+- net: atlantic: remove aq_nic_deinit() when resume (Íñigo Huguet) [2131936 2130839]
+- net: atlantic: remove deep parameter on suspend/resume functions (Íñigo Huguet) [2131936 2130839]
+- configs: enable CONFIG_HP_ILO for aarch64 (Mark Salter) [2129923 2123508]
+- drm/nouveau: recognise GA103 (Karol Herbst) [2127122 1923125]
+- net: fix a memleak when uncloning an skb dst and its metadata (Hangbin Liu) [2131255 2068355]
+- net: do not keep the dst cache when uncloning an skb dst and its metadata (Hangbin Liu) [2131255 2068355]
+- intel_idle: Fix false positive RCU splats due to incorrect hardirqs state (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/spec_ctrl: Enable RHEL only ibrs_always & retpoline,ibrs_user spectre_v2 options (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- KVM: emulate: do not adjust size of fastop and setcc subroutines (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/kvm: fix FASTOP_SIZE when return thunks are enabled (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- efi/x86: use naked RET on mixed mode call wrapper (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/bugs: Remove apostrophe typo (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/speculation: Use DECLARE_PER_CPU for x86_spec_ctrl_current (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/entry: Remove UNTRAIN_RET from native_irq_return_ldt (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/bugs: Mark retbleed_strings static (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/asm/32: Fix ANNOTATE_UNRET_SAFE use on 32-bit (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/speculation: Disable RRSBA behavior (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/kexec: Disable RET on kexec (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/bugs: Do not enable IBPB-on-entry when IBPB is not supported (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/bugs: Add Cannon lake to RETBleed affected CPU list (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- redhat/configs: Add new mitigation configs for RetBleed CVEs (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/retbleed: Add fine grained Kconfig knobs (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/cpu/amd: Enumerate BTC_NO (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/common: Stamp out the stepping madness (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- KVM: VMX: Prevent RSB underflow before vmenter (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/speculation: Fill RSB on vmexit for IBRS (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- KVM: VMX: Fix IBRS handling after vmexit (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- KVM: VMX: Prevent guest RSB poisoning attacks with eIBRS (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- KVM: VMX: Convert launched argument to flags (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- KVM: VMX: Flatten __vmx_vcpu_run() (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/speculation: Remove x86_spec_ctrl_mask (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/speculation: Use cached host SPEC_CTRL value for guest entry/exit (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/speculation: Fix SPEC_CTRL write on SMT state change (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/speculation: Fix firmware entry SPEC_CTRL handling (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/cpu/amd: Add Spectral Chicken (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/bugs: Do IBPB fallback check only once (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/bugs: Add retbleed=ibpb (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- objtool: Update Retpoline validation (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- intel_idle: Disable IBRS during long idle (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/bugs: Report Intel retbleed vulnerability (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/bugs: Split spectre_v2_select_mitigation() and spectre_v2_user_select_mitigation() (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/speculation: Add spectre_v2=ibrs option to support Kernel IBRS (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/bugs: Optimize SPEC_CTRL MSR writes (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/entry: Add kernel IBRS implementation (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/bugs: Keep a per-CPU IA32_SPEC_CTRL value (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/bugs: Enable STIBP for JMP2RET (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/bugs: Add AMD retbleed= boot parameter (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/bugs: Report AMD retbleed vulnerability (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86: Add magic AMD return-thunk (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86: Use return-thunk in asm code (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/sev: Avoid using __x86_return_thunk (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/vsyscall_emu/64: Don't use RET in vsyscall emulation (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/kvm: Fix SETcc emulation for return thunks (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/bpf: Use alternative RET encoding (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/ftrace: Use alternative RET encoding (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86,objtool: Create .return_sites (Josh Poimboeuf) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86: Undo return-thunk damage (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/retpoline: Use -mfunction-return (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/retpoline: Swizzle retpoline thunk (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/retpoline: Cleanup some #ifdefery (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/cpufeatures: Move RETPOLINE flags to word 11 (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/kvm/vmx: Make noinstr clean (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- arch/x86/boot/compressed: Add -D__DISABLE_EXPORTS to kbuild flags (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86: (Ab)use __DISABLE_EXPORTS to disable RETHUNK in real mode (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/entry: Remove skip_r11rcx (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- cpuidle,intel_idle: Fix CPUIDLE_FLAG_IRQ_ENABLE (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/speculation/srbds: Do not try to turn mitigation off when not supported (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/ibt,paravirt: Use text_gen_insn() for paravirt_patch() (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/text-patching: Make text_gen_insn() play nice with ANNOTATE_NOENDBR (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/module: Fix the paravirt vs alternative order (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86: Add straight-line-speculation mitigation (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86: Prepare inline-asm for straight-line-speculation (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86: Prepare asm files for straight-line-speculation (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86: Use -mindirect-branch-cs-prefix for RETPOLINE builds (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86: Move RETPOLINE*_CFLAGS to arch Makefile (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/entry: Add a fence for kernel entry SWAPGS in paranoid_entry() (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- Makefile: remove stale cc-option checks (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- tools headers: Remove broken definition of __LITTLE_ENDIAN (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- tools arch: Update arch/x86/lib/mem{cpy,set}_64.S copies used in 'perf bench mem memcpy' (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86: Add insn_decode_kernel() (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- tools/insn: Restore the relative include paths for cross building (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/alternative: Use insn_decode() (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/insn: Add an insn_decode() API (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/insn: Rename insn_decode() to insn_decode_from_regs() (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/paravirt: Add new features for paravirt patching (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/alternative: Support not-feature (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/alternative: Merge include files (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- objtool: Fix error handling for STD/CLD warnings (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/alternatives: Teach text_poke_bp() to emulate RET (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/ftrace: Have ftrace trampolines turn read-only at the end of system boot up (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/speculation: Change FILL_RETURN_BUFFER to work with objtool (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- objtool: Add support for intra-function calls (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- objtool: Rework allocating stack_ops on decode (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- objtool: Better handle IRET (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- objtool: Support multiple stack_op per instruction (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- objtool: Make BP scratch register warning more robust (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/kexec: Make relocate_kernel_64.S objtool clean (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- objtool: Introduce validate_return() (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- Makefile: disallow data races on gcc-10 as well (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- objtool: Improve call destination function detection (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/alternatives: Implement a better poke_int3_handler() completion scheme (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- lib/: fix Kconfig indentation (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/alternatives: Use INT3_INSN_SIZE (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/kprobes: Fix ordering while text-patching (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/kprobes: Convert to text-patching.h (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/alternative: Shrink text_poke_loc (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/alternative: Remove text_poke_loc::len (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/ftrace: Use text_gen_insn() (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/alternative: Add text_opcode_size() (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/ftrace: Use text_poke() (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/ftrace: Use vmalloc special flag (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/ftrace: Explicitly include vmalloc.h for set_vm_flush_reset_perms() (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/alternatives: Add and use text_gen_insn() helper (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/alternatives, jump_label: Provide better text_poke() batching interface (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/asm: Annotate relocate_kernel_{32,64}.c (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86: kprobes: Prohibit probing on instruction which has emulate prefix (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86: Correct misc typos (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/speculation/mds: Apply more accurate check on hypervisor platform (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- objtool: Convert insn type to enum (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- objtool: Track original function across branches (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- objtool: Rename elf_open() to prevent conflict with libelf from elftoolchain (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/ftrace: Make enable parameter bool where applicable (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/CPU/AMD: Don't force the CPB cap when running under a hypervisor (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- objtool: Fix function fallthrough detection (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/paravirt: Detect over-sized patching bugs in paravirt_patch_call() (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/cpu/amd: Exclude 32bit only assembler from 64bit build (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/asm: Mark all top level asm statements as .text (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/cpu/bugs: Use __initconst for 'const' init data (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- objtool: Add Direction Flag validation (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- objtool: Rewrite add_ignores() (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/nospec, objtool: Introduce ANNOTATE_IGNORE_ALTERNATIVE (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/ftrace: Fix warning and considate ftrace_jmp_replace() and ftrace_call_replace() (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- kbuild: Disable extra debugging info in .s output (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/CPU/AMD: Set the CPB bit unconditionally on F17h (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/alternatives: Print containing function (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/ftrace: Do not call function graph from dynamic trampolines (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- ftrace: Create new ftrace_internal.h header (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- kprobes/x86: Fix instruction patching corruption when copying more than one RIP-relative instruction (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- tracing/Makefile: Fix handling redefinition of CC_FLAGS_FTRACE (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/paravirt: Remove unused paravirt bits (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/paravirt: Remove clobbers parameter from paravirt patch functions (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/paravirt: Make paravirt_patch_call() and paravirt_patch_jmp() static (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/l1tf: Fix build error seen if CONFIG_KVM_INTEL is disabled (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- ftrace: Remove unused pointer ftrace_swapper_pid (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- x86/spec_ctrl: Temporarily remove RHEL specific IBRS code (Waiman Long) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- intel_idle: enable interrupts before C1 on Xeons (Steve Best) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- KVM: nVMX: Query current VMCS when determining if MSR bitmaps are in use (Vitaly Kuznetsov) [2103167 2090229] {CVE-2022-23816 CVE-2022-29900 CVE-2022-29901 CVE-2022-23825}
+- atlantic: Fix issue in the pm resume flow. (Igor Russkikh) [2127845 2002395]
+- atlantic: Fix driver resume flow. (Igor Russkikh) [2127845 2002395]
+- net: atlantic: always deep reset on pm op, fixing up my null deref regression (Foggy Liu) [2124966 2039680]
+- net: atlantic: invert deep par in pm functions, preventing null derefs (Foggy Liu) [2124966 2039680]
+
+* Thu Sep 29 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.31.1.el8_6]
+- ice: Allow operation with reduced device MSI-X (Petr Oros) [2126482 2102844]
+- redhat: kernel depends on new linux-firmware (John Meneghini) [2120613 2044843]
+- scsi: qedi: Use QEDI_MODE_NORMAL for error handling (John Meneghini) [2119847 2101760]
+- qede: Reduce verbosity of ptp tx timestamp (John Meneghini) [2125477 2080655]
+- qede: confirm skb is allocated before using (John Meneghini) [2120611 2040267]
+- qed: fix ethtool register dump (John Meneghini) [2120611 2040267]
+- scsi: qedf: Stop using the SCSI pointer (John Meneghini) [2120613 2044843]
+- scsi: qedf: Change context reset messages to ratelimited (John Meneghini) [2120613 2044843]
+- scsi: qedf: Fix refcount issue when LOGO is received during TMF (John Meneghini) [2120613 2044843]
+- scsi: qedf: Add stag_work to all the vports (John Meneghini) [2120613 2044843]
+- scsi: qedf: Fix potential dereference of NULL pointer (John Meneghini) [2120613 2044843]
+- scsi: qedi: Remove redundant flush_workqueue() calls (John Meneghini) [2120612 2044837]
+- scsi: qedi: Fix SYSFS_FLAG_FW_SEL_BOOT formatting (John Meneghini) [2120612 2044837]
+- qed: remove unnecessary memset in qed_init_fw_funcs (John Meneghini) [2120611 2040267]
+- qed: return status of qed_iov_get_link (John Meneghini) [2120611 2040267]
+- net: qlogic: check the return value of dma_alloc_coherent() in qed_vf_hw_prepare() (John Meneghini) [2120611 2040267]
+- qed: validate and restrict untrusted VFs vlan promisc mode (John Meneghini) [2120611 2040267]
+- qed: display VF trust config (John Meneghini) [2120611 2040267]
+- qed: prevent a fw assert during device shutdown (John Meneghini) [2120611 2040267]
+- qed: use msleep() in qed_mcp_cmd() and add qed_mcp_cmd_nosleep() for udelay. (John Meneghini) [2120611 2040267]
+- qed: Use dma_set_mask_and_coherent() and simplify code (John Meneghini) [2120611 2040267]
+- qed*: esl priv flag support through ethtool (John Meneghini) [2120611 2040267]
+- qed*: enhance tx timeout debug info (John Meneghini) [2120611 2040267]
+- qede: validate non LSO skb length (John Meneghini) [2120611 2040267]
+- qed: Enhance rammod debug prints to provide pretty details (John Meneghini) [2120611 2040267]
+- net: qed: fix the array may be out of bound (John Meneghini) [2120611 2040267]
+- qed: Use the bitmap API to simplify some functions (John Meneghini) [2120611 2040267]
+- RDMA/qed: Use helper function to set GUIDs (John Meneghini) [2120611 2040267]
+- net: qed_dev: fix check of true !rc expression (John Meneghini) [2120611 2040267]
+- net: qed_ptp: fix check of true !rc expression (John Meneghini) [2120611 2040267]
+- RDMA/qedr: Remove unsupported qedr_resize_cq callback (John Meneghini) [2120611 2040267]
+- qed: Change the TCP common variable - "iscsi_ooo" (John Meneghini) [2120611 2040267]
+- qed: Optimize the ll2 ooo flow (John Meneghini) [2120611 2040267]
+- net: qed_debug: fix check of false (grc_param < 0) expression (John Meneghini) [2120611 2040267]
+- qed: Fix missing error code in qed_slowpath_start() (John Meneghini) [2120611 2040267]
+- qed: Fix compilation for CONFIG_QED_SRIOV undefined scenario (John Meneghini) [2120611 2040267]
+- qed: Initialize debug string array (John Meneghini) [2120611 2040267]
+- qed: Fix spelling mistake "ctx_bsaed" -> "ctx_based" (John Meneghini) [2120611 2040267]
+- qed: fix ll2 establishment during load of RDMA driver (John Meneghini) [2120611 2040267]
+- qed: Update the TCP active termination 2 MSL timer ("TIME_WAIT") (John Meneghini) [2120611 2040267]
+- qed: Update TCP silly-window-syndrome timeout for iwarp, scsi (John Meneghini) [2120611 2040267]
+- qed: Update debug related changes (John Meneghini) [2120611 2040267]
+- qed: Add '_GTT' suffix to the IRO RAM macros (John Meneghini) [2120611 2040267]
+- qed: Update FW init functions to support FW 8.59.1.0 (John Meneghini) [2120611 2040267]
+- qed: Use enum as per FW 8.59.1.0 in qed_iro_hsi.h (John Meneghini) [2120611 2040267]
+- qed: Update qed_hsi.h for fw 8.59.1.0 (John Meneghini) [2120611 2040267]
+- qed: Update qed_mfw_hsi.h for FW ver 8.59.1.0 (John Meneghini) [2120611 2040267]
+- qed: Update common_hsi for FW ver 8.59.1.0 (John Meneghini) [2120611 2040267]
+- qed: Split huge qed_hsi.h header file (John Meneghini) [2120611 2040267]
+- qed: Remove e4_ and _e4 from FW HSI (John Meneghini) [2120611 2040267]
+- qed: Fix kernel-doc warnings (John Meneghini) [2120611 2040267]
+- qed: Don't ignore devlink allocation failures (John Meneghini) [2120611 2040267]
+- qed: Improve the stack space of filter_config() (John Meneghini) [2120611 2040267]
+- RDMA/qedr: Move variables reset to qedr_set_common_qp_params() (John Meneghini) [2120611 2040267]
+- RDMA/qedr: Fix reporting max_{send/recv}_wr attrs (John Meneghini) [2119122 2051524]
+
+* Mon Sep 26 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.30.1.el8_6]
+- af_key: add __GFP_ZERO flag for compose_sadb_supported in function pfkey_register (Xin Long) [2107611 2075181] {CVE-2022-1353}
+- SUNRPC: avoid race between mod_timer() and del_timer_sync() (Benjamin Coddington) [2126184 2104507]
+- powerpc/fadump: print start of preserved area (Diego Domingos) [2107488 2075092]
+- powerpc/fadump: align destination address to pagesize (Diego Domingos) [2107488 2075092]
+- powerpc/fadump: fix PT_LOAD segment for boot memory area (Diego Domingos) [2107488 2075092]
+- drm/amdgpu: vi: disable ASPM on Intel Alder Lake based systems (Michel Dänzer) [2091065 2066918]
+- drm/amd: Use amdgpu_device_should_use_aspm on navi umd pstate switching (Michel Dänzer) [2091065 2066918]
+- drm/amd: Refactor `amdgpu_aspm` to be evaluated per device (Michel Dänzer) [2091065 2066918]
+- drm/amd: Check if ASPM is enabled from PCIe subsystem (Michel Dänzer) [2091065 2066918]
+
+* Thu Sep 15 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.29.1.el8_6]
+- block-map: add __GFP_ZERO flag for alloc_page in function bio_copy_kern (Ewan D. Milne) [2107627 2049198] {CVE-2022-0494}
+- cpufreq: Specify default governor on command line (Prarit Bhargava) [2109996 2083766]
+- cpufreq: Fix locking issues with governors (Prarit Bhargava) [2109996 2083766]
+- cpufreq: Register governors at core_initcall (Prarit Bhargava) [2109996 2083766]
+- net_sched: cls_route: remove from list when handle is 0 (Felix Maurer) [2121817 2116328] {CVE-2022-2588}
+
+* Thu Sep 08 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.28.1.el8_6]
+- powerpc/smp: Update cpu_core_map on all PowerPc systems (Diego Domingos) [2112820 2064104]
+- iavf: Fix reset error handling (Petr Oros) [2120225 2119759]
+- iavf: Fix NULL pointer dereference in iavf_get_link_ksettings (Petr Oros) [2120225 2119759]
+- iavf: Fix adminq error handling (Petr Oros) [2120225 2119759]
+- iavf: Fix missing state logs (Petr Oros) [2120225 2119759]
+- scsi: mpt3sas: Stop fw fault watchdog work item during system shutdown (Tomas Henzl) [2111140 2106413]
+- s390/qeth: cache link_info for ethtool (Michal Schmidt) [2120197 2117098]
+- nvme: fix RCU hole that allowed for endless looping in multipath round robin (Gopal Tiwari) [2106017 2078806]
+- nvme: also mark passthrough-only namespaces ready in nvme_update_ns_info (Gopal Tiwari) [2106017 2078806]
+- nvme: fix use after free when disconnecting a reconnecting ctrl (Gopal Tiwari) [2106017 2078806]
+- nvme: only call synchronize_srcu when clearing current path (Gopal Tiwari) [2106017 2078806]
+- nvme-multipath: revalidate paths during rescan (Gopal Tiwari) [2106017 2078806]
+- scsi: lpfc: Move cfg_log_verbose check before calling lpfc_dmp_dbg() (Dick Kennedy) [2112103 2034425]
+
+* Thu Sep 08 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.27.1.el8_6]
+- [s390] s390/pci: add s390_iommu_aperture kernel parameter (Claudio Imbrenda) [2081324 2039181]
+- ipv6: take care of disable_policy when restoring routes (Andrea Claudi) [2109971 2103894]
+- net: openvswitch: fix parsing of nw_proto for IPv6 fragments (Eelco Chaudron) [2106703 2101537]
+- scsi: ch: Make it possible to open a ch device multiple times again (Ewan D. Milne) [2115965 2108649]
+- scsi: smartpqi: Fix DMA direction for RAID requests (Don Brace) [2112354 2101548]
+- iommu/vt-d: Calculate mask for non-aligned flushes (Jerry Snitselaar) [2111692 2072179]
+
+* Fri Aug 26 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.26.1.el8_6]
+- drm/amd/display: Ignore First MST Sideband Message Return Error (Mika Penttilä) [2109826 2089853]
+- ASoC: SOF: topology: read back control data from DSP (Jaroslav Kysela) [2117732 2065575]
+- ASoC: SOF: Drop ctrl_type parameter for snd_sof_ipc_set_get_comp_data() (Jaroslav Kysela) [2117732 2065575]
+- ASoC: SOF: control: Do not handle control notification with component type (Jaroslav Kysela) [2117732 2065575]
+- ASoC: SOF: sof-audio: Drop the `cmd` member from struct snd_sof_control (Jaroslav Kysela) [2117732 2065575]
+- ASoC: SOF: Drop ctrl_cmd parameter for snd_sof_ipc_set_get_comp_data() (Jaroslav Kysela) [2117732 2065575]
+- ASoC: SOF: topology: Set control_data->cmd alongside scontrol->cmd (Jaroslav Kysela) [2117732 2065575]
+- ASoC: SOF: Drop ipc_cmd parameter for snd_sof_ipc_set_get_comp_data() (Jaroslav Kysela) [2117732 2065575]
+- ASoC: SOF: ipc: Rename send parameter in snd_sof_ipc_set_get_comp_data() (Jaroslav Kysela) [2117732 2065575]
+- cgroup: Use css_tryget() instead of css_tryget_online() in task_get_css() (Vratislav Bendel) [2120776 2111491]
+- platform/x86/intel: Fix 'rmmod pmt_telemetry' panic (Prarit Bhargava) [2091079 2080426]
+- KVM: x86/mmu: make apf token non-zero to fix bug (Vitaly Kuznetsov) [2105340 2096201]
+- iommu/vt-d: Make DMAR_UNITS_SUPPORTED a config setting (Jerry Snitselaar) [2112983 2095498]
+
+* Wed Aug 24 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.25.1.el8_6]
+- redhat: add missing ybz numbers to changelog (Augusto Caringi)
+- block: limit request dispatch loop duration (Ming Lei) [2110772 2005082]
+- NLM: Defend against file_lock changes after vfs_test_lock() (Benjamin Coddington) [2102099 2094884]
+- x86/speculation/mmio: Print SMT warning (Waiman Long) [2110388 2090252] {CVE-2022-21123 CVE-2022-21125 CVE-2022-21166}
+- KVM: x86/speculation: Disable Fill buffer clear within guests (Waiman Long) [2110388 2090252] {CVE-2022-21123 CVE-2022-21125 CVE-2022-21166}
+- x86/speculation/mmio: Reuse SRBDS mitigation for SBDS (Waiman Long) [2110388 2090252] {CVE-2022-21123 CVE-2022-21125 CVE-2022-21166}
+- x86/speculation/srbds: Update SRBDS mitigation selection (Waiman Long) [2110388 2090252] {CVE-2022-21123 CVE-2022-21125 CVE-2022-21166}
+- x86/speculation/mmio: Add sysfs reporting for Processor MMIO Stale Data (Waiman Long) [2110388 2090252] {CVE-2022-21123 CVE-2022-21125 CVE-2022-21166}
+- x86/speculation/mmio: Enable CPU Fill buffer clearing on idle (Waiman Long) [2110388 2090252] {CVE-2022-21123 CVE-2022-21125 CVE-2022-21166}
+- x86/bugs: Group MDS, TAA & Processor MMIO Stale Data mitigations (Waiman Long) [2110388 2090252] {CVE-2022-21123 CVE-2022-21125 CVE-2022-21166}
+- x86/speculation/mmio: Add mitigation for Processor MMIO Stale Data (Waiman Long) [2110388 2090252] {CVE-2022-21123 CVE-2022-21125 CVE-2022-21166}
+- x86/speculation: Add a common function for MD_CLEAR mitigation update (Waiman Long) [2110388 2090252] {CVE-2022-21123 CVE-2022-21125 CVE-2022-21166}
+- x86/speculation/mmio: Enumerate Processor MMIO Stale Data bug (Waiman Long) [2110388 2090252] {CVE-2022-21123 CVE-2022-21125 CVE-2022-21166}
+- Documentation: Add documentation for Processor MMIO Stale Data (Waiman Long) [2110388 2090252] {CVE-2022-21123 CVE-2022-21125 CVE-2022-21166}
+- x86/tsx: Disable TSX development mode at boot (Waiman Long) [2110388 2090252] {CVE-2022-21123 CVE-2022-21125 CVE-2022-21166}
+- x86/tsx: Use MSR_TSX_CTRL to clear CPUID bits (Waiman Long) [2110388 2090252] {CVE-2022-21123 CVE-2022-21125 CVE-2022-21166}
+- x86/tsx: Clear CPUID bits when TSX always force aborts (Waiman Long) [2110388 2090252] {CVE-2022-21123 CVE-2022-21125 CVE-2022-21166}
+- cpu/speculation: Add prototype for cpu_show_srbds() (Waiman Long) [2110388 2090252] {CVE-2022-21123 CVE-2022-21125 CVE-2022-21166}
+- x86/cpu: Move arch_smt_update() to a neutral place (Waiman Long) [2110388 2090252] {CVE-2022-21123 CVE-2022-21125 CVE-2022-21166}
+- ice: Ignore error message when setting same promiscuous mode (Petr Oros) [2118580 2100683]
+- ice: Fix clearing of promisc mode with bridge over bond (Petr Oros) [2118580 2100683]
+- ice: Ignore EEXIST when setting promisc mode (Petr Oros) [2118580 2100683]
+- ice: Fix double VLAN error when entering promisc mode (Petr Oros) [2118580 2100683]
+- ice: Fix promiscuous mode not turning off (Petr Oros) [2117026 2088787]
+- ice: Introduce enabling promiscuous mode on multiple VF's (Petr Oros) [2117026 2088787]
+- ice: do not setup vlan for loopback VSI (Petr Oros) [2118582 2103845]
+- ice: check (DD | EOF) bits on Rx descriptor rather than (EOP | RS) (Petr Oros) [2118582 2103845]
+- ice: Fix max VLANs available for VF (Petr Oros) [2118581 2112298]
+- ice: change devlink code to read NVM in blocks (Petr Oros) [2118583 2093904]
+- ice: Fix memory corruption in VF driver (Petr Oros) [2102359 2037937]
+- ice: Fix queue config fail handling (Petr Oros) [2102359 2037937]
+- ice: Sync VLAN filtering features for DVM (Petr Oros) [2102359 2037937]
+- ice: Fix PTP TX timestamp offset calculation (Petr Oros) [2102359 2037937]
+- ice: Fix interrupt moderation settings getting cleared (Petr Oros) [2102359 2037937]
+- ice: fix possible under reporting of ethtool Tx and Rx statistics (Petr Oros) [2102359 2037937]
+- ice: allow creating VFs for !CONFIG_NET_SWITCHDEV (Petr Oros) [2102359 2037937]
+- ice: add trace events for tx timestamps (Petr Oros) [2102359 2037937]
+- ice: fix return value check in ice_gnss.c (Petr Oros) [2102359 2037937]
+- ice: remove PF pointer from ice_check_vf_init (Petr Oros) [2102359 2037937]
+- ice: introduce ice_virtchnl.c and ice_virtchnl.h (Petr Oros) [2102359 2037937]
+- ice: cleanup long lines in ice_sriov.c (Petr Oros) [2102359 2037937]
+- ice: introduce ICE_VF_RESET_LOCK flag (Petr Oros) [2102359 2037937]
+- ice: introduce ICE_VF_RESET_NOTIFY flag (Petr Oros) [2102359 2037937]
+- ice: convert ice_reset_vf to take flags (Petr Oros) [2102359 2037937]
+- ice: convert ice_reset_vf to standard error codes (Petr Oros) [2102359 2037937]
+- ice: make ice_reset_all_vfs void (Petr Oros) [2102359 2037937]
+- ice: drop is_vflr parameter from ice_reset_all_vfs (Petr Oros) [2102359 2037937]
+- ice: move reset functionality into ice_vf_lib.c (Petr Oros) [2102359 2037937]
+- ice: fix a long line warning in ice_reset_vf (Petr Oros) [2102359 2037937]
+- ice: introduce VF operations structure for reset flows (Petr Oros) [2102359 2037937]
+- ice: fix incorrect dev_dbg print mistaking 'i' for vf->vf_id (Petr Oros) [2102359 2037937]
+- ice: introduce ice_vf_lib.c, ice_vf_lib.h, and ice_vf_lib_private.h (Petr Oros) [2102359 2037937]
+- ice: use ice_is_vf_trusted helper function (Petr Oros) [2102359 2037937]
+- ice: log an error message when eswitch fails to configure (Petr Oros) [2102359 2037937]
+- ice: cleanup error logging for ice_ena_vfs (Petr Oros) [2102359 2037937]
+- ice: move ice_set_vf_port_vlan near other .ndo ops (Petr Oros) [2102359 2037937]
+- ice: refactor spoofchk control code in ice_sriov.c (Petr Oros) [2102359 2037937]
+- ice: rename ICE_MAX_VF_COUNT to avoid confusion (Petr Oros) [2102359 2037937]
+- ice: remove unused definitions from ice_sriov.h (Petr Oros) [2102359 2037937]
+- ice: convert vf->vc_ops to a const pointer (Petr Oros) [2102359 2037937]
+- ice: remove circular header dependencies on ice.h (Petr Oros) [2102359 2037937]
+- ice: rename ice_virtchnl_pf.c to ice_sriov.c (Petr Oros) [2102359 2037937]
+- ice: rename ice_sriov.c to ice_vf_mbx.c (Petr Oros) [2102359 2037937]
+- ice: Fix FV offset searching (Petr Oros) [2102359 2037937]
+- ice: Add support for outer dest MAC for ADQ tunnels (Petr Oros) [2102359 2037937]
+- ice: avoid XDP checks in ice_clean_tx_irq() (Petr Oros) [2102359 2037937]
+- ice: change "can't set link" message to dbg level (Petr Oros) [2102359 2037937]
+- ice: Add slow path offload stats on port representor in switchdev (Petr Oros) [2102359 2037937]
+- ice: Add support for inner etype in switchdev (Petr Oros) [2102359 2037937]
+- ice: convert VF storage to hash table with krefs and RCU (Petr Oros) [2102359 2037937]
+- ice: introduce VF accessor functions (Petr Oros) [2102359 2037937]
+- ice: factor VF variables to separate structure (Petr Oros) [2102359 2037937]
+- ice: convert ice_for_each_vf to include VF entry iterator (Petr Oros) [2102359 2037937]
+- ice: use ice_for_each_vf for iteration during removal (Petr Oros) [2102359 2037937]
+- ice: remove checks in ice_vc_send_msg_to_vf (Petr Oros) [2102359 2037937]
+- ice: move VFLR acknowledge during ice_free_vfs (Petr Oros) [2102359 2037937]
+- ice: move clear_malvf call in ice_free_vfs (Petr Oros) [2102359 2037937]
+- ice: pass num_vfs to ice_set_per_vf_res() (Petr Oros) [2102359 2037937]
+- ice: store VF pointer instead of VF ID (Petr Oros) [2102359 2037937]
+- ice: refactor unwind cleanup in eswitch mode (Petr Oros) [2102359 2037937]
+- ice: add TTY for GNSS module for E810T device (Petr Oros) [2102359 2037937]
+- ice: Simplify tracking status of RDMA support (Petr Oros) [2102359 2037937]
+- ice: Add ability for PF admin to enable VF VLAN pruning (Petr Oros) [2102359 2037937]
+- ice: Add support for 802.1ad port VLANs VF (Petr Oros) [2102359 2037937]
+- ice: Advertise 802.1ad VLAN filtering and offloads for PF netdev (Petr Oros) [2102359 2037937]
+- ice: Support configuring the device to Double VLAN Mode (Petr Oros) [2102359 2037937]
+- ice: Add support for VIRTCHNL_VF_OFFLOAD_VLAN_V2 (Petr Oros) [2102359 2037937]
+- ice: Add hot path support for 802.1Q and 802.1ad VLAN offloads (Petr Oros) [2102359 2037937]
+- ice: Add outer_vlan_ops and VSI specific VLAN ops implementations (Petr Oros) [2102359 2037937]
+- ice: Adjust naming for inner VLAN operations (Petr Oros) [2102359 2037937]
+- ice: Use the proto argument for VLAN ops (Petr Oros) [2102359 2037937]
+- ice: Refactor vf->port_vlan_info to use ice_vlan (Petr Oros) [2102359 2037937]
+- ice: Introduce ice_vlan struct (Petr Oros) [2102359 2037937]
+- ice: Add new VSI VLAN ops (Petr Oros) [2102359 2037937]
+- ice: Add helper function for adding VLAN 0 (Petr Oros) [2102359 2037937]
+- ice: Refactor spoofcheck configuration functions (Petr Oros) [2102359 2037937]
+- Revert "ice: Allow to pass VLAN tagged packets to VF when port VLAN is configured" (Petr Oros) [2102359 2037937]
+- Revert "ice: Do not enable VLAN pruning when spoofchk is enabled" (Petr Oros) [2102359 2037937]
+- ice: Remove likely for napi_complete_done (Petr Oros) [2102359 2037937]
+- ice: add support for DSCP QoS for IDC (Petr Oros) [2102359 2037937]
+- ice: respect metadata on XSK Rx to skb (Petr Oros) [2102359 2037937]
+- ice: don't reserve excessive XDP_PACKET_HEADROOM on XSK Rx to skb (Petr Oros) [2102359 2037937]
+- ice: respect metadata in legacy-rx/ice_construct_skb() (Petr Oros) [2102359 2037937]
+- ice: Fix broken IFF_ALLMULTI handling (Petr Oros) [2102359 2037937]
+- iavf: Fix VLAN_V2 addition/rejection (Petr Oros) [2118707 2115618]
+- iavf: Fix deadlock in initialization (Petr Oros) [2118705 2054656]
+- scsi: qla2xxx: Fix erroneous mailbox timeout after PCI error injection (Nilesh Javali) [2110768 2044160]
+- sched/deadline: Fix BUG_ON condition for deboosted tasks (Phil Auld) [2117410 2111860]
+
+* Wed Aug 17 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.24.1.el8_6]
+- powerpc/64: Move paca allocation later in boot (Desnes A. Nunes do Rosario) [2092241 2016335]
+- powerpc/prom: fix early DEBUG messages (Desnes A. Nunes do Rosario) [2092241 2016335]
+- powerpc: Set crashkernel offset to mid of RMA region (Desnes A. Nunes do Rosario) [2092241 2016335]
+- hv_balloon: rate-limit "Unhandled message" warning (Vitaly Kuznetsov) [2117050 2087270]
+- powerpc: Enable execve syscall exit tracepoint (Steve Best) [2106662 2095521]
+- ice: Fix VSIs unable to share unicast MAC (Petr Oros) [2111936 2080033]
+
+* Wed Aug 10 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.23.1.el8_6]
+- drivers/base: fix userspace break from using bin_attributes for cpumap and cpulist (Phil Auld) [2112030 2089715]
+- iavf: Fix issue with MAC address of VF shown as zero (Petr Oros) [2102360 2037938]
+- iavf: Remove non-inclusive language (Petr Oros) [2102360 2037938]
+- iavf: Fix incorrect use of assigning iavf_status to int (Petr Oros) [2102360 2037938]
+- iavf: stop leaking iavf_status as "errno" values (Petr Oros) [2102360 2037938]
+- iavf: Add usage of new virtchnl format to set default MAC (Petr Oros) [2102360 2037938]
+- iavf: refactor processing of VLAN V2 capability message (Petr Oros) [2102360 2037938]
+- iavf: Add support for 50G/100G in AIM algorithm (Petr Oros) [2102360 2037938]
+- iavf: remove redundant ret variable (Petr Oros) [2102360 2037938]
+- iavf: Remove useless DMA-32 fallback configuration (Petr Oros) [2102360 2037938]
+- pidfd: fix a poll race when setting exit_state (Oleg Nesterov) [2107643 2044587]
+- fork: fix pidfd_poll()'s return type (Oleg Nesterov) [2107643 2044587]
+- pidfd: add polling support (Oleg Nesterov) [2107643 2044587]
+- kabi: introduce the kabi_aux_*() helpers (Oleg Nesterov) [2107643 2044587]
+
+* Thu Aug 04 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.22.1.el8_6]
+- mm/memcg: Free percpu stats memory of dying memcg's (Waiman Long) [2110039 2004037]
+
+* Wed Aug 03 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.21.1.el8_6]
+- KVM: x86/mmu: Don't advance iterator after restart due to yielding (Nico Pache) [2081013 2058907]
+- RHEL-only: KVM: selftests: Fix AArch64 compilation (Paul Lai) [2107655 2071997]
+- x86/fpu: KVM: Set the base guest FPU uABI size to sizeof(struct kvm_xsave) (Paul Lai) [2107652 2092066]
+- KVM: x86: Use ERR_PTR_USR() to return -EFAULT as a __user pointer (Paul Lai) [2088288 2074679]
+- KVM: x86: add system attribute to retrieve full set of supported xsave states (Paul Lai) [2088288 2074679]
+- KVM: x86: Add a helper to retrieve userspace address from kvm_device_attr (Paul Lai) [2088288 2074679]
+- tools: arch: x86: pull in pvclock headers (Paul Lai) [2088288 2074679]
+- KVM: x86: Expose TSC offset controls to userspace (Paul Lai) [2088288 2074679]
+- KVM: x86: Refactor tsc synchronization code (Paul Lai) [2088288 2074679]
+- selftests: kvm: move vm_xsave_req_perm call to amx_test (Paul Lai) [2088288 2074679]
+- RHEL-only: KVM: selftests: Remove unused modes (Andrew Jones) [2107655 2071997]
+- tools headers UAPI: Sync linux/kvm.h with the kernel sources (Paul Lai) [2088287 1918929]
+- kvm: selftests: sync uapi/linux/kvm.h with Linux header (Paul Lai) [2088287 1918929]
+- kvm: selftests: conditionally build vm_xsave_req_perm() (Paul Lai) [2088287 1918929]
+- x86/kvm/fpu: Remove kvm_vcpu_arch.guest_supported_xcr0 (Paul Lai) [2088287 1918929]
+- x86/kvm/fpu: Limit guest user_xfeatures to supported bits of XCR0 (Paul Lai) [2088287 1918929]
+- KVM: x86/cpuid: Exclude unpermitted xfeatures sizes at KVM_GET_SUPPORTED_CPUID (Paul Lai) [2088287 1918929]
+- KVM: x86: Move CPUID.(EAX=0x12,ECX=1) mangling to __kvm_update_cpuid_runtime() (Paul Lai) [2088287 1918929]
+- KVM: x86/cpuid: Clear XFD for component i if the base feature is missing (Paul Lai) [2088287 1918929]
+- KVM: x86: Do runtime CPUID update before updating vcpu->arch.cpuid_entries (Paul Lai) [2088287 1918929]
+- x86/fpu: Fix inline prefix warnings (Paul Lai) [2088287 1918929]
+- selftest: kvm: Add amx selftest (Paul Lai) [2088287 1918929]
+- selftest: kvm: Move struct kvm_x86_state to header (Paul Lai) [2088287 1918929]
+- selftest: kvm: Reorder vcpu_load_state steps for AMX (Paul Lai) [2088287 1918929]
+- kvm: x86: Disable interception for IA32_XFD on demand (Paul Lai) [2088287 1918929]
+- x86/fpu: Provide fpu_sync_guest_vmexit_xfd_state() (Paul Lai) [2088287 1918929]
+- kvm: selftests: Add support for KVM_CAP_XSAVE2 (Paul Lai) [2088287 1918929]
+- kvm: x86: Add support for getting/setting expanded xstate buffer (Paul Lai) [2088287 1918929]
+- x86/fpu: Add uabi_size to guest_fpu (Paul Lai) [2088287 1918929]
+- kvm: x86: Add CPUID support for Intel AMX (Paul Lai) [2088287 1918929]
+- kvm: x86: Add XCR0 support for Intel AMX (Paul Lai) [2088287 1918929]
+- kvm: x86: Disable RDMSR interception of IA32_XFD_ERR (Paul Lai) [2088287 1918929]
+- kvm: x86: Emulate IA32_XFD_ERR for guest (Paul Lai) [2088287 1918929]
+- kvm: x86: Intercept #NM for saving IA32_XFD_ERR (Paul Lai) [2088287 1918929]
+- x86/fpu: Prepare xfd_err in struct fpu_guest (Paul Lai) [2088287 1918929]
+- kvm: x86: Add emulation for IA32_XFD (Paul Lai) [2088287 1918929]
+- x86/fpu: Provide fpu_update_guest_xfd() for IA32_XFD emulation (Paul Lai) [2088287 1918929]
+- kvm: x86: Enable dynamic xfeatures at KVM_SET_CPUID2 (Paul Lai) [2088287 1918929]
+- x86/fpu: Provide fpu_enable_guest_xfd_features() for KVM (Paul Lai) [2088287 1918929]
+- x86/fpu: Add guest support to xfd_enable_feature() (Paul Lai) [2088287 1918929]
+- x86/fpu: Make XFD initialization in __fpstate_reset() a function argument (Paul Lai) [2088287 1918929]
+- kvm: x86: Exclude unpermitted xfeatures at KVM_GET_SUPPORTED_CPUID (Paul Lai) [2088287 1918929]
+- kvm: x86: Fix xstate_required_size() to follow XSTATE alignment rule (Paul Lai) [2088287 1918929]
+- x86/fpu: Prepare guest FPU for dynamically enabled FPU features (Paul Lai) [2088287 1918929]
+- x86/fpu: Extend fpu_xstate_prctl() with guest permissions (Paul Lai) [2088287 1918929]
+- kvm: selftests: move ucall declarations into ucall_common.h (Paul Lai) [2088287 1918929]
+- kvm: selftests: move base kvm_util.h declarations to kvm_util_base.h (Paul Lai) [2088287 1918929]
+- cpuid: kvm_find_kvm_cpuid_features() should be declared 'static' (Paul Lai) [2088287 1918929]
+- KVM: x86: Make sure KVM_CPUID_FEATURES really are KVM_CPUID_FEATURES (Paul Lai) [2088287 1918929]
+- KVM: x86: Add helper to consolidate core logic of SET_CPUID{2} flows (Paul Lai) [2088287 1918929]
+- tools arch x86: Sync the msr-index.h copy with the kernel sources (Andrew Jones) [2107655 2071997]
+
+* Tue Jul 26 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.20.1.el8_6]
+- powerpc/pseries: Fix use after free in remove_phb_dynamic() (Steve Best) [2081250 2073707]
+- mt76: mt7921: Fix the error handling path of mt7921_pci_probe() (Íñigo Huguet) [2101684 2096758]
+- mt76: mt7921e: fix possible probe failure after reboot (Íñigo Huguet) [2095654 2078877]
+- x86/apic/vector: Fix ordering in vector assignment (Frank Ramsay) [2084646 2076607]
+
+* Mon Jul 18 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.19.1.el8_6]
+- net/mlx5: CT: Fix header-rewrite re-use for tupels (Amir Tzin) [2104013 2101162]
+- net/mlx5e: TC, Fix ct_clear overwriting ct action metadata (Amir Tzin) [2104012 2100474]
+- netfilter: flowtable: fix TCP flow teardown (Florian Westphal) [2104002 2088234]
+- netfilter: conntrack: annotate data-races around ct->timeout (Florian Westphal) [2104002 2088234]
+- netfilter: conntrack: initialize ct->timeout (Florian Westphal) [2104002 2088234]
+- net/sched: act_police: more accurate MTU policing (Davide Caratti) [2102333 2100893]
+- bpf: Fix request_sock leak in sk lookup helpers (Antoine Tenart) [2104670 2085313]
+
+* Wed Jul 13 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.18.1.el8_6]
+- redhat: flesh out rpminspect config file (Jarod Wilson)
+- powerpc/pseries/ddw: Revert "Extend upper limit for huge DMA window for persistent memory" (Steve Best) [2100150 2056080]
+- vdpa: mlx5: synchronize driver status with CVQ (Jason Wang) [2093416 2048009]
+- vdpa: mlx5: prevent cvq work from hogging CPU (Jason Wang) [2093416 2048009]
+- vdpa/mlx5: Avoid processing works if workqueue was destroyed (Cindy Lu) [2093416 2048009]
+- cifs: fix potential double free during failed mount (Ronnie Sahlberg) [2102251 2088799]
+
+* Sat Jul 09 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.17.1.el8_6]
+- tcp: drop the hash_32() part from the index calculation (Guillaume Nault) [2087130 2064876] {CVE-2022-1012}
+- tcp: increase source port perturb table to 2^16 (Guillaume Nault) [2087130 2064876] {CVE-2022-1012}
+- tcp: dynamically allocate the perturb table used by source ports (Guillaume Nault) [2087130 2064876] {CVE-2022-1012}
+- tcp: add small random increments to the source port (Guillaume Nault) [2087130 2064876] {CVE-2022-1012}
+- tcp: resalt the secret every 10 seconds (Guillaume Nault) [2087130 2064876] {CVE-2022-1012}
+- tcp: use different parts of the port_offset for index and offset (Guillaume Nault) [2087130 2064876] {CVE-2022-1012}
+- secure_seq: use the 64 bits of the siphash for port offset calculation (Guillaume Nault) [2087130 2064876] {CVE-2022-1012}
+- tcp: add some entropy in __inet_hash_connect() (Guillaume Nault) [2087130 2064876] {CVE-2022-1012}
+- tcp: change source port randomizarion at connect() time (Guillaume Nault) [2087130 2064876] {CVE-2022-1012}
+- hrtimer: Unbreak hrtimer_force_reprogram() (Fernando Pacheco) [2090484 2071776]
+- hrtimer: Use raw_cpu_ptr() in clock_was_set() (Fernando Pacheco) [2090484 2071776]
+- hrtimer: Avoid more SMP function calls in clock_was_set() (Fernando Pacheco) [2090484 2071776]
+- hrtimer: Avoid unnecessary SMP function calls in clock_was_set() (Fernando Pacheco) [2090484 2071776]
+- hrtimer: Add bases argument to clock_was_set() (Fernando Pacheco) [2090484 2071776]
+- time/timekeeping: Avoid invoking clock_was_set() twice (Fernando Pacheco) [2090484 2071776]
+- timekeeping: Distangle resume and clock-was-set events (Fernando Pacheco) [2090484 2071776]
+- timerfd: Provide timerfd_resume() (Fernando Pacheco) [2090484 2071776]
+- hrtimer: Force clock_was_set() handling for the HIGHRES=n, NOHZ=y case (Fernando Pacheco) [2090484 2071776]
+- hrtimer: Ensure timerfd notification for HIGHRES=n (Fernando Pacheco) [2090484 2071776]
+- hrtimer: Consolidate reprogramming code (Fernando Pacheco) [2090484 2071776]
+- hrtimer: Avoid double reprogramming in __hrtimer_start_range_ns() (Fernando Pacheco) [2090484 2071776]
+- hrtimer: Update softirq_expires_next correctly after __hrtimer_get_next_event() (Fernando Pacheco) [2090484 2071776]
+- hrtimer: Annotate lockless access to timer->state (Fernando Pacheco) [2090484 2071776]
+- mm, compaction: fast_find_migrateblock() should return pfn in the target zone (Rafael Aquini) [2100529 2067130]
+- lib/sbitmap: fix sb->map leak (Ming Lei) [2100254 2093549]
+- scsi: core: Fix sbitmap depth in scsi_realloc_sdev_budget_map() (Ewan D. Milne) [2100254 2071831]
+- lib/sbitmap: allocate sb->map via kvzalloc_node (Ewan D. Milne) [2100254 2071831]
+- mm: move kvmalloc-related functions to slab.h (Ewan D. Milne) [2100254 2071831]
+- scsi: core: Reallocate device's budget map on queue depth change (Ewan D. Milne) [2100254 2071831]
+- scsi: core: Fix scsi_device_max_queue_depth() (Ewan D. Milne) [2100254 2071831]
+- netfilter: nf_tables: disallow non-stateful expression in sets earlier (Phil Sutter) [2092986 2092987] {CVE-2022-32250}
+- audit: improve audit queue handling when "audit=1" on cmdline (Richard Guy Briggs) [2095434 2035123]
+- audit: improve robustness of the audit queue handling (Richard Guy Briggs) [2095434 2035123]
+
+* Tue Jun 28 2022 Frantisek Hrbata <fhrbata@redhat.com> [4.18.0-372.16.1.el8_6]
+- x86/platform/uv: Log gap hole end size (Frank Ramsay) [2084645 2074098]
+- x86/platform/uv: Update TSC sync state for UV5 (Frank Ramsay) [2084645 2074098]
+- x86/platform/uv: Update NMI Handler for UV5 (Frank Ramsay) [2084645 2074098]
+- x86/platform/uv: Remove unused variable in UV5 NMI handler (Frank Ramsay) [2084645 2074098]
+- blk-mq: fix blk_mq_flush_plug_list (Ming Lei) [2096931 2088397]
+- sched/pelt: Fix attach_entity_load_avg() corner case (Phil Auld) [2096305 2056383]
+
+* Tue Jun 21 2022 Frantisek Hrbata <fhrbata@redhat.com> [4.18.0-372.15.1.el8_6]
+- perf: Fix sys_perf_event_open() race against self (Michael Petlan) [2087948 2087949] {CVE-2022-1729}
+- vmxnet3: fix minimum vectors alloc issue (Kamal Heib) [2094473 2093242]
+- gfs2: Stop using glock holder auto-demotion for now (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: buffered write prefaulting (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: Align read and write chunks to the page cache (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: Pull return value test out of should_fault_in_pages (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: Clean up use of fault_in_iov_iter_{read,write}able (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: Variable rename (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: Fix filesystem block deallocation for short writes (Andreas Gruenbacher) [2092073 2054855]
+- iomap: iomap_write_end cleanup (Andreas Gruenbacher) [2092073 2054855]
+- iomap: iomap_write_failed fix (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: Don't re-check for write past EOF unnecessarily (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: No short reads or writes upon glock contention (Andreas Gruenbacher) [2092073 2054855]
+- fs/iomap: Fix buffered write page prefaulting (Andreas Gruenbacher) [2092073 2054855]
+- generic_perform_write()/iomap_write_actor(): saner logics for short copy (Andreas Gruenbacher) [2092073 2054855]
+- iomap: Convert iomap_write_end types (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: Make sure not to return short direct writes (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: Remove dead code in gfs2_file_read_iter (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: Fix gfs2_file_buffered_write endless loop workaround (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: Minor retry logic cleanup (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: Disable page faults during lockless buffered reads (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: Fix should_fault_in_pages() logic (Andreas Gruenbacher) [2092073 2054855]
+- mm: gup: make fault_in_safe_writeable() use fixup_user_fault() (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: Initialize gh_error in gfs2_glock_nq (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: Switch lock order of inode and iopen glock (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: cancel timed-out glock requests (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: Expect -EBUSY after canceling dlm locking requests (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: gfs2_setattr_size error path fix (Andreas Gruenbacher) [2092073 2054855]
+- gfs2: assign rgrp glock before compute_bitstructs (Bob Peterson) [2092073 2054855]
+- net: openvswitch: don't send internal clone attribute to the userspace. (Antoine Tenart) [2097796 2085509]
+
+* Tue Jun 14 2022 Frantisek Hrbata <fhrbata@redhat.com> [4.18.0-372.14.1.el8_6]
+- scsi: core: sysfs: Fix setting device state to SDEV_RUNNING (Chris Leech) [2091078 2086970]
+- scsi: core: sysfs: Fix hang when device state is set via sysfs (Chris Leech) [2091078 2086970]
+- net/sched: act_ct: fix ref leak when switching zones (Marcelo Ricardo Leitner) [2066356 2014027]
+- net/sched: act_ct: Fix flow table lookup after ct clear or switching zones (Marcelo Ricardo Leitner) [2066356 2014027]
+- drm/i915: Stop force enabling pipe bottom color gammma/csc (Foggy Liu) [2083384 2054487]
+- gfs2: Fix gfs2_release for non-writers regression (Bob Peterson) [2092074 1955591]
+- gfs2: gfs2_create_inode rework (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: gfs2_inode_lookup rework (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: gfs2_inode_lookup cleanup (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: Fix remote demote of weak glock holders (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: Fix glock_hash_walk bugs (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: Cancel remote delete work asynchronously (Bob Peterson) [2092074 1955591]
+- gfs2: set glock object after nq (Bob Peterson) [2092074 1955591]
+- gfs2: remove RDF_UPTODATE flag (Bob Peterson) [2092074 1955591]
+- gfs2: Eliminate GIF_INVALID flag (Bob Peterson) [2092074 1955591]
+- gfs2: Fix atomic bug in gfs2_instantiate (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: fix GL_SKIP node_scope problems (Bob Peterson) [2092074 1955591]
+- gfs2: Add some flags missing from glock output (Bob Peterson) [2092074 1955591]
+- gfs2: split glock instantiation off from do_promote (Bob Peterson) [2092074 1955591]
+- gfs2: further simplify do_promote (Bob Peterson) [2092074 1955591]
+- gfs2: re-factor function do_promote (Bob Peterson) [2092074 1955591]
+- gfs2: Remove 'first' trace_gfs2_promote argument (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: change go_lock to go_instantiate (Bob Peterson) [2092074 1955591]
+- gfs2: Switch some BUG_ON to GLOCK_BUG_ON for debug (Bob Peterson) [2092074 1955591]
+- gfs2: move GL_SKIP check from glops to do_promote (Bob Peterson) [2092074 1955591]
+- gfs2: Add GL_SKIP holder flag to dump_holder (Bob Peterson) [2092074 1955591]
+- gfs2: remove redundant check in gfs2_rgrp_go_lock (Bob Peterson) [2092074 1955591]
+- gfs2: Fix mmap + page fault deadlocks for direct I/O (Andreas Gruenbacher) [2092074 1955591]
+- iov_iter: Introduce ITER_IOVEC_FLAG_NOFAULT flag to disable page faults (Andreas Gruenbacher) [2092074 1955591]
+- gup: Introduce FOLL_NOFAULT flag to disable page faults (Andreas Gruenbacher) [2092074 1955591]
+- iomap: Add done_before argument to iomap_dio_rw (Andreas Gruenbacher) [2092074 1955591]
+- iomap: Support partial direct I/O on user copy failures (Andreas Gruenbacher) [2092074 1955591]
+- iomap: Fix iomap_dio_rw return value for user copies (Andreas Gruenbacher) [2092074 1955591]
+- iomap: support reading inline data from non-zero pos (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: Only dereference i->iov when iter_is_iovec(i) (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: Prevent endless loops in gfs2_file_buffered_write (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: Fix mmap + page fault deadlocks for buffered I/O (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: Eliminate ip->i_gh (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: Move the inode glock locking to gfs2_file_buffered_write (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: Fix "Introduce flag for glock holder auto-demotion" (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: Introduce flag for glock holder auto-demotion (Bob Peterson) [2092074 1955591]
+- gfs2: fix scheduling while atomic bug in glocks (Bob Peterson) [2092074 1955591]
+- gfs2: Clean up function may_grant (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: Add wrapper for iomap_file_buffered_write (Andreas Gruenbacher) [2092074 1955591]
+- iov_iter: Introduce fault_in_iov_iter_writeable (Andreas Gruenbacher) [2092074 1955591]
+- iov_iter: Turn iov_iter_fault_in_readable into fault_in_iov_iter_readable (Andreas Gruenbacher) [2092074 1955591]
+- gup: Turn fault_in_pages_{readable,writeable} into fault_in_{readable,writeable} (Andreas Gruenbacher) [2092074 1955591]
+- powerpc/signal64: Don't opencode page prefaulting (Andreas Gruenbacher) [2092074 1955591]
+- sanitize iov_iter_fault_in_readable() (Andreas Gruenbacher) [2092074 1955591]
+- [xarray] iov_iter_fault_in_readable() should do nothing in xarray case (Andreas Gruenbacher) [2092074 1955591]
+- powerpc/kvm: Fix kvm_use_magic_page (Andreas Gruenbacher) [2092074 1955591]
+- iov_iter: Fix iov_iter_get_pages{,_alloc} page fault return value (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: Fix length of holes reported at end-of-file (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: Remove redundant check from gfs2_glock_dq (Bob Peterson) [2092074 1955591]
+- gfs2: release iopen glock early in evict (Bob Peterson) [2092074 1955591]
+- mm: change fault_in_pages_* to have an unsigned size parameter (Andreas Gruenbacher) [2092074 1955591]
+- gfs2: Eliminate vestigial HIF_FIRST (Bob Peterson) [2092074 1955591]
+- iomap: remove the iomap arguments to ->page_{prepare,done} (Andreas Gruenbacher) [2092074 1955591]
+- md: Set MD_BROKEN for RAID1 and RAID10 (Nigel Croxon) [2075075 2048954]
+- raid5: introduce MD_BROKEN (Nigel Croxon) [2075075 2048954]
+- drm/i915/ehl: Remove require_force_probe protection (Michel Dänzer) [2075567 2048674]
+- genirq: Use rcu in kstat_irqs_usr() (Waiman Long) [2083308 2068445]
+- dm integrity: fix memory corruption when tag_size is less than digest size (Benjamin Marzinski) [2082184 2081775]
+
+* Mon Jun 06 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.13.1.el8_6]
+- openvswitch: always update flow key after nat (Aaron Conole) [2068476 2066885]
+- KVM: PPC: Fix TCE handling for VFIO (Daniel Henrique Barboza) [2085572 2062687]
+- rfkill: make new event layout opt-in (Jose Ignacio Tornos Martinez) [2087641 2023175]
+- ASoC: Intel: soc-acpi: add entries in ADL match table (Jaroslav Kysela) [2090423 2052011]
+- isert: support for unsolicited NOPIN with no response (Maurizio Lombardi) [2079433 2035915]
+- iscsit: increment max_cmd_sn for isert on command release (Maurizio Lombardi) [2079433 2035915]
+- net: tcp better handling of reordering then loss cases (Marcelo Ricardo Leitner) [2080972 2074566]
+- tcp: tcp_mark_head_lost is only valid for sack-tcp (Marcelo Ricardo Leitner) [2080972 2074566]
+
+* Wed Jun 01 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.12.1.el8_6]
+- sctp: use the correct skb for security_sctp_assoc_request (Xin Long) [2070959 2070915]
+- net/mlx5e: Fix wrong source vport matching on tunnel rule (Amir Tzin) [2088610 2064589]
+- net/mlx5: DR, Fix missing flow_source when creating multi-destination FW table (Amir Tzin) [2088611 2072920]
+- net/mlx5: DR, Fix slab-out-of-bounds in mlx5_cmd_dr_create_fte (Amir Tzin) [2088611 2072920]
+- net/mlx5: DR, Cache STE shadow memory (Amir Tzin) [2075553 2062715]
+- net/mlx5: DR, Fix the threshold that defines when pool sync is initiated (Amir Tzin) [2075553 2062715]
+- drm/i915/display: Remove check for low voltage sku for max dp source rate (Jocelyn Falempe) [2066644 2063931]
+- net/mlx5: DR, Ignore modify TTL on RX if device doesn't support it (Amir Tzin) [2088638 2072934]
+- net/mlx5: Bridge, Fix devlink deadlock on net namespace deletion (Amir Tzin) [2081011 2055580]
+- net/mlx5e: TC, Skip redundant ct clear actions (Amir Tzin) [2079918 2055590]
+- net/mlx5e: TC, fix decap fallback to uplink when int port not supported (Amir Tzin) [2088639 2077048]
+- CI: Use zstream builder image (Veronika Kabatova)
+- ice: Allow to pass VLAN tagged packets to VF when port VLAN is configured (Petr Oros) [2081794 2079926]
+- ice: clear stale Tx queue settings before configuring (Petr Oros) [2081794 2079926]
+- ice: fix crash when writing timestamp on RX rings (Petr Oros) [2081794 2079926]
+- ice: Fix race during aux device (un)plugging (Petr Oros) [2081794 2079926]
+- ice: fix PTP stale Tx timestamps cleanup (Petr Oros) [2081794 2079926]
+- ice: ice_sched: fix an incorrect NULL check on list iterator (Petr Oros) [2081794 2079926]
+- ice: fix use-after-free when deinitializing mailbox snapshot (Petr Oros) [2081794 2079926]
+- ice: wait 5 s for EMP reset after firmware flash (Petr Oros) [2081794 2079926]
+- ice: Protect vf_state check by cfg_lock in ice_vc_process_vf_msg() (Petr Oros) [2081794 2079926]
+- ice: Fix incorrect locking in ice_vc_process_vf_msg() (Petr Oros) [2081794 2079926]
+- ice: Fix memory leak in ice_get_orom_civd_data() (Petr Oros) [2081794 2079926]
+- ice: fix crash in switchdev mode (Petr Oros) [2081794 2079926]
+- Revert "iavf: Fix deadlock occurrence during resetting VF interface" (Petr Oros) [2081794 2079926]
+- ice: arfs: fix use-after-free when freeing @rx_cpu_rmap (Petr Oros) [2081794 2079926]
+- ice: clear cmd_type_offset_bsz for TX rings (Petr Oros) [2081794 2079926]
+- ice: xsk: fix VSI state check in ice_xsk_wakeup() (Petr Oros) [2081794 2079926]
+- ice: synchronize_rcu() when terminating rings (Petr Oros) [2081794 2079926]
+- ice: Do not skip not enabled queues in ice_vc_dis_qs_msg (Petr Oros) [2081794 2079926]
+- ice: Set txq_teid to ICE_INVAL_TEID on ring creation (Petr Oros) [2081794 2079926]
+- ice: Fix broken IFF_ALLMULTI handling (Petr Oros) [2081794 2079926]
+- ice: Fix MAC address setting (Petr Oros) [2081794 2079926]
+- openvswitch: Fix setting ipv6 fields causing hw csum failure (Eelco Chaudron) [2086549 1974356]
+- sched/cputime, proc/stat: Fix incorrect guest nice cpustat value (Waiman Long) [2084138 2017382]
+- procfs: Use all-in-one vtime aware kcpustat accessor (Waiman Long) [2084138 2017382]
+- procfs: Use vtime aware kcpustat accessor to fetch CPUTIME_SYSTEM (Waiman Long) [2084138 2017382]
+- proc: read kernel cpu stat pointer once (Waiman Long) [2084138 2017382]
+- proc: use "unsigned int" in /proc/stat hook (Waiman Long) [2084138 2017382]
+- sched/cputime: Support other fields on kcpustat_field() (Waiman Long) [2084138 2017382]
+- sched/cputime: Add vtime guest task state (Waiman Long) [2084138 2017382]
+- sched/cputime: Add vtime idle task state (Waiman Long) [2084138 2017382]
+- sched/cputime: Spare a seqcount lock/unlock cycle on context switch (Waiman Long) [2084138 2017382]
+- sched/vtime: Move task_struct_rh->vtime_cpu back to vtime structure (Waiman Long) [2084138 2017382]
+- net: openvswitch: fix leak of nested actions (Eelco Chaudron) [2086590 2073538]
+- net/sched: fix initialization order when updating chain 0 head (Marcelo Ricardo Leitner) [2074221 2044711]
+- PCI: hv: Propagate coherence from VMbus device to PCI device (Vitaly Kuznetsov) [2074829 2068429]
+- Drivers: hv: vmbus: Propagate VMbus coherence to each VMbus device (Vitaly Kuznetsov) [2074829 2068429]
+
+* Wed May 25 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.11.1.el8_6]
+- Revert "xfs: actually bump warning counts when we send warnings" (Carlos Maiolino) [2071713 2059262]
+- SUNRPC: use different lock keys for INET6 and LOCAL (Guillaume Nault) [2079856 2061651]
+- Revert "netfilter: conntrack: tag conntracks picked up in local out hook" (Florian Westphal) [2065266 2062870]
+- Revert "netfilter: nat: force port remap to prevent shadowing well-known ports" (Florian Westphal) [2065266 2062870]
+- KVM: PPC: Book3S HV: Add infrastructure to support 2nd DAWR (Laurent Vivier) [2079069 2059318]
+- KVM: PPC: Book3S HV: Rename current DAWR macros and variables (Laurent Vivier) [2079069 2059318]
+- esp: limit skb_page_frag_refill use to a single page (Sabrina Dubroca) [2062114 2062115] {CVE-2022-27666}
+- esp: Fix possible buffer overflow in ESP transformation (Sabrina Dubroca) [2062114 2062115] {CVE-2022-27666}
+- NFS: Don't loop forever in nfs_do_recoalesce() (Scott Mayhew) [2080998 2080467]
+
+* Fri May 13 2022 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.10.1.el8_6]
+- Fonts: Replace discarded const qualifier (Nico Pache) [2064762 1904374]
+- Fonts: Support FONT_EXTRA_WORDS macros for built-in fonts (Nico Pache) [2064762 1904374]
+- fbdev, newport_con: Move FONT_EXTRA_WORDS macros into linux/font.h (Nico Pache) [2064762 1904374]
+- CI: Drop baseline runs (Veronika Kabatova)
+- redhat: drop the -sha512 suffix from default rhpkg invocation (Jarod Wilson)
+- redhat: switch release to zstream (Augusto Caringi)
+- ceph: fix possible NULL pointer dereference for req->r_session (Xiubo Li) [2080071 2076165]

@@ -1,0 +1,203 @@
+* Tue Feb 25 2020 Herton R. Krzesinski <herton@redhat.com> [4.18.0-147.8.1.el8_1]
+- rebuild, due infrastructure issues last kernel build wasn't signed properly [1807231 1807216]
+
+* Fri Feb 21 2020 Herton R. Krzesinski <herton@redhat.com> [4.18.0-147.7.1.el8_1]
+- [hid] hiddev: do cleanup in failure of opening a device (Benjamin Tissoires) [1803458 1803460] {CVE-2019-19527}
+- [hid] hiddev: avoid opening a disconnected device (Benjamin Tissoires) [1803458 1803460] {CVE-2019-19527}
+- [nvme] nvmet: fix discover log page when offsets are used (Gopal Tiwari) [1801216 1745836]
+- [netdrv] ibmvnic: Serialize device queries (Steve Best) [1794060 1778037]
+- [netdrv] ibmvnic: Bound waits for device queries (Steve Best) [1794060 1778037]
+- [netdrv] ibmvnic: Terminate waiting device threads after loss of service (Steve Best) [1794060 1778037]
+- [netdrv] ibmvnic: Fix completion structure initialization (Steve Best) [1794060 1778037]
+- [netdrv] ibmvnic: Ignore H_FUNCTION return from H_EOI to tolerate XIVE mode (Steve Best) [1794060 1778037]
+- [tools] selftests/powerpc: Fix compile error on tlbie_test due to newer gcc (Desnes Augusto Nunes do Rosario) [1794058 1755707]
+- [tools] selftests/powerpc: Add test case for tlbie vs mtpidr ordering issue (Desnes Augusto Nunes do Rosario) [1794058 1755707]
+- [powerpc] powerpc/mm: Fixup tlbie vs mtpidr/mtlpidr ordering issue on POWER9 (Desnes Augusto Nunes do Rosario) [1794058 1755707]
+- [powerpc] powerpc/book3s64/radix: Rename CPU_FTR_P9_TLBIE_BUG feature flag (Desnes Augusto Nunes do Rosario) [1794058 1755707]
+- [powerpc] powerpc/book3s64/mm: Don't do tlbie fixup for some hardware revisions (Desnes Augusto Nunes do Rosario) [1794058 1755707]
+
+* Mon Feb 17 2020 Herton R. Krzesinski <herton@redhat.com> [4.18.0-147.6.1.el8_1]
+- [crypto] crypto: chelsio - count incomplete block in IV (Jonathan Toppins) [1798527 1725813]
+- [crypto] crypto: chelsio - Fix softlockup with heavy I/O (Jonathan Toppins) [1798527 1725813]
+- [crypto] crypto: chelsio - Fix NULL pointer dereference (Jonathan Toppins) [1798527 1725813]
+- [nvme] nvme: Treat discovery subsystems as unique subsystems (Ewan Milne) [1798381 1757525]
+- [mm] mm/page-writeback.c: don't break integrity writeback on ->writepage() error (Christoph von Recklinghausen) [1797962 1782117]
+- [lib] crc-t10dif: crc_t10dif_mutex can be static (Vladis Dronov) [1797961 1769462]
+- [lib] crc-t10dif: Allow current transform to be inspected in sysfs (Vladis Dronov) [1797961 1769462]
+- [lib] crc-t10dif: Pick better transform if one becomes available (Vladis Dronov) [1797961 1769462]
+- [crypto] api - Introduce notifier for new crypto algorithms (Vladis Dronov) [1797961 1769462]
+- [block] blk-mq: make sure that line break can be printed (Ming Lei) [1797960 1741462]
+- [block] blk-mq: avoid sysfs buffer overflow with too many CPU cores (Ming Lei) [1797960 1741462]
+- [scsi] hpsa: update driver version (Joseph Szczypek) [1797519 1761968]
+- [scsi] scsi: hpsa: add missing hunks in reset-patch (Joseph Szczypek) [1797519 1761968]
+- [arm64] arm64: compat: Workaround Neoverse-N1 #1542419 for compat user-space (Mark Salter) [1797518 1757828]
+- [arm64] arm64: Fake the IminLine size on systems affected by Neoverse-N1 #1542419 (Mark Salter) [1797518 1757828]
+- [arm64] arm64: errata: Hide CTR_EL0.DIC on systems affected by Neoverse-N1 #1542419 (Mark Salter) [1797518 1757828]
+- [arm64] arm64: Handle erratum 1418040 as a superset of erratum 1188873 (Mark Salter) [1797518 1757828]
+- [arm64] arm64: errata: Add workaround for Cortex-A76 erratum #1463225 (Mark Salter) [1797518 1757828]
+- [arm64] arm64: Kconfig: Tidy up errata workaround help text (Mark Salter) [1797518 1757828]
+- [arm64] arm64: Apply ARM64_ERRATUM_1188873 to Neoverse-N1 (Mark Salter) [1797518 1757828]
+- [arm64] arm64: Add part number for Neoverse N1 (Mark Salter) [1797518 1757828]
+- [arm64] arm64: Make ARM64_ERRATUM_1188873 depend on COMPAT (Mark Salter) [1797518 1757828]
+- [arm64] arm64: Restrict ARM64_ERRATUM_1188873 mitigation to AArch32 (Mark Salter) [1797518 1757828]
+- [arm64] arm64: arch_timer: avoid unused function warning (Mark Salter) [1797518 1757828]
+- [arm64] arm64: Add workaround for Cortex-A76 erratum 1286807 (Mark Salter) [1797518 1757828]
+- [md] dm snapshot: rework COW throttling to fix deadlock (Mike Snitzer) [1796490 1758605]
+- [md] dm snapshot: introduce account_start_copy() and account_end_copy() (Mike Snitzer) [1796490 1758605]
+- [block] fix memleak of bio integrity data (Ming Lei) [1795338 1779898]
+- [powerpc] xive: Prevent page fault issues in the machine crash handler (Diego Domingos) [1795337 1756116]
+- [scsi] scsi: megaraid_sas: IRQ poll to avoid CPU hard lockups (Tomas Henzl) [1795335 1726251]
+- [powerpc] powerpc/perf: Disable trace_imc pmu (Steve Best) [1794061 1785573]
+- [s390] s390/qeth: ensure linear access to packet headers (Philipp Rudo) [1794059 1781085]
+- [s390] s390/qeth: guard against runt packets (Philipp Rudo) [1794059 1781085]
+- [s390] s390/qeth: handle skb allocation error gracefully (Philipp Rudo) [1794059 1781085]
+- [s390] s390/qeth: drop unwanted packets earlier in RX path (Philipp Rudo) [1794059 1781085]
+- [s390] s390/qeth: support per-frame invalidation (Philipp Rudo) [1794059 1781085]
+- [s390] s390/qeth: gather more detailed RX dropped/error statistics (Philipp Rudo) [1794059 1781085]
+- [s390] s390/net: Mark expected switch fall-throughs (Philipp Rudo) [1794059 1781085]
+- [s390] s390/qeth: consolidate skb RX processing in L3 driver (Philipp Rudo) [1794059 1781085]
+- [s390] s390/qeth: remove RX seqno in skb->cb (Philipp Rudo) [1794059 1781085]
+- [powerpc] kvm: ppc: book3s hv: Flush link stack on guest exit to host kernel (Gustavo Duarte) [1794056 1777686] {CVE-2019-18660}
+- [powerpc] book3s64: Fix link stack flush on context switch (Gustavo Duarte) [1794056 1777686] {CVE-2019-18660}
+- [powerpc] 64s: support nospectre_v2 cmdline option (Gustavo Duarte) [1794056 1777686] {CVE-2019-18660}
+- [powerpc] fsl: Update Spectre v2 reporting (Gustavo Duarte) [1794056 1777686] {CVE-2019-18660}
+- [powerpc] fsl: Add nospectre_v2 command line argument (Gustavo Duarte) [1794056 1777686] {CVE-2019-18660}
+- [powerpc] fsl: Fix spectre_v2 mitigations reporting (Gustavo Duarte) [1794056 1777686] {CVE-2019-18660}
+- [powerpc] 64: Make meltdown reporting Book3S 64 specific (Gustavo Duarte) [1794056 1777686] {CVE-2019-18660}
+- [powerpc] 64: Disable the speculation barrier from the command line (Gustavo Duarte) [1794056 1777686] {CVE-2019-18660}
+- [firmware] efi/memreserve: Register reservations as 'reserved' in /proc/iomem (Bhupesh Sharma) [1792200 1772730]
+- [firmware] efi/memreserve: deal with memreserve entries in unmapped memory (Bhupesh Sharma) [1792200 1772730]
+- [s390] s390/cpum_sf: save TOD clock base in SDBs for time conversion (Philipp Rudo) [1792198 1743504]
+- [s390] s390/sclp: Fix bit checked for has_sipl (Philipp Rudo) [1791408 1748347]
+- [scsi] qla2xxx: Fix incorrect SFUB length used for Secure Flash Update MB Cmd (Himanshu Madhani) [1790350 1782598]
+- [scsi] qla2xxx: Added support for MPI and PEP regions for ISP28XX (Himanshu Madhani) [1790350 1782598]
+- [scsi] qla2xxx: Correctly retrieve and interpret active flash region (Himanshu Madhani) [1790350 1782598]
+- [powerpc] powerpc/tm: Fix FP/VMX unavailable exceptions inside a transaction (Gustavo Duarte) [1788862 1750653] {CVE-2019-15030}
+- [powerpc] powerpc/tm: Fix restoring FP/VMX facility incorrectly on interrupts (Gustavo Duarte) [1791630 1750653] {CVE-2019-15031}
+- [scsi] scsi: qla2xxx: Fix different size DMA Alloc/Unmap (Himanshu Madhani) [1788206 1753031]
+- [scsi] qla2xxx: call dma_free_coherent with correct size in all cases in qla24xx_sp_unmap (Himanshu Madhani) [1788206 1753031]
+- [fs] devpts_pty_kill(): don't bother with d_delete() (Eric Sandeen) [1783959 1772718]
+- [fs] devpts: always delete dcache dentry-s in dput() (Eric Sandeen) [1783959 1772718]
+
+* Tue Jan 14 2020 Herton R. Krzesinski <herton@redhat.com> [4.18.0-147.5.1.el8_1]
+- [powerpc] powerpc/shared: Use static key to detect shared processor (Phil Auld) [1781114 1767529]
+- [powerpc] powerpc/vcpu: Assume dedicated processors as non-preempt (Phil Auld) [1781114 1767529]
+
+* Mon Dec 16 2019 Herton R. Krzesinski <herton@redhat.com> [4.18.0-147.4.1.el8_1]
+- [block] blk-mq: apply normal plugging for HDD (Ming Lei) [1782181 1759380]
+- [block] blk-mq: honor IO scheduler for multiqueue devices (Ming Lei) [1782181 1759380]
+- [block] blk-mq: simplify blk_mq_make_request() (Ming Lei) [1782181 1759380]
+- [block] blk-mq: remove blk_mq_put_ctx() (Ming Lei) [1782181 1759380]
+- [x86] kvm: vmx: use MSR_IA32_TSX_CTRL to hard-disable TSX on guest that lack it (Paolo Bonzini) [1781660 1779553] {CVE-2019-19338}
+- [x86] kvm: vmx: implement MSR_IA32_TSX_CTRL disable RTM functionality (Paolo Bonzini) [1781660 1779553] {CVE-2019-19338}
+- [x86] kvm: x86: implement MSR_IA32_TSX_CTRL effect on CPUID (Paolo Bonzini) [1781660 1779553] {CVE-2019-19338}
+- [x86] kvm: x86: do not modify masked bits of shared MSRs (Paolo Bonzini) [1781660 1779553] {CVE-2019-19338}
+- [x86] kvm: x86: fix presentation of TSX feature in ARCH_CAPABILITIES (Paolo Bonzini) [1781660 1779553] {CVE-2019-19338}
+- [x86] kvm/x86: Export MDS_NO=0 to guests when TSX is enabled (Paolo Bonzini) [1781660 1779553] {CVE-2019-19338}
+- [fs] cifs: Fix cifsInodeInfo lock_sem deadlock when reconnect occurs (Leif Sahlberg) [1778693 1765979]
+- [fs] cifs: avoid using MID 0xFFFF (Leif Sahlberg) [1778693 1765979]
+- [fs] cifs: Fix retry mid list corruption on reconnects (Leif Sahlberg) [1778693 1765979]
+- [fs] smb3: fix unmount hang in open_shroot (Leif Sahlberg) [1781113 1757670]
+- [fs] CIFS: fix deadlock in cached root handling (Leif Sahlberg) [1781113 1757670]
+- [fs] Fix match_server check to allow for auto dialect negotiate (Leif Sahlberg) [1781113 1757670]
+- [fs] SMB3: retry on STATUS_INSUFFICIENT_RESOURCES instead of failing write (Leif Sahlberg) [1781113 1757670]
+- [fs] cifs: fix panic in smb2_reconnect (Leif Sahlberg) [1781113 1757670]
+- [fs] cifs: fix strcat buffer overflow and reduce raciness in smb21_set_oplock_level() (Leif Sahlberg) [1781113 1757670]
+- [fs] smb3: fix signing verification of large reads (Dave Wysochanski) [1781110 1753114]
+- [scsi] scsi: lpfc: Fix port relogin failure due to GID_FT interaction (Dick Kennedy) [1781108 1733217]
+- [fs] xfs: fix missing ILOCK unlock when xfs_setattr_nonsize fails due to EDQUOT (Bill O'Donnell) [1778692 1739607]
+- [net] cfg80211: wext: avoid copying malformed SSIDs (Jarod Wilson) [1778633 1778634] {CVE-2019-17133}
+- [block] blkcg: perpcu_ref init/exit should be done from blkg_alloc/free() (Ming Lei) [1777766 1741392]
+- [fs] userfaultfd_release: always remove uffd flags and clear vm_userfaultfd_ctx (Alex Gladkov) [1777389 1749763] {CVE-2019-14898}
+- [netdrv] mwifiex: Fix three heap overflow at parsing element in cfg80211_ap_settings (Jarod Wilson) [1776618 1775484] {CVE-2019-14814 CVE-2019-14815 CVE-2019-14816}
+- [netdrv] mwifiex: fix possible heap overflow in mwifiex_process_country_ie() (Jarod Wilson) [1776209 1776210] {CVE-2019-14895}
+- [netdrv] mwifiex: Fix heap overflow in mmwifiex_process_tdls_action_frame() (Jarod Wilson) [1776161 1776162] {CVE-2019-14901}
+- [netdrv] rtlwifi: Fix potential overflow on P2P code (Jarod Wilson) [1775222 1775223] {CVE-2019-17666}
+- [pci] hv: Avoid use of hv_pci_dev->pci_slot after freeing it (Mohammed Gamal) [1764635 1737569]
+
+* Tue Nov 26 2019 Herton R. Krzesinski <herton@redhat.com> [4.18.0-147.3.1.el8_1]
+- [x86] kvm: svm: taint module and print taint message iff nested is enabled (Bandan Das) [1776114 1775410]
+
+* Fri Nov 22 2019 Herton R. Krzesinski <herton@redhat.com> [4.18.0-147.2.1.el8_1]
+- [sched] fair: Scale bandwidth quota and period without losing quota/period ratio precision (Phil Auld) [1773568 1706247]
+- [sched] fair: Fix -Wunused-but-set-variable warnings (Phil Auld) [1773568 1706247]
+- [sched] fair: Fix low cpu usage with high throttling by removing expiration of cpu-local slices (Phil Auld) [1773568 1706247]
+- [powerpc] powerpc/pseries: Track LMB nid instead of using device tree (Steve Best) [1772110 1758742]
+- [powerpc] powerpc/pseries/memory-hotplug: Only update DT once per memory DLPAR request (Steve Best) [1772110 1758742]
+- [powerpc] powerpc/rtas: allow rescheduling while changing cpu states (Steve Best) [1772109 1758651]
+- [powerpc] powerpc/pseries/mobility: use cond_resched when updating device tree (Steve Best) [1772109 1758651]
+- [netdrv] i40e: Do not check VF state in i40e_ndo_get_vf_config (Stefan Assmann) [1770177 1752498]
+- [fs] CIFS: Fix use after free of file info structures (Dave Wysochanski) [1767357 1757865]
+- [fs] cifs: use cifsInodeInfo->open_file_lock while iterating to avoid a panic (Dave Wysochanski) [1767357 1757865]
+- [netdrv] net/ibmvnic: prevent more than one thread from running in reset (Steve Best) [1764830 1756943]
+- [netdrv] net/ibmvnic: unlock rtnl_lock in reset so linkwatch_event can run (Steve Best) [1764830 1756943]
+- [netdrv] ibmvnic: Warn unknown speed message only when carrier is present (Steve Best) [1764832 1749873]
+- [netdrv] net/ibmvnic: Fix missing { in __ibmvnic_reset (Steve Best) [1764832 1749873]
+- [netdrv] net/ibmvnic: free reset work of removed device from queue (Steve Best) [1764832 1749873]
+- [netdrv] ibmvnic: Do not process reset during or after device removal (Steve Best) [1764832 1749873]
+- [cpuidle] cpuidle: governor: Add new governors to cpuidle_governors again (Marcelo Tosatti) [1764831 1759282]
+- [cpuidle] cpuidle-haltpoll: do not set an owner to allow modunload (Marcelo Tosatti) [1764831 1759282]
+- [cpuidle] cpuidle-haltpoll: set haltpoll as preferred governor (Marcelo Tosatti) [1764831 1759282]
+- [cpuidle] cpuidle: allow governor switch on cpuidle_register_driver() (Marcelo Tosatti) [1764831 1759282]
+- [cpuidle] cpuidle: Add cpuidle.governor= command line parameter (Marcelo Tosatti) [1764831 1759282]
+- [cpuidle] cpuidle-haltpoll: vcpu hotplug support (Marcelo Tosatti) [1764831 1759282]
+- [cpuidle] cpuidle-haltpoll: disable host side polling when kvm virtualized (Marcelo Tosatti) [1764831 1759282]
+- [cpuidle] cpuidle: add haltpoll governor (Marcelo Tosatti) [1764831 1759282]
+- [cpuidle] cpuidle: header file stubs must be "static inline" (Marcelo Tosatti) [1764831 1759282]
+- [cpuidle] governors: unify last_state_idx (Marcelo Tosatti) [1764831 1759282]
+- [cpuidle] cpuidle: add poll_limit_ns to cpuidle_device structure (Marcelo Tosatti) [1764831 1759282]
+- [cpuidle] cpuidle: poll_state: Fix default time limit (Marcelo Tosatti) [1764831 1759282]
+- [cpuidle] cpuidle: poll_state: Disregard disable idle states (Marcelo Tosatti) [1764831 1759282]
+- [cpuidle] cpuidle: poll_state: Revise loop termination condition (Marcelo Tosatti) [1764831 1759282]
+- [cpuidle] cpuidle: menu: Fix wakeup statistics updates for polling state (Marcelo Tosatti) [1764831 1759282]
+- [cpuidle] cpuidle-haltpoll: return -ENODEV on modinit failure (Marcelo Tosatti) [1764831 1759282]
+- [cpuidle] add cpuidle-haltpoll driver (Marcelo Tosatti) [1764831 1759282]
+- [x86] kvm: x86: add host poll control msrs (Vitaly Kuznetsov) [1764831 1749495]
+- [s390] s390/setup: Fix kernel lock down for s390 (Philipp Rudo) [1764827 1748343]
+- [powerpc] powerpc: Allow flush_(inval_)dcache_range to work across ranges >4GB (Steve Best) [1764826 1744062]
+- [fs] mm/huge_memory: fix vmf_insert_pfn_{pmd, pud}() crash, handle unaligned addresses (Jeff Moyer) [1764825 1743159]
+- [mm] mm/huge_memory.c: fix modifying of page protection by insert_pfn_pmd() (Jeff Moyer) [1764825 1743159]
+- [pci] PCI: hv: Use bytes 4 and 5 from instance ID as the PCI domain numbers (Mohammed Gamal) [1764634 1671288]
+- [pci] PCI: hv: Detect and fix Hyper-V PCI domain number collision (Mohammed Gamal) [1764634 1671288]
+
+* Tue Nov 12 2019 Frantisek Hrbata <fhrbata@redhat.com> [4.18.0-147.1.1.el8_1]
+- [arm64] arm64/sve: Fix wrong free for task->thread.sve_state (Andrew Jones) [1767358 1756450]
+- [drm] drm/i915/cmdparser: Fix jump whitelist clearing (Dave Airlie) [1756871 1756873] {CVE-2019-0155}
+- [drm] drm/i915: Lower RM timeout to avoid DSI hard hangs (Dave Airlie) [1766056 1756805] {CVE-2019-0154}
+- [drm] drm/i915/gen8+: Add RC6 CTX corruption WA (Dave Airlie) [1766056 1756805] {CVE-2019-0154}
+- [drm] drm/i915/cmdparser: Ignore Length operands during command matching (Dave Airlie) [1756871 1756873] {CVE-2019-0155}
+- [drm] drm/i915/cmdparser: Add support for backward jumps (Dave Airlie) [1756871 1756873] {CVE-2019-0155}
+- [drm] drm/i915/cmdparser: Use explicit goto for error paths (Dave Airlie) [1756871 1756873] {CVE-2019-0155}
+- [drm] drm/i915: Add gen9 BCS cmdparsing (Dave Airlie) [1756871 1756873] {CVE-2019-0155}
+- [drm] drm/i915: Allow parsing of unsized batches (Dave Airlie) [1756871 1756873] {CVE-2019-0155}
+- [drm] drm/i915: Support ro ppgtt mapped cmdparser shadow buffers (Dave Airlie) [1756871 1756873] {CVE-2019-0155}
+- [drm] drm/i915: Add support for mandatory cmdparsing (Dave Airlie) [1756871 1756873] {CVE-2019-0155}
+- [drm] drm/i915: Remove Master tables from cmdparser (Dave Airlie) [1756871 1756873] {CVE-2019-0155}
+- [drm] drm/i915: Disable Secure Batches for gen6+ (Dave Airlie) [1756871 1756873] {CVE-2019-0155}
+- [drm] drm/i915: Rename gen7 cmdparser tables (Dave Airlie) [1756871 1756873] {CVE-2019-0155}
+- [x86] x86/tsx: Add config options to set tsx=on|off|auto (Josh Poimboeuf) [1766550 1766551] {CVE-2019-11135}
+- [documentation] x86/speculation/taa: Add documentation for TSX Async Abort (Josh Poimboeuf) [1766550 1766551] {CVE-2019-11135}
+- [x86] x86/tsx: Add "auto" option to the tsx= cmdline parameter (Josh Poimboeuf) [1766550 1766551] {CVE-2019-11135}
+- [base] x86/speculation/taa: Add sysfs reporting for TSX Async Abort (Josh Poimboeuf) [1766550 1766551] {CVE-2019-11135}
+- [x86] x86/speculation/taa: Add mitigation for TSX Async Abort (Josh Poimboeuf) [1766550 1766551] {CVE-2019-11135}
+- [x86] x86/cpu: Add a "tsx=" cmdline option with TSX disabled by default (Josh Poimboeuf) [1766550 1766551] {CVE-2019-11135}
+- [x86] x86/cpu: Add a helper function x86_read_arch_cap_msr() (Josh Poimboeuf) [1766550 1766551] {CVE-2019-11135}
+- [x86] x86/msr: Add the IA32_TSX_CTRL MSR (Josh Poimboeuf) [1766550 1766551] {CVE-2019-11135}
+- [documentation] Documentation: Add ITLB_MULTIHIT documentation (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [kvm] kvm: x86: mmu: Recovery of shattered NX large pages (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [virt] kvm: Add helper function for creating VM worker threads (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [kvm] kvm: mmu: ITLB_MULTIHIT mitigation (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [kernel] cpu/speculation: Uninline and export CPU mitigations helpers (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [x86] x86/cpu: Add Tremont to the cpu vulnerability whitelist (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [x86] x86: Add ITLB_MULTIHIT bug infrastructure (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [kvm] KVM: vmx, svm: always run with EFER.NXE=1 when shadow paging is active (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [kvm] KVM: x86: add tracepoints around __direct_map and FNAME(fetch) (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [kvm] KVM: x86: change kvm_mmu_page_get_gfn BUG_ON to WARN_ON (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [kvm] KVM: x86: remove now unneeded hugepage gfn adjustment (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [kvm] KVM: x86: make FNAME(fetch) and __direct_map more similar (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [kvm] kvm: mmu: Do not release the page inside mmu_set_spte() (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [kvm] kvm: Convert kvm_lock to a mutex (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [kvm] KVM: x86/mmu: Reintroduce fast invalidate/zap for flushing memslot (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [kvm] Revert "KVM: x86/mmu: Zap only the relevant pages when removing a memslot" (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [kvm] kvm: x86, powerpc: do not allow clearing largepages debugfs entry (Paolo Bonzini) [1698416 1690344] {CVE-2018-12207}
+- [zstream] switch to zstream (Frantisek Hrbata)

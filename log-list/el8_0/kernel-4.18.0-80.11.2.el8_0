@@ -1,0 +1,7 @@
+#继承4.18.0-80.11.1.el8_0，并分支，添加4.18.0-80.11.2.el8_0
+
+* Fri Sep 20 2019 CentOS Sources <bugs@centos.org> - 4.18.0-80.11.2.el8.centos
+- Apply debranding changes
+
+* Sun Sep 15 2019 Frantisek Hrbata <fhrbata@redhat.com> [4.18.0-80.11.2.el8_0]
+- [vhost] vhost: make sure log_num < in_num (Eugenio Perez) [1750881 1750882] {CVE-2019-14835}

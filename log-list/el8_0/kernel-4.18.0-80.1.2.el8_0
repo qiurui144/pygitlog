@@ -1,0 +1,39 @@
+#继承4.18.0-80.el8，添加4.18.0-80.1.1.el8_0、4.18.0-80.1.2.el8_0
+
+* Mon Jul 01 2019 Johnny Hughes <johnny@centos.org>
+- Manual CentOS Debranding
+
+* Sun Apr 28 2019 Frantisek Hrbata <fhrbata@redhat.com> [4.18.0-80.1.2.el8_0]
+- [arm64] arm64/speculation: Support 'mitigations=' cmdline option (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [s390] s390/speculation: Support 'mitigations=' cmdline option (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [powerpc] powerpc/speculation: Support 'mitigations=' cmdline option (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [powerpc] powerpc/64: Disable the speculation barrier from the command line (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation/mds: Add 'mitigations=' support for MDS (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation: Support 'mitigations=' cmdline option (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [kernel] cpu/speculation: Add 'mitigations=' cmdline option (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation/mds: Print SMT vulnerable on MSBDS with mitigations off (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation/mds: Fix comment (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation/mds: Add SMT warning message (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation: Move arch_smt_update() call to after mitigation decisions (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation/mds: Add mds=full, nosmt cmdline option (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [documentation] Documentation: Add MDS vulnerability documentation (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [documentation] Documentation: Move L1TF to separate directory (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation/mds: Add mitigation mode VMWERV (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation/mds: Add sysfs reporting for MDS (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation/mds: Add mitigation control for MDS (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation/mds: Conditionally clear CPU buffers on idle entry (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/kvm/vmx: Add MDS protection when L1D Flush is not active (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation/mds: Clear CPU buffers on exit to user (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation/mds: Add mds_clear_cpu_buffers() (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [kvm] x86/kvm: Expose X86_FEATURE_MD_CLEAR to guests (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation/mds: Add BUG_MSBDS_ONLY (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation/mds: Add basic bug infrastructure for MDS (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation: Consolidate CPU whitelists (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/msr-index: Cleanup bit defines (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/speculation: Cast ~SPEC_CTRL_STIBP atomic value to int (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [x86] x86/cpu: Sanitize FAM6_ATOM naming (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [include] locking/atomics, asm-generic: Move some macros from <linux/bitops.h> to a new <linux/bits.h> file (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+- [tools] tools include: Adopt linux/bits.h (Josh Poimboeuf) [1698809 1698896 1699001 1690338 1690360 1690351] {CVE-2018-12130 CVE-2018-12127 CVE-2018-12126}
+
+* Sat Apr 27 2019 Frantisek Hrbata <fhrbata@redhat.com> [4.18.0-80.1.1.el8_0]
+- [zstream] switch to zstream (Frantisek Hrbata)
