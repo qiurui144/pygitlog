@@ -1,0 +1,5473 @@
+count = 110477
+alsa 8589
+kvm 4968
+scsi 3816
+net 3299
+asoc 3143
+usb 2653
+mt76 1736
+bpf 1645
+xfs 1632
+net/mlx5 1488
+net/mlx5e 1285
+ice 1227
+iwlwifi 1221
+mlxsw 1064
+selftests 1058
+arm64 873
+mm 830
+selftests/bpf 775
+netfilter 762
+acpi 730
+wifi 693
+crypto 691
+bluetooth 671
+sched 657
+ath11k 629
+block 609
+pci 600
+bnxt_en 599
+cifs 586
+hid 556
+libbpf 552
+mac80211 549
+rcu 539
+sunrpc 525
+mptcp 506
+io_uring 481
+ceph 472
+nfs 468
+rdma/mlx5 441
+gfs2 434
+r8169 433
+nfsd 428
+dmaengine 419
+nvme 418
+rtw88 417
+s390/qeth 401
+media 401
+i40e 396
+net/smc 377
+thunderbolt 355
+ext4 338
+nfp 335
+drm/i915 335
+devlink 331
+perf tools 321
+mlx5 321
+igc 319
+phy 312
+ath10k 308
+sfc 294
+iommu/vt-d 287
+rdma/core 281
+ionic 265
+sctp 263
+acpica 259
+tipc 257
+ib/hfi1 255
+rtlwifi 250
+rdma/rxe 250
+platform/x86 245
+tcp 245
+qed 243
+ib/mlx5 242
+drm/amd/display 240
+rtw89 240
+i2c 232
+pinctrl 231
+nvmet 221
+bus 219
+selinux 218
+blk-mq 218
+xprtrdma 217
+mlx5e 217
+cxgb4 215
+fuse 214
+ovl 211
+cfg80211 209
+cpufreq 209
+sched/fair 206
+brcmfmac 203
+ethtool 202
+xhci 198
+ipv6 198
+libperf 190
+treewide 189
+x86/fpu 189
+mei 186
+drivers 180
+drm/amdgpu 177
+smb3 177
+tls 177
+driver core 176
+iavf 173
+iommu/amd 171
+ibmvnic 165
+iommu 164
+rcutorture 161
+pm 159
+perf stat 159
+perf trace 157
+dm 157
+documentation 156
+docs 156
+tools 153
+md 152
+soundwire 151
+kasan 151
+hv 150
+torture 149
+xsk 149
+xfrm 148
+ipmi 147
+nvme-pci 142
+nfsv4 142
+ixgbe 141
+libceph 141
+bpftool 137
+vfs 133
+bridge 133
+tpm 131
+rdma 130
+rdma/bnxt_re 129
+audit 129
+input 128
+netdevsim 127
+nl80211 124
+s390/pci 121
+redhat 121
+bonding 120
+dma-mapping 120
+kunit 119
+perf/x86/intel/uncore 119
+openvswitch 118
+locking/lockdep 117
+x86 113
+gpio 112
+svcrdma 112
+tools lib traceevent 109
+gpiolib 109
+s390/qdio 109
+powerpc 108
+perf intel-pt 108
+vt-d 107
+rdma/irdma 105
+iomap 105
+tools/power turbostat 104
+fpga 104
+rdma/uverbs 104
+swiotlb 103
+igb 102
+samples/bpf 102
+ath9k 100
+cgroup 100
+mwifiex 100
+block, bfq 97
+net/sched 97
+perf/x86/intel 96
+ipv4 95
+perf 95
+fs 95
+perf evsel 95
+printk 94
+perf cs-etm 94
+nvme-tcp 91
+s390 90
+perf script 90
+ata 90
+perf scripts python 89
+gve 88
+rcu/nocb 88
+x86/sgx 85
+spi 85
+ib/core 85
+powerpc/pseries 85
+xdp 84
+of 83
+powerpc/perf 82
+tools/bpf 81
+net_sched 81
+perf/core 79
+perf evlist 79
+perf annotate 78
+ntb 78
+thermal 78
+dt-bindings 77
+perf test 77
+iommu/arm-smmu 77
+hv_netvsc 77
+rdma/cma 76
+flow_offload 76
+iommu/arm-smmu-v3 76
+e1000e 75
+rdma/efa 75
+ib/uverbs 75
+sched/core 74
+bnx2x 74
+ima 74
+perf tests 73
+perf record 73
+rbd 72
+perf/x86 72
+x86/speculation 72
+tools/power/x86/intel-speed-select 71
+serial 71
+drm 71
+x86/platform/uv 71
+rdma/siw 70
+mm/gup 70
+s390/zcrypt 70
+md/raid5 70
+redhat/configs 70
+can 69
+perf report 69
+udp 69
+dm integrity 69
+xarray 69
+doc 69
+intel_th 69
+hwmon 68
+dma-direct 68
+vdpa 67
+r8152 67
+signal 66
+perf probe 66
+netlink 65
+locking/rwsem 65
+powerpc/eeh 65
+loop 65
+mm/hmm 65
+cpuidle 64
+x86/intel_rdt 64
+vdpa/mlx5 63
+tc-testing 63
+mac80211_hwsim 63
+dm writecache 63
+x86/resctrl 62
+rdma/cm 61
+null_blk 60
+tracing 60
+futex 60
+irqchip/gic-v3-its 59
+lockdep 59
+nvme-fc 59
+nvme-rdma 58
+vxlan 56
+mm, slub 56
+rdma/qedr 55
+ethernet 54
+s390/dasd 54
+pci/aer 54
+mpt3sas 54
+mfd 54
+qede 54
+intel_idle 53
+kabi 53
+regmap 53
+x86/cpu 52
+jbd2 52
+x86/hyperv 52
+rcu-tasks 52
+x86/mm 52
+firmware 51
+efi 51
+x86/sev 50
+usbip 49
+blkcg 49
+x86/kvm 49
+stmmac 49
+rdma/hns 49
+dax 49
+vfio-ccw 48
+core 48
+lsm 48
+powerpc/fadump 48
+bnxt 47
+cpupower 47
+device property 47
+lib 46
+locking/rtmutex 46
+fbcon 46
+livepatch 45
+bpf, sockmap 45
+dm crypt 44
+posix-cpu-timers 44
+s390/mm 44
+perf bpf 44
+lockd 44
+mm/memory_hotplug 44
+perf top 44
+vsock 43
+vmxnet3 43
+flow_dissector 43
+amd 43
+io-wq 43
+drm/amd/pm 43
+tools/bpftool 43
+veth 43
+nbd 43
+software node 42
+lpfc 42
+rtnetlink 42
+samples 42
+vhost 42
+srcu 41
+rt2x00 41
+tools headers uapi 41
+userfaultfd 41
+x86/vdso 40
+selftests/sgx 40
+power/x86/intel-speed-select 40
+nvmet-tcp 40
+blk-cgroup 40
+x86/boot 39
+selftests/net 39
+workqueue 39
+sched/numa 39
+powerpc/powernv 39
+perf parse-events 39
+platform/mellanox 38
+mm, memcg 38
+intel 38
+perf symbols 38
+hyperv 38
+watchdog 38
+perf arm-spe 38
+powerpc/64s 37
+acpi/iort 37
+powerpc/smp 37
+rdma/umem 37
+objtool 37
+perf pmu 37
+pci/vpd 37
+fm10k 37
+mm/memcg 36
+powerpc/watchpoint 36
+perf auxtrace 36
+brcmsmac 36
+ixgbevf 36
+nvme-fabrics 36
+drop_monitor 36
+ib/iser 36
+selftests/powerpc 35
+memcg 35
+drm/amdkfd 35
+nvme-multipath 35
+powerpc/numa 35
+ib/mlx4 35
+mmc 35
+pnfs 35
+x86/fpu/xstate 35
+drm/i915/gt 34
+tun 34
+rdma/nldev 34
+x86/mm/cpa 34
+nfsd4 34
+pci/acpi 34
+irqchip/gic-v3 33
+rdma/cxgb4 33
+logitech-dj 33
+iommu/dma 33
+tee 33
+pci/aspm 33
+edac/amd64 33
+perf vendor events intel 33
+sev-es 32
+pm / domains 32
+x86/mce 32
+ib/rxe 32
+mm/hugetlb 32
+mm/vmscan.c 32
+selftest/bpf 32
+drivers/perf 32
+smartpqi 32
+percpu 31
+ieee80211 31
+bpf, selftests 31
+virtiofs 31
+ipmi_si 31
+drm/nouveau 31
+security 31
+arm-smmu-v3 31
+wireless 31
+vsock/virtio 31
+sfc_ef100 31
+perf metricgroup 31
+drm/bridge 30
+mm, compaction 30
+perf c2c 30
+genirq 30
+x86/cpufeatures 30
+hmm 30
+net/mlx4 30
+rdma/mlx4 30
+mlx4 30
+perf map 30
+mm/page_alloc 30
+x86/hyper-v 29
+ocxl 29
+rdma/hfi1 29
+kbuild 29
+fbdev 29
+hrtimer 29
+ib/ipoib 29
+vfio/pci 29
+dma-debug 29
+s390/vfio-ap 29
+rtl8xxxu 29
+be2net 29
+net/mlx4_en 29
+rdma/ucma 29
+hci_qca 28
+pci/pm 28
+net/tls 28
+arm64/mm 28
+drm/i915/display 28
+dma-buf 28
+perf script python 28
+ib/rdmavt 28
+device-dax 28
+perf metric 28
+dm raid 28
+perf data 27
+rdma/srpt 27
+mm/vmscan 27
+lib/vdso 27
+swiotlb-xen 27
+taprio 27
+iommu/io-pgtable-arm 27
+dm verity 27
+dma 27
+writeback 27
+ptp 27
+powerpc/dma 27
+vmci 27
+perf session 27
+powerpc/vas 26
+hugetlbfs 26
+powerpc/bpf 26
+tty 26
+perf/arm-cmn 26
+maintainers 26
+efi/x86 26
+perf trace beauty 26
+vfio 26
+logitech-hidpp 26
+seqlock 26
+rcu/tree 26
+rdma/ipoib 26
+virtio 26
+sched/topology 26
+mm/damon 26
+pci/err 26
+memory_hotplug 26
+perf vendor events arm64 25
+libtraceevent 25
+sch_htb 25
+sch_cake 25
+nvmet-fc 25
+perf machine 25
+psi 25
+skmsg 25
+acpi / apei 25
+perf build 25
+dm mpath 25
+kernel 25
+wacom 25
+vdpa_sim 25
+powerpc/papr_scm 25
+refperf 25
+nvmet-rdma 25
+rdma/restrack 25
+perf beauty 24
+drm/i915/tgl 24
+s390/kasan 24
+blktrace 24
+infiniband 24
+mm/page_alloc.c 24
+sbitmap 24
+perf daemon 24
+pnfs/flexfiles 24
+sched/deadline 24
+x86/mm/pat 24
+libnvdimm 24
+nitro_enclaves 24
+virtio_net 24
+ftrace 24
+exec 24
+stm class 24
+misc 24
+selftests/vm 24
+intel-ethernet 24
+drm/i915/adl_s 24
+bpfilter 24
+qmi_wwan 24
+selftest 24
+net/mlx4_core 24
+perf jevents 24
+x86/kvm/vmx 23
+dm thin 23
+libata 23
+mm, memory_hotplug 23
+cio 23
+rdma/srp 23
+cpuset 23
+iommu/iova 23
+drm/vmwgfx 23
+s390/ap 23
+perf header 23
+fanotify 23
+drm/qxl 22
+x86/tdx 22
+kcsan 22
+perf expr 22
+bareudp 22
+s390/bpf 22
+ib/cm 22
+padata 22
+page_pool 22
+ath 22
+x86/pci 22
+hugetlb 22
+skbuff 22
+cpu/hotplug 22
+pci/msi 22
+perf ftrace 22
+bpf, libbpf 21
+x86/entry/32 21
+kprobes 21
+hyper-v 21
+x86/microcode/amd 21
+ib 21
+perf/x86/intel/pt 21
+mm, page_alloc 21
+selftests/livepatch 21
+blk-throttle 21
+quota 21
+lib/vsprintf 21
+drm/i915/icl 21
+qla2xxx 21
+nfsv4.2 21
+blk-wbt 21
+genetlink 21
+mm,hwpoison 21
+memblock 20
+vhost_net 20
+drm/i915/dp 20
+vsprintf 20
+x86/fpu/signal 20
+md/raid10 20
+x86/entry/64 20
+tools, bpftool 20
+x86/bugs 20
+bdi 20
+mt7601u 20
+virtio_ring 20
+irqchip/gic-v4.1 20
+x86/asm 20
+uclogic 20
+perf/x86/rapl 20
+vt 20
+kvm/x86 20
+x86/speculation/l1tf 20
+perf/x86/intel/lbr 20
+mm, oom 20
+tools lib traceevent, perf tools 20
+memremap 20
+locking/ww_mutex 19
+perf config 19
+perf augmented_raw_syscalls 19
+nfsv4/pnfs 19
+perf/x86/amd 19
+mm/mmu_notifier 19
+khugepaged 19
+selftests/vm/pkeys 19
+net-sysfs 19
+proc 19
+extcon 19
+kernfs 19
+perf vendor events amd 19
+s390/decompressor 19
+iw_cxgb4 19
+ci 19
+dm table 19
+perf scripting python 19
+integrity 19
+nfs/pnfs 19
+arch_topology 19
+acpi / pmic 19
+perf inject 19
+powerpc/mm 19
+x86/sev-es 19
+scftorture 19
+usbnet 19
+team 19
+sfc/siena 19
+sched/debug 19
+uio 18
+evm 18
+video 18
+s390/cio 18
+vfio/mdev 18
+sched/pelt 18
+perf db-export 18
+x86/mce/amd 18
+perf thread-stack 18
+geneve 18
+x86/speculation/mds 18
+ethernet/intel 18
+md/raid1 18
+mhi 18
+genirq/affinity 18
+powerpc/pseries/vas 18
+switchdev 18
+nvme-core 18
+drm/radeon 18
+perf bench 18
+ch_ktls 18
+vdpa/ifcvf 18
+pci/ats 18
+mt7615 18
+cross-tree 18
+arm64/cpufeature 18
+boot/compressed/64 17
+block/mq-deadline 17
+gic-v4.1 17
+arm 17
+documentation/abi 17
+powerpc/powernv/npu 17
+dm snapshot 17
+drm/nouveau/kms/nv50- 17
+raid5 17
+nfs4 17
+keys 17
+acpi / lpss 17
+tg3 17
+mm/slub.c 17
+mm/memory_hotplug.c 17
+s390/pkey 17
+ipc 17
+dm bufio 17
+pci/iov 17
+perf diff 17
+powerpc/xmon 17
+slub 17
+mm/damon/dbgfs 17
+nfsv4.1 17
+vfio/type1 16
+mm/slub 16
+misc/mei/hdcp 16
+kasan, arm64 16
+tools arch x86 16
+mm/thp 16
+backlight 16
+fsnotify 16
+signal/arm64 16
+asm-generic/tlb 16
+packet 16
+l2tp 16
+pci/switchtec 16
+ntb_hw_switchtec 16
+ipvs 16
+perf python 16
+arm64/sve 16
+optee 16
+drm/i915/gvt 16
+x86/efi 16
+selftests/tls 16
+inet 16
+dm cache 16
+x86, sched 16
+powerpc/pseries/mobility 16
+netns 16
+drm/i915/guc 16
+vlan 16
+iov_iter 16
+rt2800 16
+arm/arm64 16
+pseries 16
+random 16
+powerpc/ptrace 16
+virtchnl 16
+s390/crypto 16
+virtio-balloon 16
+mm/vmalloc.c 15
+ib/isert 15
+tools include uapi 15
+ip 15
+dm thin metadata 15
+bfq 15
+ip6_gre 15
+perf list 15
+pci/dpc 15
+eth 15
+powerpc/xive 15
+intel_rapl 15
+acpi/nfit 15
+tracing/osnoise 15
+vhost-vdpa 15
+mm/memcontrol.c 15
+configs 15
+powercap/intel_rapl 15
+neighbor 15
+sysfs 15
+usb-storage 15
+btf 15
+firmware_loader 15
+s390/sclp 15
+hv_balloon 15
+rdma/i40iw 15
+powerpc/rtas 15
+iommu/virtio 14
+locking/mutex 14
+tcp_bbr 14
+signal/x86 14
+vrf 14
+perf powerpc 14
+perf parse 14
+resource 14
+compat_ioctl 14
+dma-pool 14
+rcuperf 14
+perf/smmuv3 14
+mm/rmap 14
+timers 14
+cxgb4vf 14
+x86/cpu/amd 14
+rdma/counter 14
+i2c-hid 14
+drm/i915/tc 14
+jump_label 14
+lwtunnel 14
+kselftest 14
+rdma/usnic 14
+drm/virtio 14
+mm/huge_memory.c 14
+mm/vmalloc 14
+crypto/chcr 14
+drm/amd/amdgpu 13
+cls_flower 13
+mm/migrate 13
+kasan, mm 13
+page cache 13
+kselftests 13
+perf dso 13
+svm 13
+mmap locking api 13
+powerpc/sstep 13
+pci/p2pdma 13
+perf/amd/uncore 13
+gen_compile_commands 13
+tools/testing/nvdimm 13
+nvme-loop 13
+devres 13
+megaraid_sas 13
+timekeeping 13
+perf/x86/cstate 13
+mailbox 13
+btusb 13
+nfs/flexfiles 13
+x86/kvmclock 13
+selftests/harness 13
+locking 13
+mediatek 13
+irqchip/gic 13
+posix-timers 13
+time 13
+powerpc/pci 13
+menu 13
+mm/sparse 13
+tools/kvm_stat 13
+rdma/vmw_pvrdma 13
+fork 13
+x86/irq 13
+rdma/iw_cxgb4 12
+ib/usnic 12
+ib/mad 12
+locktorture 12
+ipvlan 12
+edac 12
+ahci 12
+mm/gup_benchmark 12
+virtio-pci-modern 12
+cgroup/cpuset 12
+namei 12
+rdma/device 12
+drm/i915/dg2 12
+hv_utils 12
+eeh 12
+s390/cpum_cf 12
+autofs 12
+writeback, cgroup 12
+smp 12
+tools build 12
+mm/swapfile.c 12
+powernv 12
+tools headers 12
+perf sort 12
+md-cluster 12
+drm/dp_mst 12
+powerpc/64 12
+pci/sysfs 12
+tuntap 12
+cpu 12
+perf hist 12
+powerpc/tm 12
+perf augmented_syscalls 12
+shmem 12
+perf mem 12
+driver 12
+bpf/selftests 12
+ath9k_htc 12
+kvfree_rcu 12
+x86/split_lock 12
+x86/kexec 12
+perf maps 12
+intel_pstate 12
+perf/x86/msr 12
+vhost_vdpa 12
+s390/kexec_file 12
+rdma/odp 12
+cdc-acm 12
+rdma/rw 11
+ip_tunnel 11
+kvm/nvmx 11
+mm/compaction 11
+x86/spec_ctrl 11
+bpf, x86 11
+virtio/s390 11
+storvsc 11
+hugetlb_cgroup 11
+drm/i915/gem 11
+pm / wakeup 11
+drm/edid 11
+perf vendor events 11
+btrtl 11
+tc-tests 11
+x86/mce/amd, edac/mce_amd 11
+blk-iolatency 11
+ide 11
+mm, slab 11
+trace 11
+kvm/book3s 11
+mm, thp 11
+kheaders 11
+samples, bpf 11
+esp 11
+x86/paravirt 11
+perf callchain 11
+sock 11
+mm/list_lru.c 11
+platform/x86/intel 11
+macsec 11
+multitouch 11
+bpf, xdp 11
+irq_work 11
+ib/umad 11
+mm/highmem 11
+net/mlxfw 11
+watchdog/hpwdt 11
+x86/kvm/hyper-v 11
+logitech 11
+rhashtable 11
+iommu/io-pgtable 11
+perf time-utils 11
+perf env 11
+dlm 11
+drm/amd/powerplay 11
+x86/topology 11
+virtio-net 11
+perf cpumap 11
+hv_sock 11
+acpi / x86 11
+kexec 11
+powerpc/security 11
+perf vendor events power9 11
+perf/hw_breakpoint 11
+mm/migrate.c 11
+virtio_balloon 11
+net/ibmvnic 11
+x86/amd_nb 11
+x86/apic 11
+crypto/nx 11
+powerpc/pseries/cmm 11
+mm/page_owner 11
+elan 11
+perf/ring_buffer 10
+btqca 10
+selftests/kexec 10
+bpf, devmap 10
+x86/ftrace 10
+tools/runqslower 10
+hci_bcm 10
+smb3.1.1 10
+selftests/timens 10
+ip6_tunnel 10
+cpufeature 10
+asm-generic/hyperv 10
+powerpc/pkeys 10
+mpls 10
+ib/srpt 10
+debugfs 10
+selftests/powerpc/pmu/ 10
+net/intel 10
+powercap 10
+tsc 10
+sched/rt 10
+radix tree test suite 10
+zram 10
+dm ioctl 10
+nvme-fcloop 10
+drm/ttm 10
+virt 10
+platform_data/mlxreg 10
+tick/nohz 10
+drm/udl 10
+s390/ipl 10
+tools/resolve_btfids 10
+s390/cpumf 10
+x86/fsgsbase/64 10
+x86/insn 10
+arm-smmu 10
+drbd 10
+acpi / scan 10
+pm / qos 10
+cacheinfo 10
+fs/xfs 10
+drm/ast 10
+selftests/x86/fsgsbase 10
+drm/amd 10
+phylink 10
+s390/uv 10
+locking/percpu-rwsem 10
+raw 10
+platform/uv 9
+topology 9
+umh 9
+acpi / battery 9
+powerpc/powernv/idle 9
+inet_diag 9
+macvlan 9
+head/64 9
+b43 9
+mm/damon/schemes 9
+switchtec 9
+counter 9
+ath6kl 9
+mm/memcontrol 9
+drivers core 9
+s390/boot 9
+cxgb4/cxgb4vf 9
+stacktrace 9
+signal/powerpc 9
+x86/irq/64 9
+perf/x86/uncore 9
+igb/igc 9
+udp6 9
+vdpasim 9
+tool 9
+vgaarb 9
+sched/membarrier 9
+mm/kmemleak 9
+mm/swap 9
+mm/damon/core 9
+mm/mmu_notifiers 9
+vringh 9
+kdump 9
+x86/tsc 9
+qed* 9
+iocost 9
+igbvf 9
+mm/swap.c 9
+netlabel 9
+bpf, arm64 9
+neigh 9
+powerpc/powernv/ioda 9
+selftests/powerpc/pmu 9
+pci/portdrv 9
+i40iw 9
+slab 9
+bpf, doc 9
+netpoll 9
+uprobes 9
+vhost/vsock 9
+trace/osnoise 9
+mm/mremap 9
+perf/x86/amd/ibs 9
+mm/page_isolation 9
+rhel-only 9
+mm/memory.c 9
+linux/dim 9
+kthread 9
+io-pgtable 9
+x86/traps 9
+x86/alternatives 9
+perf jvmti 9
+x86/microcode 9
+iova 9
+uas 9
+drm/amdgpu/display 9
+drm/i915/selftests 9
+vmbus 9
+neighbour 9
+rhel 9
+pie 9
+docs/mm 9
+vfio iommu 9
+cfg80211/mac80211 8
+x86/ldt 8
+sched/vtime 8
+xfrm interface 8
+erspan 8
+x86/kvm/mmu 8
+perf unwind 8
+s390/protvirt 8
+certs 8
+netem 8
+filemap 8
+dm era 8
+rdma/ocrdma 8
+kvm/mmu 8
+mm/slab 8
+ibmveth 8
+rdma/iwcm 8
+s390/mem_detect 8
+ip6_vti 8
+kvm/hyper-v 8
+drivers/base/memory.c 8
+time/sched_clock 8
+quirks 8
+drm/nouveau/disp/dp 8
+refscale 8
+spec 8
+clocksource 8
+libnvdimm/security 8
+powerpc/cacheinfo 8
+x86/process 8
+md/bitmap 8
+pci/link 8
+vmware 8
+socket 8
+mm/khugepaged 8
+kvm_stat 8
+x86/entry 8
+perf util 8
+powerpc/mce 8
+x86/unwind/orc 8
+staging 8
+device connection 8
+x86/gpu 8
+uapi 8
+x86/ima 8
+s390/setup 8
+arm_pmu 8
+rfkill 8
+mm/filemap.c 8
+cpuidle-haltpoll 8
+cxgb4/chcr 8
+makefile 8
+documentation/x86 8
+nfsv3 8
+efi/arm 8
+dm kcopyd 8
+dma-contiguous 8
+rdma/netlink 8
+drm/i915/fb 8
+sched/cputime 8
+alarmtimer 8
+i40evf 8
+kyber 8
+kvm/vmx 8
+ila 8
+drm/i915/adl_p 8
+x86/stacktrace 8
+hpsa 8
+tools lib 8
+bpf, testing 8
+xarray tests 8
+libnvdimm/pfn_dev 8
+virtio-blk 8
+atomics/treewide 8
+blk-iocost 8
+rdma/iwpm 8
+proc/kcore 8
+rdma/mad 8
+pktcdvd 8
+drm/i915/rkl 8
+fat 8
+i40e, xsk 8
+libnvdimm/pfn 8
+tick/sched 8
+i915 8
+context_tracking 8
+clk 8
+drm/mgag200 8
+drm/i915/adlp 8
+networking 8
+edac/mce_amd 8
+kdb 8
+rdma/rdmavt 8
+xen-swiotlb 8
+pseries/svm 8
+mm/huge_memory 8
+of/address 8
+perf bench numa 8
+random32 8
+dm cache metadata 7
+selftests, bpf 7
+tpm_tis 7
+llc 7
+module 7
+new helper 7
+ftrace/x86 7
+rdma/nes 7
+net sched actions 7
+sysctl 7
+mm/damon/vaddr 7
+uio_hv_generic 7
+aoe 7
+regmap-irq 7
+perf ordered_events 7
+sparsemem 7
+drm/nouveau/drm/nouveau 7
+acpi/nfit, libnvdimm 7
+acpi, nfit 7
+64s 7
+libnvdimm/namespace 7
+edac/i10nm 7
+drm/vkms 7
+drm/nouveau/disp 7
+cdrom 7
+acpi/hmat 7
+powerpc/pseries/eeh 7
+sock_map 7
+ida 7
+vmalloc 7
+edac, skx 7
+powerpc/watchdog 7
+include 7
+mm, page_owner 7
+perf evswitch 7
+trace/hwlat 7
+ppc64/kexec_file 7
+drivers/base/memory 7
+sched/cpuacct 7
+cnic 7
+char 7
+ptrace 7
+mm/sparse.c 7
+btbcm 7
+powerpc/pmem 7
+cppc_cpufreq 7
+mm/mmap.c 7
+perf docs 7
+tools/libbpf 7
+mm/kasan 7
+md/raid6 7
+arch 7
+ipv6/addrconf 7
+s390/ism 7
+libbeauty 7
+lightnvm 7
+efi/gop 7
+fq_codel 7
+s390/stp 7
+sit 7
+btmrvl 7
+ib/srp 7
+libnvdimm/region 7
+nvme-trace 7
+x86/pkeys 7
+cachefiles 7
+rq-qos 7
+powerpc/prom_init 7
+x86/alternative 7
+selftests/damon 7
+s390/gmap 7
+sk_buff 7
+hyperv_fb 7
+ntp 7
+hpwdt 7
+teo 7
+qeth 7
+mm/hotplug 7
+tools/power/cpupower 7
+dmanegine 7
+perf thread 7
+modules 7
+ataflop 7
+perf sched 7
+efi/tpm 7
+net-next/hinic 7
+hci_h5 7
+fs/ext4 7
+powerpc64/bpf 7
+powerpc/pseries/iommu 7
+prom_init 7
+rdma/pvrdma 7
+mm/compaction.c 7
+perf arm64 7
+drm/tegra 7
+perf report/top 7
+perf trace augmented_syscalls 7
+init 7
+kconfig 7
+type1 7
+mm/memremap_pages 7
+nvdimm 7
+mdio_bus 7
+x86/intel 7
+rocker 7
+nl80211/cfg80211 7
+x86/kconfig 6
+y2038 6
+perf stat aggregation 6
+powerpc/eeh_cache 6
+perf kvm 6
+dma-iommu 6
+knfsd 6
+timer 6
+io-pgtable-arm 6
+kernel.h 6
+x86/speculation/mmio 6
+dm rq 6
+iommu/io-pgtable-arm-v7s 6
+gpiolib-acpi 6
+mm/zsmalloc.c 6
+rdma/cxgb3 6
+xhci-pci 6
+kexec_file 6
+lib/scatterlist 6
+efi/libstub 6
+strparser 6
+vsock/vmci 6
+af_packet 6
+drm/nouveau/kms 6
+x86/boot/kaslr 6
+pm / core 6
+mm/debug.c 6
+locking/qspinlock 6
+mm/page-writeback.c 6
+dsa 6
+sched/psi 6
+perf hists 6
+tests 6
+kernel.spec 6
+nfit/ars 6
+libceph, ceph 6
+procfs 6
+ipc/util.c 6
+vfio-pci 6
+kobject 6
+etf 6
+ib/cma 6
+rsxx 6
+perf core 6
+datagram 6
+rcuwait 6
+blk-rq-qos 6
+xen 6
+psci 6
+net/af_iucv 6
+[md] md/raid5 6
+aio 6
+tools/testing/selftests/sysctl/sysctl.sh 6
+bpf, verifier 6
+psample 6
+pm-runtime 6
+acpi / property 6
+drm/fb-helper 6
+sched/cpufreq 6
+tcp, ulp 6
+uaccess 6
+umd 6
+leds 6
+bpf/flow_dissector 6
+irqdomain 6
+tpm/ppi 6
+vp_vdpa 6
+hdmi 6
+esp4 6
+smsc95xx 6
+s390/airq 6
+docs/bpf 6
+perf vendor events s390 6
+perf streams 6
+qedr 6
+fs/cifs 6
+s390/purgatory 6
+mm/filemap 6
+idr 6
+edac/igen6 6
+arm64/vdso 6
+tools include 6
+aqc111 6
+{ib, net}/mlx5 6
+powerpc/mm/radix 6
+sd 6
+drm/panel 6
+ipmr 6
+bpf, cgroup 6
+list 6
+rpmspec 6
+lib/stackdepot 6
+ixgbe, xsk 6
+mm/slab.c 6
+tick 6
+rdma/drivers 6
+kernel spec 6
+kernel/sysctl.c 6
+kmemleak 6
+drm/atomic 6
+libnvdimm/pmem 6
+s390/kernel 6
+base 6
+brcm80211 6
+bpf/verifier 6
+scripts/dtc 6
+libperf tests 6
+mm/gup.c 6
+mm/hugetlb.c 6
+memstick 6
+radix tree 6
+broadcom 6
+hostap 6
+perf llvm 6
+rpc 6
+md/raid5-cache 6
+drm/i915/dmc 6
+ip_vti 6
+x86/xen 6
+x86/exceptions 6
+cgroup-v1 6
+x86/elf 5
+powerpc/ppc-opcode 5
+ib/{hfi1, qib, rdmavt} 5
+x86/cpu/intel 5
+perf hists browser 5
+powerpc/nvdimm 5
+net/core 5
+lib80211 5
+net, xdp 5
+powerpc/book3s64/radix 5
+clocksource/arm_arch_timer 5
+sunrpc/cache 5
+drm/i915/uc 5
+vfio-pci/zdev 5
+rdma/devices 5
+console 5
+pci/hotplug/pnv-php 5
+kasan, slub 5
+highmem 5
+cougar 5
+dev 5
+mm/vmstat.c 5
+libsubcmd 5
+lib/test_printf 5
+x86/kdump 5
+pidfd 5
+kvm/eventfd 5
+drm/i915/gsc 5
+espintcp 5
+perf/amd/ibs 5
+mm/lru 5
+ppp 5
+drm/nouveau/kms/gv100- 5
+net/packet 5
+benet 5
+xen/balloon 5
+esp6 5
+cpumask 5
+pnfs/nfsv4 5
+compat 5
+intel-ish-hid 5
+net/bonding 5
+rdma/iser 5
+perf doc 5
+x86/kvm/nvmx 5
+drm/i915/gen12 5
+mm/vma 5
+drm/i915/ttm 5
+scs 5
+x86/insn-eval 5
+node 5
+pci/pme 5
+iommu/dma-iommu 5
+tty/sysrq 5
+bsg 5
+x86/dumpstack 5
+udp_tunnel 5
+test_ida 5
+ip_gre 5
+drm/bochs 5
+dp83640 5
+tlb 5
+perf/x86/amd/core 5
+[base] driver core 5
+x86/compressed/acpi 5
+drm/i915/display/adlp 5
+ping 5
+nvme/pci 5
+dm space map common 5
+selftests/bpf/test_offload.py 5
+s390/ftrace 5
+pci / acpi 5
+powerpc/time 5
+md/raid0 5
+lib/lockdep/tests 5
+rtc 5
+iommu/fsl_pamu 5
+btmtksdio 5
+x86/compressed 5
+lib/cmdline 5
+drm/i915/display/adl_p 5
+asm-generic 5
+docs/admin-guide/mm/damon/usage 5
+kvm/svm 5
+x86/signal 5
+clocksource/drivers/hyper-v 5
+perf dlfilter 5
+tpm_tis_spi 5
+pinctrl/amd 5
+thermal/drivers/int340x 5
+vfio_pci 5
+dm persistent data 5
+init/kconfig 5
+liquidio 5
+vmlinux.lds.h 5
+rxe 5
+kprobes/x86 5
+raid1 5
+bfq-iosched 5
+gre 5
+drm/dp 5
+x86/pkru 5
+bdev 5
+perf vendor events power8 5
+cls_api 5
+lib/test_kasan.c 5
+mm/oom_kill.c 5
+tools, bpf 5
+documentation/admin-guide 5
+paride/pcd 5
+mellanox 5
+x86/msr-index 5
+s390/ctcm 5
+powerpc/lib 5
+sched/wake_q 5
+component 5
+fscache 5
+bpf, netns 5
+hid-sony.c 5
+powerpc/fsl 5
+rdma/mthca 5
+smb311 5
+genirq/msi 5
+base/memory.c 5
+powerpc/ima 5
+net/fq_impl 5
+perf build-id 5
+rcuscale 5
+pci/ptm 5
+tools/testing/scatterlist 5
+xive 5
+swim 5
+devmap 5
+x86/retpoline 5
+drivers/base 5
+signal/x86/traps 5
+x86/msr 5
+acpi/pptt 5
+memcg, oom 5
+x86/ptrace 5
+cred 5
+usercopy 5
+perf/aux 5
+acpi / utils 5
+brd 5
+tools build feature 5
+acpi / pm 5
+bpf, x64 5
+perf debug 5
+x86/irq/32 5
+modsign 5
+xen/swiotlb 5
+lib/test_lockup.c 5
+icmp 5
+acpi / cppc 4
+qos 4
+nvme-hwmon 4
+powerpc/dt_cpu_ftrs 4
+vdpa_sim_blk 4
+mm/mempolicy.c 4
+vgacon 4
+abi 4
+dm btree 4
+ntb/msi 4
+ib/ucm 4
+thermal/drivers/int340x/processor_thermal 4
+udmabuf 4
+crash_core 4
+tools lib subcmd 4
+fget 4
+ib/umem 4
+bpf, selftest 4
+rcu/segcblist 4
+nfit 4
+drm/atomic_helper 4
+sata_rcar 4
+dt 4
+replace http links with https ones 4
+redhat/config 4
+modpost 4
+tpm, tpm_tis 4
+powerpc/kvm 4
+powerpc/process 4
+powerpc/topology 4
+powerpc/perf/hv-24x7 4
+capabilities 4
+mm/page_io.c 4
+s390/kexec 4
+igmp 4
+lan78xx 4
+stop_machine 4
+smccc 4
+bpf, sk_msg 4
+s390/uaccess 4
+microsoft 4
+tools/testing/selftests/vm/gup_benchmark.c 4
+x86/boot/64 4
+dma-remap 4
+drm/i915/gen9_bc 4
+x86/fault 4
+nfsv2 4
+nvme.h 4
+powerpc/kexec_file 4
+drm/i915/cmdparser 4
+mm/memory 4
+splice 4
+mmu_gather 4
+acpi/pci 4
+x86/compressed/64 4
+udf 4
+x86/boot/compressed/64 4
+drm/i915/sdvo 4
+bonding/alb 4
+gdrom 4
+tools/power/turbostat 4
+rdma/verbs 4
+powerpc/spinlocks 4
+perf bpf-loader 4
+mii 4
+dm delay 4
+apic 4
+smb2 4
+x86/msi 4
+cramfs 4
+drm/nouveau/disp/gm200- 4
+locking/spinlock 4
+perf mmap 4
+mm/userfaultfd 4
+perf map_groups 4
+perf clang 4
+platform/chrome 4
+powerpc/iommu 4
+crc-t10dif 4
+docs/arm64 4
+rdma/providers 4
+nvmx x86 4
+cx82310_eth 4
+tmpfs 4
+mm/cma.c 4
+rh_taint 4
+virtio_vdpa 4
+drm/i915/adlp/fb 4
+powerpc/traps 4
+locking/locktorture 4
+blk-mq-debugfs 4
+fpga manager 4
+libxfs 4
+x86/percpu 4
+perf/cgroup 4
+drivers/iommu 4
+sched/wakeup 4
+vti4 4
+kernel/futex 4
+namespace 4
+x86/idt 4
+amd_sfh 4
+be2iscsi 4
+dm verity fec 4
+virtio-pci 4
+fs/dax 4
+ipoib 4
+perf metrics 4
+af_key 4
+64 4
+tools feature 4
+selftests/tc-testing 4
+nvmet-loop 4
+perf/x86/intel/ds 4
+perf tsc 4
+ppc 4
+net/ice 4
+subflow 4
+scripts/gdb 4
+ray_cs 4
+tpm1 4
+cxgb4/ch_ktls 4
+[md] dm 4
+net/flow_dissector 4
+mm/memory-failure 4
+sched/isolation 4
+x86/uaccess 4
+thermal/int340x_thermal 4
+filesystem-dax 4
+virtio-mmio 4
+perf buildid-cache 4
+libnvdimm/bus 4
+uprobe 4
+drm/i915/perf 4
+x86/smp 4
+ifcvf 4
+route 4
+selftests/x86 4
+platform/x86/intel/vsec 4
+scripts 4
+perf symbol 4
+net/wireless 4
+mm/devm_memremap_pages 4
+floppy 4
+sched/swait 4
+sony 4
+panic 4
+af_unix 4
+edac, i10nm 4
+dasd 4
+string.h 4
+virtio-ring 4
+powerpc/64s/radix 4
+virtio_pci_modern 4
+bpf, x32 4
+boot/compressed 4
+drm/nouveau/device 4
+edac/ghes 4
+fib_notifier 4
+iocost_monitor 4
+iommu/intel 4
+timekeeping/vsyscall 4
+act_mirred 4
+smc 4
+blkcg, writeback 4
+mm, devm_memremap_pages 4
+arch/kmap 4
+pm / opp 4
+of/device 4
+amiflop 4
+md-cluster/raid10 4
+selftests/bpf/xdp_redirect_multi 4
+posix-clocks 4
+tools api fs 4
+tty/ldsem 4
+iio 4
+x86/purgatory 4
+x86/kprobes 4
+ath5k 4
+x86/umwait 4
+vfio/iommu_type1 4
+entry 4
+sfh 4
+locking/lock_events 4
+acpi / tables 4
+paride 4
+ipmi/watchdog 4
+prism54 4
+virtio_blk 4
+mm/page-writeback 4
+x86/pgtable 4
+bpf, bpftool 4
+powernv/pci 4
+nfsv4.x 4
+eeprom 4
+p2pdma 4
+x86/kernel 4
+rndis_wlan 4
+int340x_thermal 4
+config 4
+fs_parse 4
+dm stats 4
+hci_ldisc 4
+perf/arm-ccn 4
+ip6mr 4
+perf/x86/intel/rapl 4
+perf report/top tui 4
+pids 4
+x86/cpu_entry_area 4
+iommu/uapi 4
+rdma/core/sa_query 4
+net/sunrpc 4
+kselftest/cgroup 4
+inotify 4
+mm, swap 4
+bnx2 4
+mm/resource 4
+drm/amdgpu/gfx10 4
+arm64/kernel 4
+rculist 4
+powerpc/kprobes 4
+turbostat 4
+x86/crash 4
+ena 4
+softirq 4
+hci_serdev 4
+drm/amdgpu/sdma5 4
+lib/zlib 4
+scmi 4
+drm/i915/huc 4
+relay 4
+perf intel-bts 4
+testing 4
+selftests/xsk 3
+siena 3
+wait 3
+gpu 3
+ice, xsk 3
+hidraw 3
+x86/tsx 3
+nfsv42 3
+apparmor 3
+cpufeatures 3
+hfi1 3
+platform-msi 3
+iopoll 3
+libcxgb 3
+s390/time 3
+net/bridge 3
+drm/nouveau/disp/gv100- 3
+arm64/cpufeatures 3
+x86/perf/amd 3
+docs/btf 3
+of/fdt 3
+rwsem 3
+sched/wait 3
+virtio/vsock 3
+drm/i915/pxp 3
+block/diskstats 3
+u64_stats 3
+drm/i915/ehl 3
+fpsimd 3
+netvsc 3
+tools lib bpf 3
+arm_spe 3
+pm / hibernate 3
+dm log writes 3
+pstore/ram 3
+bpf, samples 3
+drm/vc4 3
+x86_64 3
+s390/smp 3
+rcu/trace 3
+headers uapi 3
+docs/admin-guide/mm/damon/start 3
+linux/bits.h 3
+net/tipc 3
+google 3
+cxgb4/l2t 3
+acpi / processor 3
+mm/swapfile 3
+x86/pti 3
+um 3
+ext4, jbd2 3
+cpumap 3
+insn 3
+drm/crc-debugfs 3
+blk-stat 3
+power 3
+dm btree spine 3
+x86/l1tf 3
+tasks, sched/core 3
+ib/{rdmavt, hfi1, qib} 3
+powernv/cpuidle 3
+efi/arm64 3
+x86/dumpstack/64 3
+binfmt_elf 3
+augmented rbtree 3
+mm, tracing 3
+drm/scheduler 3
+tools, bpf_asm 3
+fotg210-udc 3
+open 3
+cxgb3 3
+hinic 3
+platform/x86/intel/sdsi 3
+fork, memcg 3
+alternatives 3
+powerpc/pseries/mce 3
+chcr 3
+rh_kabi 3
+drm/i915/userptr 3
+net/mlx5_core 3
+powerpc/64s/pseries 3
+gro 3
+ntb_perf 3
+sch_netem 3
+tcp-zerocopy 3
+cdc_ncm 3
+generic/pgtable 3
+gup 3
+{net, rdma}/mlx5 3
+x86/asm/64 3
+p54 3
+perf namespaces 3
+sve 3
+acpi / ec 3
+drm/i915/xelpd 3
+block/loop 3
+bcache 3
+clocksource/drivers/tcb_clksrc 3
+chelsio 3
+qed/qede 3
+perf documentation 3
+bpf, sockhash 3
+mm/list_lru 3
+traps 3
+rt2800mmio 3
+lib/test_hmm.c 3
+x86/sme 3
+drm/nouveau/nouveau 3
+x86/events/amd/iommu 3
+io-pgtable-arm-v7s 3
+x86/mm/mem_encrypt 3
+bpf, offload 3
+bpf powerpc 3
+get_maintainer.pl 3
+sch_choke 3
+mm/hmm/test 3
+x86/setup 3
+x86/realmode 3
+powerpc/uaccess 3
+libnvdimm, pfn 3
+net/broadcom 3
+ebpf 3
+netronome 3
+sclp 3
+mpi3mr 3
+pci-hotplug/pnv_php 3
+sched/uclamp 3
+drm/i915/display/psr 3
+include/linux/mm_inline.h 3
+amd-xgbe 3
+rdma/ucontext 3
+perf kmem 3
+drivers/base/node.c 3
+powerpc/opalcore 3
+perf counts 3
+vmd 3
+x86/timer 3
+lib/test 3
+kernel/resource 3
+rcu/sync 3
+dynamic_debug 3
+bpf, lpm 3
+irqchip 3
+drm/nouveau/kms/fbcon 3
+act_ife 3
+ap 3
+usb/misc 3
+drm/i915/cml 3
+cpufreq / cppc 3
+perf vendor events power10 3
+i40e/ixgbe/igb 3
+cuse 3
+dm btree remove 3
+nfsv4/flexfiles 3
+locking/rwbase 3
+lib/genalloc.c 3
+spi/acpi 3
+hotplug 3
+drm/i915/bios 3
+perf beauty mmap 3
+perf parse-regs 3
+perf parser 3
+tools headers cpufeatures 3
+genirq/irqdomain 3
+documentation/powerpc 3
+fair 3
+arm64/cpuinfo 3
+bitmap 3
+drm/amdgpu/psp 3
+ipv4/igmp 3
+locking/atomic 3
+cpufreq/schedutil 3
+chelsio/chtls 3
+soc 3
+edac, skx_edac 3
+locking/qspinlock_stat 3
+perf event 3
+libnvdimm, pmem 3
+ide-cd 3
+hwmon/coretemp 3
+x86/stackframe/32 3
+userns 3
+x86/apic/vector 3
+ipip 3
+sk_msg 3
+radix tree tests 3
+x86/apic/uv 3
+paravirt 3
+perf lock 3
+arm64/bpf 3
+netxen 3
+drm/i915/dsi 3
+block/bfq 3
+mm, slab/slub 3
+locks 3
+drm/gma500 3
+drm/amdgpu/gfx9 3
+x86/ioremap 3
+shmem_parse_options() 3
+s390/lcs 3
+virt/sev-guest 3
+arm64/kprobes 3
+cpu/speculation 3
+usbcore 3
+iommu/rockchip 3
+s390/kaslr 3
+tc 3
+cpu/vmware 3
+irqchip/gic-v2m 3
+ntb_hw_amd 3
+build_bug.h 3
+perf beauty mmap_flags 3
+drm/nouveau/core 3
+sched/smt 3
+perf flamegraph 3
+sched/features 3
+powerpc sstep 3
+firewire 3
+coredump 3
+virtio-fs 3
+arm64/kvm 3
+mm/slab_common 3
+bpf/test_run 3
+tools resolve_btfids 3
+md-bitmap 3
+pcc-cpufreq 3
+powerpc/prom 3
+steam 3
+iommu/of 3
+x86/ioapic 3
+fbmem 3
+drivers/base/cpu 3
+selftests, bpftool 3
+mm/mempolicy 3
+net-gro 3
+tunnels 3
+blk 3
+devcoredump 3
+bpf, tcp 3
+lib/list_sort 3
+edac/skx_common 3
+tools/io_uring 3
+amdgpu/pm 3
+zsmalloc 3
+sysreg 3
+fb 3
+skb 3
+svcrpc 3
+huge tmpfs 3
+mm/tlb 3
+s390/docs 3
+acpi / hotplug / pci 3
+virtio-pci library 3
+enic 3
+msi 3
+fsl 3
+arm64/lib 3
+mptsas 3
+ib/sa 3
+aacraid 3
+mm/writeback 3
+hmm.c 3
+powerpc/hv-24x7 3
+bpf/tools 3
+atmel 3
+inet_connection_sock 3
+edac, skx_common 3
+lib/raid6 3
+drm/prime 3
+x86/mm/init 3
+self-tests 3
+bpf, docs 3
+hmat 3
+checkpatch 3
+stats 3
+wwan 3
+drivers/nvdimm 3
+rdma/addr 3
+powerpc/livepatch 3
+mm/page_ext.c 3
+vdso 3
+perf/arm_pmu_platform 3
+powerpc/perf/hv-gpci 3
+topology/sysfs 3
+powerpc/mm/book3s64/radix 3
+dm zoned 3
+partitions/ldm 3
+edac, sb_edac 3
+trace/timerlat 3
+cgroup1 3
+ksm 3
+wl3501_cs 3
+xsysace 3
+hyperv-keyboard 3
+perf/x86/lbr 3
+ax88179_178a 3
+rdma/netdev 3
+selftests/tpm2 3
+libbpf, xsk 3
+sfp 3
+s390/ap/zcrypt 3
+powerpc/bpf/64 3
+numa 3
+mm/memblock.c 3
+ib_srpt 3
+genalloc.c 3
+powerpc/watchpoint/ptrace 3
+perf/arm-cci 3
+rbtree 3
+iptunnel 3
+bitops 3
+net/ipv6 3
+drm/amdgpu/smu 3
+lib/test_bitmap 3
+sunvdc 3
+pkt_sched 3
+powerpc/eeh_sysfs 3
+s390/net 3
+thp 3
+libnvdimm, namespace 3
+powerpc/8xx 3
+wext 3
+perf inject jit 3
+drm/format-helper 3
+speculation/taa 3
+firmware/psci 3
+perf block-info 3
+iommu/sva 3
+documentation/locking/locktypes 3
+mm/page_reporting 3
+libnvdimm/btt 3
+hiddev 3
+irqchip/gic-v2, v3 3
+intel-speed-select 3
+lib, stackdepot 3
+s390/kprobes 3
+rt2x00usb 3
+docs/memory-barriers.txt 3
+arm64/fpsimd 3
+vhost/vdpa 3
+device 3
+mlxfw 3
+x86-32, hibernate 3
+mtd 3
+idr test suite 3
+s390/cpu_mf 3
+vdpa_sim_net 3
+vti6 3
+scripts/bpf 3
+perf ui 3
+cgroups 3
+acpi / bus 3
+bonding/802.3ad 3
+dlci 3
+perf tool 3
+libbpf, hashmap 3
+pci-epf-test/pci_endpoint_test 3
+perf version 3
+powerpc/test_emulate_step 3
+kasan, slab 3
+usbcore/driver 3
+mm, proc 3
+nvmx 3
+ovs 3
+bpf, btf 3
+debug 3
+scpi 3
+powerpc/pseries/mm 3
+rdma/qib 3
+perf, bpf 3
+ucma 3
+dcb 3
+percpu-refcount 3
+s390/kdump 3
+virtio_console 3
+lib/cmdline_kunit 3
+prctl 3
+qrtr 3
+gen_stats 3
+iommu/ioasid 3
+perf parse-event 3
+perf/x86/kvm 3
+fs/dcache 3
+exit 3
+x86/kvm/svm 3
+devtmpfs 3
+mm, page_poison 3
+swim3 3
+perf jit 3
+fs/proc 3
+seq_file 3
+powerpc/powernv/mce 3
+timerfd 3
+mm, slab, slub 3
+x86/delay 3
+tcp_bpf 2
+perf tests bp_account 2
+rdma/sw/rdmavt/qp 2
+nvme-fc and nvmet-fc 2
+mm/mincore.c 2
+doc, mm 2
+perf string 2
+powerpc/83xx 2
+mm/kaslr 2
+merge 2
+x86/microcode/intel 2
+vmci_host 2
+powerpc/powernv/pci 2
+base/memory 2
+net-tun 2
+block/rq_qos 2
+drm/i915/icl+ 2
+net/xprtrdma 2
+selftests/tc-testings 2
+mod_devicetable 2
+perf symbol-elf 2
+watchpoint 2
+btsdio 2
+mt7603 2
+perf/core, arch/x86 2
+tools beauty 2
+s390/dumpstack 2
+x86/virt 2
+blk-mq, elevator 2
+lib/sbitmap 2
+powerpc64 2
+pm / clk 2
+drm/i915/overlay 2
+powerpc/dart 2
+pid 2
+perf test event_update 2
+drm/i915/guc/slpc 2
+x86/speculation/srbds 2
+libnvdimm, region 2
+perf scripting 2
+perf/x86/amd/uncore 2
+bitfield 2
+blk-mq-tag 2
+mm, mmu_notifier 2
+mlx4_en 2
+documentation/kprobes 2
+events 2
+eventpoll 2
+selftests, xsk 2
+cxlflash 2
+bug 2
+sound 2
+libnvdimm/label 2
+s390/perf 2
+timers/nohz 2
+perf ui browser 2
+slob 2
+drivers/dax 2
+net/mxl5e 2
+irqchip/gic, gic-v3 2
+pkeys 2
+hidp 2
+libata/ahci 2
+dma/debug 2
+mm, debug_pagealloc 2
+xen-netfront 2
+drm/selftests 2
+powerpc/drmem 2
+lib/iov_iter 2
+lib/genalloc 2
+mm/gup/writeback 2
+ntb_tool 2
+netlink/wireless 2
+lib/stackdepot.c 2
+xattr 2
+sch_sfb 2
+parse-maintainers 2
+perf utils 2
+isofs 2
+internal 2
+seq_buf 2
+usb/host 2
+realmode 2
+ax88172a 2
+f2fs 2
+raid6/test 2
+vmw_pvscsi 2
+cpufreq/intel_pstate 2
+net/mlx5_fpga 2
+pm / arch 2
+lib/mpi 2
+linkage 2
+acpi / osi 2
+dlink 2
+selftests/btf 2
+rdma/sw/rdmavt/mad 2
+bpf, cpumap 2
+kselftest/runner 2
+mm, slb 2
+include/bitmap.h 2
+atlantic 2
+fs/cifs/smb2pdu.c 2
+powerpc/memcpy 2
+sched,x86 2
+cifs/smb3 2
+kvm x86/mmu 2
+mm/pgtable-generic.c 2
+iwl-trans 2
+dm linear 2
+drm/i915/dsi/xelpd 2
+virtio_pci 2
+drm/cma-helper 2
+net/af_unix 2
+32 2
+bonding/main 2
+dcache 2
+vm_sockets 2
+x86/fpu/amx 2
+net/{mlx5|nfp|bnxt} 2
+fs/lock 2
+lib/string_helpers 2
+kcov 2
+tree 2
+ethoc 2
+writeback, memcg 2
+net/qrtr 2
+ib/hf1 2
+sparse.c 2
+perf iostat 2
+aquantia 2
+intel_ish-hid 2
+bpf/trace 2
+bpftool/docs 2
+xmon 2
+crash 2
+include/scsi/srp.h 2
+inet6 2
+atomics 2
+mm/arm64 2
+mm/mmu_notifier.c 2
+acpi / button 2
+drm/fourcc 2
+mm, vmstat 2
+drm/i915/fbc 2
+net-sysctl 2
+fib_tests 2
+fs/iomap 2
+blkdev 2
+thunderx 2
+af_vsock 2
+ntb_netdev 2
+powerpc/hugetlb 2
+acpi/nfit, libnvdimm/security 2
+powerpc/pseries/svm 2
+fonts 2
+[netdrv] net/broadcom 2
+clocksource/drivers/arm_arch_timer 2
+rdma/hw/hfi1/rc 2
+mm/workingset 2
+x86/smpboot 2
+net/vmw_vsock 2
+stddef 2
+perf dsos 2
+crypto/chelsio/chtls 2
+net/chelsio 2
+x86/intel_split_lock 2
+scsi_ioctl 2
+kernel/cpu 2
+kvm/nested 2
+x86/math-emu 2
+drm/amdgpu/sriov 2
+acpi/nfit, x86/mce 2
+dm space maps 2
+include/linux/slab.h 2
+drm/sti 2
+[kvm] kvm 2
+perf trace beauty ioctl 2
+powerpc/pseries/hotplug-memory 2
+libnvdimm/of_pmem 2
+vti[6] 2
+acpi, apei, einj 2
+x86/mm/tlb 2
+drm/i915/fbdev 2
+pref tools 2
+devpts 2
+mm/page_poison 2
+lfpc 2
+fs/nfs 2
+mm/vmstat 2
+io-uring 2
+namei.c 2
+net, sk_msg 2
+insn-eval 2
+ib/qib 2
+powerpc/pcidn 2
+opp 2
+swap 2
+ib/verbs 2
+setup 2
+unwind 2
+rtnl 2
+powerpc/mm/highmem 2
+lib/test_kasan 2
+raid5-cache 2
+drm/ssd130x 2
+perf mem-events 2
+mt7921e 2
+io_uring/io-wq 2
+memfd 2
+selftests/fpu 2
+nfs_common 2
+mm, sched/numa 2
+lockdep/lib/tests 2
+s390/disassembler 2
+net/vlan 2
+selftests/mptcp 2
+s390/tlb 2
+lib/crc 2
+perf arm_spe 2
+x86/time 2
+x86/kvm/mmu.c 2
+mm, reclaim 2
+mscc.c 2
+acpi, apei 2
+mm/sparsemem 2
+selinuxfs 2
+x86/mm/pti 2
+platform/x86/dell-wmi-sysman 2
+drm/nouveau/disp/nv50- 2
+memcontrol 2
+partitions/aix 2
+drm/nouveau/kms/tu102- 2
+ipv4/tcp 2
+bpf/stackmap 2
+gro_cells 2
+perf/headers 2
+uv 2
+serdev 2
+perf synthetic events 2
+rdma/rvt 2
+test_bpf 2
+libceph, rbd 2
+irqchip/gic-v3-mbi 2
+hns 2
+geneve, vxlan 2
+workqueue, lockdep 2
+mm/book3s64 2
+kallsyms 2
+gso 2
+btrfs 2
+thermal/core 2
+opa_vnic 2
+x86/acpi/sleep 2
+drm/nouveau/i2c 2
+x86/process/64 2
+mm/oom 2
+mm/swap_state.c 2
+kcov, usb 2
+mdio 2
+powerpc/watchpoint/xmon 2
+async_xor 2
+libnvdimm/dimm 2
+eventfd 2
+net/tcp_fastopen 2
+skd_main 2
+block/bio-integrity 2
+ipset 2
+assoc_array 2
+migrate.c 2
+kvm nvmx 2
+devinet 2
+processor 2
+speculation 2
+media/v4l2-core 2
+mpage 2
+arch, mm 2
+sched/rt, kconfig 2
+redhat/scripts 2
+x86/head/64 2
+prctl_set_mm 2
+nvmet-file 2
+time/namespace 2
+nsvm 2
+x86/kvm/lapic 2
+mm_iommu 2
+net/af_packet 2
+uverbs 2
+dm space map disk 2
+ipc/mqueue 2
+coresight 2
+mm/memremap 2
+powerpc/powernv/vas 2
+kernel/printk 2
+powernv/memtrace 2
+intel-hid 2
+static_call 2
+mm/page_counter 2
+pseries/fadump 2
+perf/x86/regs 2
+x86/fpu/xsave 2
+include/linux/hugetlb.h 2
+sched/hotplug 2
+perf strbuf 2
+s390/cpum_cf_diag 2
+bpf, net 2
+ucsi_ccg 2
+drm/vboxvideo 2
+tools/lib/lockdep 2
+[crypto] md/raid6 2
+md/cluster 2
+io-mapping 2
+delayacct 2
+usblp 2
+net_tstamp 2
+x86/fpu/regset 2
+sched,rt 2
+qic 2
+iosys-map 2
+arch/x86 2
+kstrto* 2
+fs/proc/proc_sysctl.c 2
+sd_zbc 2
+documentation/infiniband 2
+flexfiles 2
+ns 2
+x86/sgx/virt 2
+powerpc/idle 2
+int340x/processor_thermal_device 2
+pseries/iommu 2
+libsymbols kallsyms 2
+usb storage 2
+s390x/mm 2
+perf arch powerpc 2
+netdevice 2
+perf bpf examples 2
+block/dac960.c 2
+close_range 2
+tools/power/x86 2
+s390/opcodes 2
+locking/pvqspinlock 2
+genirq/debugfs 2
+documentation/driver-api 2
+lwt_bpf 2
+gcc-9 2
+vfio/gvt 2
+mm/fork 2
+bpf, lsm 2
+kcm 2
+kvm/emulate 2
+mm/page_isolation.c 2
+drm/via 2
+x86/pci, x86/amd_nb 2
+drivers/usb/typec/tps6598x.c 2
+perf kvm stat 2
+perf x86 kvm-stat 2
+drm/nouveau/disp/hda/gf119- 2
+get_maintainer 2
+net/ulp 2
+drm/i915/hdmi 2
+fs/namei.c 2
+security/integrity 2
+cbs 2
+memory_hotplug.c 2
+perf_event 2
+nvme_fc 2
+rdma/ib_srp 2
+powerpc/mm/hash 2
+perf affinity 2
+x86/umip 2
+page_alloc 2
+idt 2
+driver/perf 2
+kvm/arm 2
+bnxt_re 2
+bcmgenet 2
+drm/bridge_connector 2
+lib/generic-radix-tree.c 2
+mm/hugeltb 2
+sched,livepatch 2
+powernv/idle 2
+umip 2
+selftests/bonding 2
+mptspi 2
+x86/platform 2
+mm/page_idle.c 2
+bpf ppc64 2
+irq/matrix 2
+kernel/module.c 2
+sch_ets 2
+linux/qed 2
+drm/syncobj 2
+drm/amdgpu/vcn 2
+powerpc/pseries/dma 2
+arm64, vmcoreinfo 2
+net/mellanox 2
+x86/acpi, x86/boot 2
+pppoe 2
+mm, madvise_inject_error 2
+acpi / apd 2
+xfrm6_tunnel 2
+hci_ll 2
+paride/pf 2
+usb-serial 2
+mm/hugetlbfs 2
+drm/i915/aml 2
+perf buildid-list 2
+perf/x86/intel/cstate 2
+drm/amdgpu/vcn3.0 2
+ipv4/route 2
+vfio-pci/nvlink2 2
+ip6 defrag 2
+x86/mm/kaslr 2
+perf coresight 2
+bpf, cgroups 2
+batman-adv 2
+cdc_ether 2
+perf tests tsc 2
+pagewalk 2
+drm/i915/dpcd_bl 2
+gic-v3 2
+x86/speculation/swapgs 2
+percpu_ref 2
+nlm 2
+seqcount 2
+governors 2
+wireless/mediatek 2
+tunnel6 2
+preempt 2
+dnet 2
+usbhid 2
+drm/amd/swsmu 2
+cper 2
+sound/oss/dmasound 2
+aarch64 2
+nvme-mpath 2
+rcu/rcutorture 2
+perf srccode 2
+usb/early 2
+completion 2
+scatterlist 2
+mlx5, xsk 2
+init/console 2
+mm/page_poison.c 2
+ath9k_hw 2
+utimes 2
+drm/display 2
+md/raid5-ppl 2
+codel 2
+powerpc/pseries/ddw 2
+cls_bpf 2
+nfsroot 2
+lockdown 2
+zlib 2
+perf ctype 2
+pkcs#7 2
+sch_api 2
+hibernate 2
+drm/nouveau/svm 2
+sch_dsmark 2
+drm/nouveau/nvif 2
+bpf/sockmap 2
+drm/connector 2
+drm/rockchip 2
+rculist_nulls 2
+sched/cfs 2
+rpcrdma 2
+misc/sgi-gru 2
+nilfs2 2
+s390/als 2
+autonuma 2
+x86/kasan 2
+mm, hugetlbfs 2
+mm, memory_failure 2
+perf report tui 2
+rtl818x_pci 2
+mm/cma 2
+powerpc/book3s64/pkeys 2
+mce 2
+radix-tree 2
+rt2800usb 2
+hso 2
+btmtkuart 2
+tsx 2
+math64 2
+acpi / configfs 2
+ats 2
+nfs/flexfile 2
+lsm_audit 2
+mld 2
+mm/kmemleak.c 2
+acpi/x86 2
+ext4, dax 2
+tcp/udp 2
+lib/rhashtable 2
+vhost/test 2
+efi/memreserve 2
+perf tools, tools lib traceevent 2
+kvm/pmu 2
+tracepoint 2
+lib/math/rational.c 2
+vti 2
+recordmcount.pl 2
+edac, mce_amd 2
+gpio/spi 2
+x86/numa 2
+net, gro 2
+regset 2
+pci/of 2
+efi/cper, cxl 2
+add new 13d3 2
+i40e(vf) 2
+drm/drv 2
+tasklets 2
+acpi / glue 2
+arm64/fpsimdmacros 2
+mm, hotplug 2
+cfq 2
+kernel/sched/psi.c 2
+lib/vsprintf.c 2
+x86/refcount 2
+gic-v3-its 2
+powerpc/svm 2
+uprobes/x86 2
+mm/ksm 2
+perf tools powerpc 2
+perf sched timehist 2
+selftests/kvm 2
+acpi-cpufreq 2
+drm/shmem-helper 2
+x86/cpu/bugs 2
+netdev 2
+rdma/qed 2
+virt/kvm 2
+irqchip/gic-v4 2
+rdma/bnxt 2
+crash_core, vmcoreinfo 2
+x86/mm/doc 2
+clkdev 2
+r8153_ecm 2
+x86/vdso/vdso2c 2
+of_address 2
+genksyms 2
+proc/vmcore.c 2
+nsfs 2
+locking/qrwlock 2
+acpi/apei 2
+udpv6 2
+dm mirror log 2
+s390/ccwgroup 2
+kvm/nsvm 2
+mm/hwpoison 2
+irqdomain/msi 2
+mlx4_core 2
+tools/rcutorture 2
+net/dst 2
+powerpc/pseries/dlpar 2
+drm/hisilicon 2
+ife 2
+boot/64 2
+powerpc/hv-gpci 2
+perf svghelper 2
+mm/damon/vaddr-test 2
+printk/console 2
+virtio-ccw 2
+powerpc/stacktrace 2
+new primitive 2
+libceph, rbd, ceph 2
+s390/vtime 2
+lib/lockdep 2
+pnfs/filelayout 2
+kernel/locking 2
+qla4xxx 2
+pseries/drmem 2
+locking/local_lock 2
+powerpc/kexec 2
+powerpc/kernel/sysfs 2
+compiler 2
+tls splice 2
+tools arch 2
+boot 2
+sr 2
+device.h 2
+edac, skx, i10nm 2
+powerpc/powernv/dump 2
+pktgen 2
+acpi / video 2
+file 2
+documentation/dax 2
+powerpc/cell 2
+efi/libstub/random 2
+documentation/virt/kvm/api.rst 2
+tasklist_lock, ppc64 2
+drm/amdgpu/powerplay 2
+latency_top 2
+perf help 2
+timer/trace 2
+usb/hcd 2
+mqprio 2
+umem 2
+drivers/md/raid5 2
+cxl 2
+compiler.h 2
+mm, slab_common 2
+tpm_crb 2
+lib/test_lockup 2
+libfdt 2
+mm/iommu 2
+x86/fsgsbase 2
+mm/vmap 2
+s390/kvm 2
+selftests/net/forwarding 2
+perf cpu_map 2
+nocb 2
+perf synthetic-events 2
+hci_intel 2
+seg6 2
+pwm 2
+drm/i915/dgfx 2
+thermal/x86_pkg_temp_thermal 2
+tap 2
+overflow.h 2
+sparse 2
+kasan, kmemleak 2
+drm/amdgpu/pm 2
+locking/spinlocks 2
+acpi / sbs 2
+convenience helper 2
+cdc-wdm 2
+documentation/arm64 2
+test_objagg 2
+net/xdp 2
+acpi / numa 2
+mm/mlock.c 2
+perf/ring-buffer 2
+irqdomain/treewide 2
+x86/coco 2
+ib/{rdmavt, qib, hfi1} 2
+platform/x86/intel/pmt 2
+cxgb4/ch_ipsec 2
+ixgbe/ixgbevf 2
+acpi/arm64 2
+drivers/firmware/psci 2
+fs_parser 2
+tracing/hwlat 2
+debugobjects 2
+resource/docs 2
+idle 2
+asoc/soundwire 2
+virtio_vsock 2
+cls_matchall 2
+net/xfrm 2
+intel/i40e 2
+cxgb4/chtls 2
+kernel/rwsem 2
+xarray.h 2
+axp288 2
+tpm_tis_core 2
+wl3501 2
+rndis_host 2
+mm/mlock 2
+tc_skbedit 2
+typec 2
+arm64/crash_core 2
+video/hdmi 2
+perf cgroup 2
+kernel/sysctl-test 2
+tracing/irqsoff 2
+powerpc/shared 2
+asm-generic/tlb, arch 2
+tools lib api fs 2
+powerpc/pseries/scm 2
+x86/apic/msi 2
+mos7720 2
+agp/intel-gtt 2
+kselftests/bpf 2
+ppc64 2
+selftests_bpf 2
+docs/admin-guide/mm/damon 2
+xfrm6 2
+pm/hibernate 2
+hci_mrvl 2
+x86/amd_gart 2
+net/bond 2
+tools/bpf/runqslower 2
+mv88e6xxx 2
+perf mem2node 2
+drivers/base/node 2
+x86/acpi 2
+acpi / dptf 2
+proc/sysctl 2
+lib/vdso/32 2
+/proc/pid/smaps 2
+ms_block 2
+fib 2
+mm/rmap.c 2
+fpu 2
+s390/build 2
+selftests/x86/amx 2
+perf probe powerpc 2
+s390/extmem 2
+x86/kvm/fpu 2
+itimers 2
+ipv6_stub 2
+libnvdimm, label 2
+xhci-ext-caps.c 2
+rdma/include 2
+tick/broadcast 2
+u2fzero 2
+ipmi_ssif 2
+arm64/stacktrace 2
+tunnel 2
+mm/madvise 2
+documentation/l1tf 2
+powerpc/kernel 2
+sched/nohz 2
+stmmac/intel 2
+cdc-ncm 2
+/proc/<pid>/cmdline 2
+l3mdev 2
+test_rhashtable 2
+rh_features 2
+of/platform 1
+docs/vm/damon 1
+tools gpio 1
+dma_fence_array 1
+perf_event_get() 1
+mm/damon/dbgfs-test 1
+iwl4965 1
+x86,objtool 1
+x86 user stack frame reads 1
+irqchip/gic-common 1
+schedule 1
+irqchip/gicv2m 1
+kcov, usbip 1
+kretprobe 1
+roccat 1
+drm/amdgpu/vcn3 1
+selftests/powerpc/eeh 1
+drm/panel/panel-sitronix-st7701 1
+s390/drivers 1
+gitlab-ci 1
+arm64/kexec 1
+can, slip 1
+tcp_cubic 1
+ioapic 1
+documentation/dma-isa-lpc 1
+drm/aperture 1
+mm/mmap 1
+tools cpupower debug 1
+intel/ixgbevf 1
+powerpc/hw_breakpoint.h 1
+doc/kvm 1
+powerpc/book3s64 1
+drm/i915/adlp/tc 1
+dev-tools 1
+ucm 1
+nds32/io 1
+gpio/mmc/of 1
+drm/i915/tgl/psr 1
+include/trace/events/vmscan.h 1
+x86/cpu/topology 1
+nfsv4.0 1
+fdti_sio 1
+reg.c 1
+mpt3sas_ctl 1
+ib/cache 1
+drm/nouveau/devinit 1
+nt 1
+selftest/fpu 1
+net-zerocopy 1
+applicom 1
+trace_uprobe/sdt 1
+opticon 1
+f81232 1
+iscsi target 1
+block/genhd 1
+drm/i915/tc/tgl 1
+include/ 1
+xen-blkfront 1
+usb host 1
+sched/fair/util_est 1
+xskmap 1
+perf json 1
+thermal/drivers/intel 1
+drm/amd/powerpay 1
+mm/powerpc 1
+drm/nouveau/dmem 1
+audit_inode() 1
+do_epoll_ctl() 1
+x86/mm/init32 1
+maintainers, xsk 1
+perf ui stdio 1
+mm/usercopy 1
+net/filter 1
+ib/{hw, sw} 1
+rdma/sw/rdmavt/srq 1
+powerpc/embedded6xx/mve5100 1
+tools cpupower 1
+mm/damon/vaddr,paddr 1
+block/blk-rq-qos 1
+caif 1
+acpi / osl 1
+tools/testing 1
+ptr auth 1
+blockdev 1
+block/drbd 1
+book3s64/kvm 1
+uapi, x86 1
+tcp/fq 1
+locking/rwlocks 1
+s390/zcrypt/pkey 1
+ipv6_tunnel 1
+scsi/qla1280 1
+rdma/hw/i40iw/i40iw_utils 1
+docs, bpf 1
+signal/usb 1
+tools selftests/bpf 1
+linux/memory_hotplug.h 1
+pci / thunderbolt 1
+perf script brstackinsn 1
+lib/crc32test 1
+perf feature detection 1
+pegasus 1
+dma_buf 1
+locktorture.c 1
+dell_rbu 1
+usb/core 1
+mm/damon/reclaim 1
+net/mlx4/mcg 1
+rdma/hw/hfi1/uc 1
+hyperv_vmbus.h 1
+xen-blkfront.c 1
+usb/typec/tcpm 1
+nfit_test 1
+drm/i915/rpl-s 1
+thermal/drivers/core 1
+thread_info 1
+mm/bootmem 1
+powerpc/52xx/efika 1
+amd/iommu 1
+{ib/net}/mlx5 1
+rdma/sw/rdmavt/vt 1
+selftests/net/ipsec 1
+perf tests expr 1
+perf test zstd 1
+tpm/tpm_i2c_infineon 1
+rdma/hw/hfi1/user_exp_rcv 1
+cpu/smt 1
+xfrm_user 1
+perf traceevent 1
+include/uapi/linux/swab.h 1
+tools/libpf 1
+kvm/cma 1
+i915/cml 1
+devpts_pty_kill() 1
+fq 1
+rcutorture/formal 1
+x86/mm/ident_map 1
+drm/i915/tgl/dsi 1
+kernel/sysctl 1
+kdump, proc/vmcore 1
+kernel packaging 1
+s390/bug 1
+intel/ice 1
+selftest/net/forwarding 1
+linux/math64.h 1
+lib/rbtree 1
+{x86,powerpc,microblaze}/kmap 1
+tcp_ipv6 1
+tools/include/uapi 1
+xfrmi 1
+x86/{mce,mm} 1
+ocxl/afu_irq 1
+dm-cache 1
+arm64/spinlock 1
+tools/.../rcutorture 1
+[kernel]  sched/fair 1
+mm, oom_adj 1
+extable 1
+->file_open() 1
+copy_xstate_to_kernel() 1
+buildid 1
+ipc, sem 1
+arch/arm64 1
+sched/preempt 1
+sparc/oprofile 1
+dm bio prison v2 1
+block/floppy 1
+lsm_audit,selinux 1
+ite 1
+linux/limits.h 1
+lib/crc32 1
+libata-scsi 1
+drm/amdgpu/swsmu 1
+irqchip/gicv3-its 1
+rdma/hw/hfi1/mad 1
+perf test mmap-thread-lookup 1
+udc 1
+net/usb/r8153_ecm 1
+rlimit 1
+ibmvfc 1
+sched, lockdep 1
+function_graph 1
+iwlmvm 1
+percpu-rwsem 1
+bpa10x 1
+net, core 1
+pseries/hotplug-cpu 1
+perf arm pmu 1
+rdma/i40w 1
+mpt* 1
+create_pipe_files() 1
+perf test session_topology 1
+kernel/signal.c 1
+net/ena 1
+tools headers barrier 1
+mos7840 1
+hwrng 1
+sched/proc 1
+x86/uaccess, kcov 1
+asoc/extcon 1
+edac, {i7core,sb,skx}_edac 1
+selftests/bps 1
+cgroup/debug 1
+isolcpus 1
+fail_function 1
+proc.txt 1
+amd/display/dc 1
+perf tools metric 1
+blkdev.h 1
+drm/amdgpu/si 1
+x86/extable 1
+sched,perf,kvm 1
+arch/powerpc/kvm/book3s_hv_uvmem 1
+tools headers api 1
+drm/nouveau/imem/ga10 1
+ext4,jbd2 1
+net-tcp 1
+{net, ib}/mlx5 1
+arm64/ptrace 1
+tools power turbostat 1
+loadpin 1
+hdlc_ppp 1
+net/cdc_ncm 1
+usb typec 1
+powerpc/512x 1
+nohz 1
+alternative 1
+powernv/opal-msglog 1
+mm, futex 1
+cxgb4/cxgb4vf_main 1
+__netif_receive_skb_core 1
+dma-mapping, powerpc 1
+tools/libbpf_probes 1
+documentation/virtual/kvm 1
+mm/shmem.c 1
+tools/testing/selftests/vm/hmm-tests.c 1
+copy_regset_to_user() 1
+powerpc/pmu 1
+linux/elfnote.h 1
+powerpc/imc 1
+x86/asm/realmode 1
+powerpc/code-patching 1
+perf lzma 1
+vdso/treewide 1
+x86/pkey 1
+pcmcia 1
+perf top/report 1
+powerpc/vdso 1
+perf test vmlinux-kallsyms 1
+s390/topology 1
+mmu notifier 1
+rdma_rxe 1
+perf namespace 1
+rdma/core/iwpm_msg 1
+tools ui popup 1
+udp4 1
+perf intel_pt 1
+tick-sched 1
+x86/nospec, objtool 1
+macally 1
+io-64-nonatomic 1
+pci/xilinx 1
+bt3c_cs 1
+usb/mtu3 1
+cgroup.c 1
+raid10 1
+drm/i915/rpl-p 1
+include/linux/units.h 1
+virtio-mem 1
+kfifo 1
+x86/memory_failure 1
+vfio_ap 1
+powerpc/aout 1
+powerpc/powernv/eeh 1
+powerpc/hw_breakpoints 1
+drivers/net/b44 1
+x86/ibt,paravirt 1
+kernel-packaging 1
+x86/uaccess, ubsan 1
+all 1
+mm/init-mm.c 1
+ipcomp 1
+powerpc64/bpf elfv1 1
+tracing/fgraph 1
+ipv6_gre 1
+x86, efi 1
+dumpstack/64 1
+net/dim 1
+int3403_thermal 1
+linkwatch 1
+bpf, inode 1
+scsi_sysfs 1
+kbuild, btf 1
+perf/x86/intel/bts 1
+cnb 1
+perf/arch/powerpc 1
+drivers/fpga/dfl-fme-pr.c 1
+drm/i915/psr 1
+s390/dasd/cio 1
+clocksource/drivers/timer-atmel-pit 1
+x86/stackframe 1
+whiteheat 1
+alsa/asoc 1
+[fs] ext4 1
+ipc/mqueue.c 1
+cifs` 1
+bpf, test 1
+arm64/crashkernel 1
+perf/ioctl 1
+inetpeer 1
+sata_promise 1
+perf tools x86 1
+rdma/nl 1
+ib/rdmavt, ib/hfi1 1
+radix tree test 1
+mei/hdcp 1
+dm cache policy smq 1
+bpf, ringbuf 1
+drm/nouveau/devinit/ga10 1
+[netdrv] gve 1
+acpi/pcc 1
+rdma/hw/mlx5/odp 1
+sx8 1
+block/swim3 1
+tcp/dccp 1
+hvc 1
+z2ram 1
+perf beauty ioctl cmd 1
+acpi, x86/boot 1
+genirq/chip 1
+ata_piix 1
+selftest/powerpc 1
+libata, freezer 1
+merrifield 1
+rdma/hw/hfi1/file_ops 1
+rdma/sw/rdmavt/mcast 1
+usb/dwc3/gadget 1
+mm, drm/ttm 1
+cpuidle/pseries 1
+doc/rcuref 1
+drm/i915/dg1 1
+tools api 1
+sgl_alloc_order 1
+rmda/siw 1
+arm/efi 1
+rtl8187 1
+doc/ip-sysctl 1
+docs/admin-guide/mm/damon/reclaim 1
+iort 1
+io_edgeport 1
+csiostor 1
+main 1
+powerpc/powernv/sriov 1
+mq, mqprio 1
+video/console/vgacon 1
+block/partitions/efi.c 1
+libperf xyarray 1
+perf/core, arch/powerpc 1
+brcmutil 1
+x86-32/asm/power 1
+genwqe 1
+include/linux/mm.h 1
+gro_cell 1
+build, kcsan 1
+samples/bpf, selftests/bpf 1
+[infiniband] usnic_verbs 1
+perf cacheline 1
+sched/documentation 1
+uapi/ethtool 1
+ipv6/route 1
+wiimote 1
+partitions/efi 1
+perf script report 1
+blk-mq-rdma 1
+netprio_cgroup 1
+kernfs, sysfs, cgroup, intel_rdt 1
+net/mlx5i 1
+tools tools, tools lib traceevent 1
+[hwmon] hwmon 1
+iwlwifi/fw 1
+x86/mmx 1
+documentation/bpf 1
+drivers/net/ethernet/intel 1
+perf/x86/core 1
+net/mlx4/en_rx 1
+net/tcp 1
+perf tools documentation 1
+bpf, ppc64 1
+drivers/of/of_mdio.c 1
+bpf, lru 1
+rdma/counters 1
+rdma/hw/hfi1/ud 1
+include/linux/bitops.h 1
+linux/time32.h 1
+nmi 1
+powerpc/powernv/elog 1
+{net,vdpa}/mlx5 1
+pci/rcec 1
+sched/dl 1
+drm/amdgpu/vcn1 1
+infiniband/qedr 1
+bpf, test, cgroup 1
+hv_uio_generic 1
+rdma/hw/hfi1/exp_rcv 1
+mm, tree-wide 1
+arch/cc 1
+block, mm 1
+ipv4/fib_frontend 1
+misc/sgi-xp 1
+rbtree, rtmutex 1
+arm-smmu-qcom 1
+powerpc/lib/feature-fixups 1
+bio.h 1
+x86/text-patching 1
+qspinlock 1
+mm, clear_huge_page 1
+qed, qede, qedf 1
+kernel/kcmp.c 1
+vdpa/vdpa_sim 1
+drivers/net 1
+mm,compaction,cma 1
+mwl8k 1
+yama 1
+proc/vmcore 1
+net/e1000e 1
+linux/kernel.h 1
+x86,config 1
+x86/module 1
+x86/modules 1
+[scsi] lfpc 1
+pmu 1
+powerpc/hmi 1
+powerpc/vfio/iommu/kvm 1
+tools script 1
+powerpc/sysfs 1
+genheaders 1
+include/linux/seq_file.h 1
+migrate 1
+mscc 1
+secure_seq 1
+perf kvm s390 1
+ccp 1
+powerpc/vcpu 1
+x86/e820, ioport 1
+swap_readpage() 1
+ehea 1
+arm64/hugetlb 1
+drm/nouveau/kms/nv140- 1
+perf ui gtk 1
+dmagenine 1
+x86/mm/numa 1
+mm/zswap.c 1
+x86/crashdump/32 1
+powernv/eeh 1
+x86/debug 1
+x86/spectre 1
+math 1
+selftest/sigaltstack 1
+rtmutex 1
+drivers/block/mtip32xx 1
+kernel/events/uprobes 1
+cp2112 1
+rdma/sw/rdmavt/mr 1
+runsqslower 1
+doc, block, bfq 1
+ib/bnxt 1
+arm64/speculation 1
+rh_flags 1
+acpi/sleep 1
+seltests/powerpc 1
+enter_state 1
+pnfs/flexfile 1
+tools/power turbosstat 1
+arm64/signal 1
+docs/virt/kvm 1
+drm/amdgpu/ucode 1
+params 1
+drivers/misc/vmw_vmci 1
+powerpc/radix 1
+iw_cxgb* 1
+bpf/syscall 1
+xfs,fstrim 1
+drm/fbdev-helper 1
+net/bpfilter 1
+sch_qfq 1
+linux/ktime.h 1
+{ipv4, ipv6} 1
+tasks 1
+nfsd/nfsd3_proc_readdir 1
+drm/bufs 1
+net, veth 1
+nfs/blocklayout 1
+bus_find_device 1
+rdma/rds 1
+uhid 1
+perf pmu-events 1
+mm/slab_common.c 1
+perf tests x86 1
+x86, kcsan 1
+powerpc, kexec_file 1
+powerpc/embedded6xx/holly 1
+filename_mountpoint() 1
+lockdep,trace 1
+drm/nouveau/fb/tu102- 1
+powerpc/hvcall 1
+rbtree, sched/fair 1
+drm/radeon/radeon_kms 1
+tools, headers 1
+fix regression in "epoll 1
+x86/mtrr 1
+nullb 1
+drm/amdgpu/vcn2.5 1
+x86/perf 1
+ah6 1
+lib/ubsan 1
+selftests/vm/.gitignore 1
+driver/base/memory.c 1
+drivers/net/ethernet 1
+fcntl 1
+bpf, kconfig 1
+perf tests pmu 1
+admin guide/pm 1
+rcu,ftrace 1
+powerpc/pesries 1
+drivers/ib,hfi1 1
+bpftool, selftests/bpf 1
+dl2k 1
+doc/mm 1
+rcu/tiny 1
+mptcp/pm_netlink.c 1
+drm/i915/icl/tc 1
+mm/nvdimm 1
+ib/{hfi1, ipoib, rdma} 1
+net-veth 1
+perf arm cs-etm 1
+irq_remapping 1
+x86/amd/uncore 1
+smbd 1
+parport 1
+svm/avic 1
+bonding (gcc13) 1
+fbdev, newport_con 1
+cpufreq-dt 1
+hw-breakpoints 1
+sr9800 1
+x86, retpolines 1
+tools/build 1
+task_work 1
+x86, hyperv 1
+pci / pm 1
+xfs_attr_leaf 1
+fs/lockd 1
+rmda/cm 1
+documentation/stackprotector 1
+mm/page_counter.c 1
+locking/rt 1
+selftests/bpf_iter 1
+x86/bugs/multihit 1
+tools/testing/selftests/bpf 1
+documentation/io-mapping 1
+lib/timerqueue 1
+bulk 1
+ib/{core, hw, umem} 1
+ipv6/ndisc 1
+hid cp2112 1
+atomic/tty 1
+docs/livepatch 1
+id 1
+tc/act 1
+bpf, tags 1
+drm/i915/debugfs 1
+thunderx nic 1
+i40e_main 1
+perf build-ids 1
+sata_nv 1
+ib/hfi1, qib 1
+restore docs "treewide 1
+powerpc/sriov 1
+lib/test_linear_ranges 1
+drm/sched 1
+cpu-topology 1
+libtraceevent, perf tools 1
+ch_ktls/cxgb4 1
+macintosh 1
+nvme-lightnvm 1
+sdhci-pci 1
+rtl818x 1
+virtio/virtio_ring 1
+block,bfq 1
+bpf_helpers_doc.py 1
+maccess 1
+perf tests arm64 1
+inetdevice 1
+vmxfeatures 1
+xen/acpi 1
+drm/nouveau/mmu/ga10 1
+documentation/arm64/sve 1
+sched,rcu 1
+initramfs 1
+acard_ahci 1
+net/nfp 1
+selftest/net/ipsec.c 1
+sched/topology,schedutil 1
+bpf, capability 1
+sch_cbq 1
+math64.h 1
+sched/core, workqueues 1
+tools/testing/selftests/vm/ 1
+fs/namespace.c 1
+powerpc/hw_breakpoint 1
+mm/migration 1
+fscache, cachefiles 1
+net/switchdev 1
+powerpc/asm 1
+perf memswap 1
+sysfs, kobject 1
+misc/mei 1
+bpf, tls 1
+powerpc/maple 1
+cgroup, rstat 1
+s390/speculation 1
+eni_vdpa 1
+bpf, runqslower 1
+perf trace beauty renameat 1
+edac, {skx, i10nm} 1
+net/mlxe5 1
+vgic 1
+mount_pseudo() 1
+tools/bpf/bpftool 1
+efi/random 1
+catpt 1
+powerpc64/idle 1
+x86/head64 1
+x86/asm/32 1
+uapi, fsopen 1
+arch/kunmap 1
+cpuhotplug 1
+uswsusp 1
+sensor-hub 1
+drm/plane 1
+powerpc/pseries/npu 1
+x86/speculation/taa 1
+ib/bnxt_re 1
+drm/i915/ringbuffer 1
+powerpc/test_emulate_sstep 1
+[mm]  x86/e820 1
+dma-fence 1
+perf/arch/arm64 1
+kernel/events/uprobes.c 1
+sched/eas 1
+drm/amdgpu/{uvd,vcn} 1
+intel/iavf 1
+lenovo 1
+compiler_attributes.h 1
+net/ethernet/silan/sc92031 1
+printk/nmi 1
+powerpc/speculation 1
+drivers property 1
+arm/stacktrace 1
+net/phy 1
+pseries/eeh 1
+rdma/core/multicast 1
+figetbsz 1
+powerpc/pseries/cpuidle 1
+lockdep/selftests 1
+proc/stat 1
+x86/vector 1
+genirq, sched/isolation 1
+[scripts] get_maintainer.pl 1
+tpm/tpm_crb 1
+usb, kcov 1
+riscv/stacktrace 1
+ethernet/sis 1
+lib/test_kasan_module.c 1
+arm64/numa 1
+kvm_main 1
+thermal/x86_pkg_temp 1
+perf test vfs_getname 1
+exit/exec 1
+doc/af_xdp 1
+ovl_lookup_real_one() 1
+perf-with-kcore.sh 1
+async 1
+a4tech 1
+linux/printk.h 1
+cipso,calipso 1
+meson 1
+documentation/watchdog 1
+gpio/driver.rst 1
+net-ipv6-ndisc 1
+pd 1
+speedstep 1
+drm/bridge/synopsys 1
+fix error 1
+drm/nouveau/disp/hda/gt215- 1
+perf block-range 1
+nfs_instantiate() 1
+edmaengine 1
+syscall_get_arch 1
+dw 1
+powerpc/ebpf64 1
+misc/vmw_vmci 1
+pm/em 1
+drm/i915/display/fbc 1
+perf/arch/x86 1
+selftests, sched/membarrier 1
+fix for "dma-buf 1
+powerpc/powernv/ioda1 1
+generic_perform_write()/iomap_write_actor() 1
+vsock_addr 1
+orinoco 1
+h5 1
+nohz_full 1
+perf event-parse 1
+perf include bpf 1
+dm flakey 1
+powerpc/mm/iommu/vfio_spapr_tce 1
+i40e/i40evf 1
+ark3116 1
+bpf/cgroup 1
+xfrm/xfrm_policy 1
+perf test session topology 1
+cls_cgroup 1
+locking/seqlock 1
+tools/virtio 1
+ib/hfi 1
+dax, iomap 1
+bpf, libbpf, smatch 1
+fs/proc/vmcore 1
+drivers/net/ibmvnic 1
+seqlock, kcsan 1
+x86/mpx, mm/core 1
+lwt 1
+idr-test 1
+include/linux/string_helpers.h 1
+gmap 1
+rdma/hw/hfi1/pio_copy 1
+msr-index 1
+s390/kconfig 1
+net/i40e 1
+xsk, net 1
+perf/arm-smmuv3 1
+lib/test_overflow.c 1
+perf tests evsel-tp-sched 1
+sample/vfio-mdev/mbocs 1
+drm/nouveau/i2c/gm200 1
+drm/nouveau/bar/nv50 1
+drm/backport 1
+oom, oom_reaper 1
+ib/counters 1
+cgroup, writeback 1
+mm, kvm 1
+asm-generic/tlb, ia64 1
+vsc8531 1
+drm/nouveau/gem 1
+drm/omapdrm 1
+vfs_get_tree() 1
+units 1
+rh_taint, pci 1
+x86 kvm page table walks 1
+fsnotify() 1
+atm 1
+tracing/events 1
+tdx 1
+drm/client 1
+cgroup2 1
+ncsi 1
+audit_tree 1
+mm/ksm.c 1
+cpuidle/powernv 1
+blk-merge 1
+lsm,selinux 1
+tools/kernel.h 1
+mdev 1
+drm/amd/pm/smu11 1
+linux/build_bug.h 1
+fs/file 1
+powerpc/opal 1
+firewire-ohci 1
+mm, page_owner, debug_pagealloc 1
+cpu/cpuid-deps 1
+drm/i915/cfl 1
+spapr_tce 1
+prodikeys 1
+drivers/base/dd.c 1
+test_firmware 1
+ipvlan, l3mdev 1
+raid5-ppl 1
+x32 1
+drivers/gpu/drm/via 1
+trace/bpf_trace 1
+zynq-fpga 1
+kvm/hyper-v/vmx 1
+rbtree_latch 1
+s390, dcssblk, dax 1
+perf probe-file 1
+dm/dax 1
+if_addr 1
+[scsi] qla2xxx 1
+drivers/hv 1
+x86/power/hibernate_64 1
+drm/solomon 1
+kselftests/net 1
+migration 1
+mm/page_vma_mapped.c 1
+blk-core 1
+drm/nouveau/fb/ga10 1
+mwave 1
+drm/nouveau/fifo/ga102 1
+net, xsk 1
+cpufreq/acpi-cpufreq.c 1
+powerpc/powernv/pseries 1
+init_rootfs() 1
+md/raid456 1
+drm/drm_vblank 1
+tools x86 uapi asm 1
+drm/i915/dmabuf 1
+mm, hmm 1
+linux 1
+perf tools beauty ioctl 1
+fs/exec.c 1
+nofpsmid 1
+appledisplay 1
+cxgb4i 1
+mount 1
+x86/arch_prctl 1
+fib_frontend, ip6_fib 1
+dm snap persistent 1
+hpilo 1
+linux/list.h 1
+bluecard_cs 1
+powerpc/64s/hash 1
+acpi/irq 1
+kexec, keys 1
+acpi / irq 1
+docs/damon 1
+x86/gart 1
+mm, swap, get_swap_pages 1
+vga_switcheroo 1
+x86/cpu/common 1
+x86/vsyscall_emu/64 1
+s390/stacktrace 1
+usbtmc 1
+sunrpc/nfsd 1
+blk-sysfs 1
+powerpc/uapi 1
+hmc6352 1
+xen/pci-swiotlb 1
+rdma/umad 1
+gtp 1
+mlx5-core 1
+alps 1
+net/mlx5_vdpa 1
+ssd1307fb 1
+protvirt 1
+drm/nouveau/subdev/bus 1
+userfaultfd_release 1
+genirq/core 1
+kasan, x86, s390 1
+lib/list-test 1
+/proc/kpagecount 1
+x86/percpu, x86/irq 1
+mm, hwpoison 1
+[tools] bpf 1
+common 1
+powerpc/mm/nvdimm 1
+sched/topology, arch/arm64 1
+arm64/neon 1
+x86/mm/pageattr 1
+powerpc/opcodes 1
+drm/nouveau/fbcon 1
+locking/ww-mutex 1
+mm/khugepaged.c 1
+include/linux/huge_mm.h 1
+misc/uss720 1
+mmiowb 1
+kernel/rh_taint.c 1
+pdc_adma 1
+libnvdimm/security, acpi/nfit 1
+selftests/x86/pkeys 1
+{nl, mac}80211 1
+kernel/bpf/ 1
+hardirq/nmi 1
+sched/doc 1
+vmw_pvrdma 1
+x86/microcode, cpuhotplug 1
+x86/dump_pagetables 1
+drivers/ipmi 1
+svm/sev 1
+kernel/workqueue 1
+kasan/kunit 1
+virito-pci-modern 1
+x86/devicetable 1
+perf/ui/gtk 1
+ib/opa_vnic 1
+drm/fb_helper 1
+usb/xhci-plat 1
+genirq/pm 1
+mm,memory_failure 1
+proc/meminfo 1
+cgroup/cgroup.c 1
+kconfig.debug 1
+powerpc/mm/books3s 1
+acpi / sleep 1
+nfs_remount() 1
+sched_clock 1
+sfc/ethtool_common 1
+mm/damon/selftests 1
+memremap.c 1
+core/skmsg 1
+powerpc/pseries/memory-hotplug 1
+riscv/mmiowb 1
+samples/vfs 1
+vdpa-sim 1
+drm/nouveau/bar/ga10 1
+mm/percpu 1
+kvm/book3s64 1
+s390/pkey/zcrypt 1
+s390/zcore 1
+locking/static_key 1
+sr_vendor 1
+perf bpf_counter 1
+ixgbe_ipsec 1
+tc_act 1
+iser 1
+x86/asm/crypto 1
+ib/{qib, hfi1, rdmavt} 1
+cxgb4/ptp 1
+redragon 1
+drm/nouveau/kms/gf119-gp10x 1
+mm,thp 1
+hid-sensor-custom 1
+membarrier 1
+md/dm-writecache 1
+perf/core, arch/arm 1
+dm ingerity 1
+mm/page_io 1
+arm64 / acpi 1
+ethtool.h 1
+dfs_cache 1
+perf regs x86 1
+kernel/audit 1
+x86/bpf 1
+vfio/pci/nvlink2 1
+drm/amdgpu/vcn2.0 1
+devdax 1
+kernel/hung_task.c 1
+include/net/bond_3ad 1
+powerpc/opal_elog 1
+rdma/hw/hfi1/msix 1
+linux/kconfig.h 1
+sched/autogroup 1
+powerpc/64/kdump 1
+lib/decompressors 1
+mm,thp,shmem 1
+ipv6_sockglue 1
+sch_prio 1
+wireless/nl80211 1
+x86/64 1
+fixed-phy 1
+perf tools report 1
+security/commoncap 1
+lib/dump_stack 1
+block, zoned 1
+perf annotate/tui 1
+documentation/x86/64 1
+x86/selftests/pkeys 1
+powerpc64/bpf elfv2 1
+s390/hypfs 1
+sched/headers 1
+s390/tape 1
+lockdep/documention 1
+dump_stack 1
+net/bpf 1
+sw_sync 1
+net/ipv4/udp_tunnel_core.c 1
+holtek 1
+console/fbcon 1
+pm / devfreq 1
+kernel/crash 1
+perf archive 1
+i2c-eeprom_slave 1
+include/asm-generic/topology.h 1
+cxgb4/t4_hw 1
+net/ethernet/qlogic/qed 1
+zcrypt 1
+p54usb 1
+locking/spinlock/rt 1
+mm, treewide 1
+perf beauty sockaddr 1
+fs/binfmt_elf.c 1
+drivers/net/usb/r8152 1
+rdma/hw/hfi1/chip 1
+bfusb 1
+ipfrag 1
+dts 1
+include/linux/memremap.h 1
+ath3k 1
+tags.sh 1
+mm/madvise.c 1
+mm, numa 1
+rdma/smc 1
+mm/shuffle 1
+bpf, xdp, samples 1
+drm/nouveau/privring/ga10 1
+[netdrv] be2net 1
+drivers/ib,core 1
+hdlc_fr 1
+bnx2fc_fcoe 1
+irqdesc 1
+watchdog/core 1
+drm/i915/reset 1
+include/uapi/linux/blkzoned.h 1
+tools pci 1
+bridge/mdb 1
+powerpc/kgdb 1
+crypto/testmgr 1
+x86/lib/atomic64_386_32 1
+nfs4.0 1
+selftests/vm/gup_benchmark.c 1
+net-next 1
+drivers/net/ethernet/qlogic/qed/qed_rdma.h 1
+x86,kvm/xen 1
+rtnl_configure_link 1
+dm bio record 1
+tpm/st33zp24 1
+drivers/block/drbd 1
+drm/atomic-helper 1
+qtnfmac 1
+fs/nfs, swapon 1
+drivers/ib,usnic 1
+nfs/sunrpc 1
+rt2x00mmio 1
+nft_set_pipapo 1
+kvm svm 1
+selftests/bpf/test_xdp_redirect_multi 1
+moduleparams 1
+perf/ibs 1
+mm, huge page 1
+pseries/hotplug-memory 1
+iommm/vt-d 1
+include/linux/printk.h 1
+{net, ib}/mlx4 1
+ocfs2/dlm 1
+fs/stat 1
+net/ipv5/tcp 1
+rdma/hfi 1
+smpboot 1
+vsock/virtio_transport_common 1
+n_tty 1
+mm,hwpoison-inject 1
+powernv/pseries 1
+osd 1
+x86/litf 1
+drm/amd/psp 1
+panic, kexec 1
+blk-throtl 1
+dim 1
+gfs2_meta 1
+i40e/i40e_virtchnl_pf 1
+powerpc/kdump 1
+amdgpu 1
+drm/nouveau/i2c/gk110 1
+devmap/cpumap 1
+tools uapi 1
+ipv6/sit 1
+rdma/iw_cxgb3 1
+drm/amd/dm/mst 1
+net, neigh 1
+x86/reboot 1
+swap.c 1
+jump-label 1
+nfs nfsd 1
+tracing/blktrace 1
+perf beauty msg_flags 1
+bitfield.h 1
+nvmet_fc 1
+mtd_blkdevs 1
+block/blk-cgroup 1
+entry/64 1
+fs/exec 1
+perf skel 1
+fs/nsfs.c 1
+iwlwiif 1
+selftest/net/xfrm 1
+pinctrl/gpio 1
+drm/armada 1
+early init 1
+include/linux/page_ext.h 1
+powerpc/powernv/opal 1
+drivers/base/test 1
+net/udpgso_bench_tx 1
+epoll 1
+cxgb4/chtls/cxgbit 1
+drm/nouveau/disp/ga10 1
+acpi/nfit, device-dax 1
+fs/drop_caches.c 1
+net/ixgbe 1
+tools, perf 1
+net/smscx5xx 1
+x86/mce/amd, edac 1
+media/videobuf2 1
+checksyscalls 1
+x86/amd_nb, char/amd64-agp 1
+efi/apple-properties 1
+net/netlink_compat 1
+sched/{rt, deadline} 1
+[x86] x86/stacktrace 1
+printk/kdb 1
+[x86] x86/kdump 1
+fs/io_uring 1
+vt/fbcon 1
+fs/eventpoll.c 1
+audit_get_nd() 1
+atomics/powerpc 1
+include/linux/linkage.h 1
+linux/time64.h 1
+mm/tlb, x86/mm 1
+target 1
+dm bio prison 1
+ndctl/papr_scm, uapi 1
+mount_fs 1
+perf arm64/s390 1
+pmem 1
+perf/arm-dmc620 1
+memunmap 1
+mm/truncate 1
+mm/damon/paddr 1
+mm, dev_pagemap 1
+mm/slub, kunit 1
+qla3xxx 1
+drm/i915/tc/icl 1
+asm-generic/mmiowb 1
+s390/futex 1
+tools arch kvm 1
+vfs, fdtable 1
+libnvdimm/altmap 1
+powerpc/ebpf32 1
+mm/swapcache 1
+kvm/vmx/svm 1
+rdma/sw/rdmavt/cq 1
+perf scripting perl 1
+mm/zswap 1
+perf/bpf 1
+ipc/shm 1
+drm/amdgpu/gmc10 1
+vdso/datapage 1
+pata_atiixp 1
+perf branch 1
+vgaswitcheroo 1
+arch/kmap_atomic 1
+dm crypt and integrity 1
+tpm2 1
+oom_kill.c 1
+thermal/drivers/acpi 1
+mm/cma_debug.c 1
+unrpc 1
+orinoco_usb 1
+drm/imx 1
+mm/pkeys 1
+[scsi] be2iscsi 1
+connector/cn_proc 1
+arch/powerpc/kvm/book3s 1
+sch_generic 1
+s390/startup 1
+drm/msm/hdmi 1
+block/bio 1
+nvmet-fcloop 1
+xen/spinlock 1
+iommu/hyper-v 1
+drivers/fpga/dfl-afu-dma-region.c 1
+drivers/crypto/ccp/sev-dev.c 1
+kprobes, x86/ptrace.h 1
+ath9x 1
+ethernet/sfc 1
+rcu/nohz 1
+dm stripe 1
+perf tests record 1
+selftests/bpf/test_progs 1
+gic-v4 1
+mm,vmscan 1
+drm/shme-helpers 1
+drm/nouveau/gpio/ga10 1
+mm,page_alloc,cma 1
+crypto/pcrypt 1
+documentation, selinux 1
+bpf_xdp_redirect_map 1
+x86/asm-offsets 1
+perf srcline 1
+x86,bugs 1
+drm/i915/gen9 1
+bpf/error-inject/kprobes 1
+memtrace 1
+locking/osq 1
+drm/nouveau/i2c/gk110- 1
+sierra-ms 1
+kvm, x86 1
+fs, close_range 1
+docs/admin-guide 1
+iommu/dmar 1
+perf clockid 1
+pstore 1
+pl2303 1
+iscsit 1
+printk/docs 1
+livepatch/sample 1
+fixed_phy 1
+bpf_lru_list 1
+tools/insn 1
+fs/namespace 1
+x86/nmi 1
+perf strfilter 1
+cgroup/pids 1
+kernel/events 1
+cpufreq/cpufreq_governor 1
+lib/test_vmalloc.c 1
+lib/test_kmod.c 1
+xdp, net 1
+[scsi] mpt* 1
+trace_helpers.c 1
+mic 1
+bus/mhi 1
+smsc 1
+perf, tools 1
+tools perf beauty 1
+bpf/local_storage 1
+drm/amdgpu/vce 1
+dissector 1
+x86/kdump/64 1
+headers/uninline 1
+mm/hash64 1
+powerpc/mm/drconf 1
+mm/cgroup/reclaim 1
+hfsplus 1
+x86/mem_encrypt 1
+usb/typec 1
+perf annotate mips 1
+lib/smp_processor_id 1
+drivers/acpi/scan.c 1
+documentation/hw-vuln 1
+new wrapper 1
+powerpc/makefiles 1
+drm/i915/backlight 1
+x86/mce, edac/mce_amd 1
+kernel/printk.c 1
+igb_main 1
+qlogic 1
+do_vfs_ioctl() 1
+x86/kexec/64 1
+ib/{mlx5, ocrdma, qedr, rxe} 1
+virtio_blk.c 1
+tools/objtool 1
+pefile 1
+bnxt_tc 1
+ia64 1
+unicore32/stacktrace 1
+error-injection 1
+s390/cpuinfo 1
+mm/failslab.c 1
+x86, s390/mm 1
+start massaging the checks in sget_...() 1
+drm/i915/hpd 1
+perf ui helpline 1
+x86/thermal 1
+iidc 1
+sata_mv 1
+perf color 1
+kdoc 1
+process/64 1
+page_owner 1
+drm/amdgpu/cs 1
+lib/strncpy_from_user.c 1
+apei / erst 1
+nfs, nfsd 1
+bonding/options 1
+driver-core 1
+hid-saitek 1
+x86/apic/of 1
+perf kcore_copy 1
+device_cgroup 1
+entry, nmi 1
+mm/workingset.c 1
+vhost vdpa 1
+regmap-i2c 1
+kernel/memremap, kasan 1
+drm/nouveau/ttm 1
+ata/acard_ahci 1
+mdiobus 1
+vfio-ap 1
+selftests/kselftest/runner.sh 1
+powerpc/paravirt 1
+mqueue 1
+tpm_eventlog.h 1
+kernel/locking/mutex.c 1
+drm/nouveau/disp/hda/gv100- 1
+rfcomm 1
+x86/perf/events 1
+include/linux/memory.h 1
+viewsonic 1
+isdn/hisax 1
+tools lib traceevent,  perf tools 1
+genirq/irqchip 1
+pm / sleep 1
+add 044f 1
+x86/dma 1
+printf 1
+acpi / platform 1
+sysrq 1
+s390/hugetlb 1
+cap_inode_getsecurity 1
+ipmi_si_pci 1
+tools/testing/selftests/vm/gup_test.c 1
+powerpc/ioda/npu 1
+sched/irq 1
+tweewide 1
+ieee802154 1
+process 1
+mm/memory-failure.c 1
+rdma/hw/hfi1/iowait 1
+signal/sparc 1
+ndo_bridge_setlink 1
+ib/{rdmavt, hfi1) 1
+x86/atomic 1
+rocker, dsa, ethsw 1
+libbpf,selftests/bpf 1
+bpf, inode_storage 1
+acpi/acpica 1
+rdma/core/iwpm_util 1
+ib/{rdmavt, hfi1} 1
+locking/percpu-rwsem, lockdep 1
+rmda/odp 1
+tools perf 1
+drivers/base/power 1
+mm/rodata_test.c 1
+bpf/tracing 1
+tss 1
+perf s390-cpumsf 1
+rdma/hw/efa/efa_com 1
+swapfile 1
+stmmac_pci 1
+virtio/test 1
+tools iio 1
+qlogic/qede 1
+drm/nouveau/ga102- 1
+i2c-piix4 1
+documentation/dma-api-howto 1
+gliolib 1
+mdio-mux-gpio 1
+rdma/cxbg 1
+mm/cow 1
+x86/alternatives, jump_label 1
+fjes 1
+[acpi] acpi / pm 1
+lib/test_string.c 1
+arm64, mm, efi 1
+x86/headers 1
+documentation/kvm 1
+alarmtimers 1
+atomics/generic 1
+drm/amdgpu/jpeg2.5 1
+sched/x86 1
+bpf, core 1
+ipc/shm.c 1
+copy_process() 1
+xen/blkfront 1
+scripts/clang-tools 1
+mm/pagealloc.c 1
+ppc_cbe 1
+sizes.h 1
+pci/vmd 1
+ptr_ring 1
+drm/nouveau/devinit/tu102- 1
+ravb 1
+x86/documentation 1
+minor 1
+bpf, x86, arm64 1
+e1000(e) 1
+x86/mce-inject 1
+fs/cifs/smb2ops.c 1
+drm/nouveau/bios 1
+[netdrv] net/mlx5e 1
+drm/amdgpu/uvd7 1
+clone 1
+ib/{ipoib,hfi1} 1
+selftests, kvm 1
+ionic_lif 1
+dma/direct 1
+x86/bus_lock 1
+msr 1
+powerpc/rtasd 1
+timekeeping/ntp 1
+unifdef 1
+powerpc/module_64 1
+rhel-kabi 1
+perf tests bp_signal 1
+bpf/xskmap 1
+mm/sparsemem.c 1
+drm/nouveau/pci/ga10 1
+lib/div64.c 1
+s390/config 1
+txhash 1
+x86/uprobes 1
+x86/tdx/ioapic 1
+openswitch 1
+configfs 1
+block-map 1
+mm, vmscan 1
+fs/btrfs 1
+backtrace-test 1
+vm.txt 1
+acpi / device_sysfs 1
+pkey 1
+ib/core, ipoib 1
+smp, irq_work 1
+perf record/stat 1
+perf s390 1
+sch_hhf 1
+ip6_fib 1
+drm/nouveau/disp/gp100 1
+mm/vunmap 1
+perf comm 1
+sata_qstor 1
+dma/pool 1
+powerpc/optprobes 1
+hid-logitech-dj 1
+staging/android/ion 1
+xfs_bmap_util 1
+ip6gre 1
+isdn 1
+printk/tracing 1
+mlock 1
+arm64/iommu 1
+doc, af_xdp 1
+locking/seqlocks 1
+perf copyfile 1
+mnt 1
+btqcomsmd 1
+tools/power/cpupower/{todo => todo} 1
+powerpc/32 1
+user_regset_copyout_zero() 1
+perf c2c report 1
+mm/x86 1
+locking/arch 1
+bfq/mq-deadline 1
+tools compiler.h 1
+rdma, core and ulps 1
+skd 1
+livepatch/selftests 1
+virtio-iommu 1
+net/ipv4 1
+x86/retpolines 1
+tty_ioctl() 1
+device core 1
+drm/amdgpu/sdma 1
+drivers/scsi 1
+lib/test_bits.c 1
+perf/hw_breakpoints 1
+[] iommu/arm-smmu-v3 1
+x86/mm/highmem 1
+locking/futex 1
+[net] flow_dissector 1
+s390/lib 1
+cpuacct 1
+hash64 1
+blk-zoned 1
+sockmap 1
+target/iblock 1
+block, scsi 1
+spectrum 1
+powerpc/doc 1
+selftests/bpf, flow_dissector 1
+drm/nouveau/kms/gt215- 1
+ice/ptp 1
+ar5523 1
+blk-mq-sched 1
+memory 1
+drm/nouveau/i2c/g94- 1
+pnp 1
+rdma/core/counters 1
+kernel/rcu/tree.c 1
+s390/dma 1
+ip6erspan 1
+vfio/virqfd 1
+sch_red 1
+kye 1
+bpf/cpumap 1
+drivers/irqchip 1
+act_ctinfo 1
+kernel/dma/direct 1
+vfio-mdev 1
+docs/core-api/mm 1
+arm64/prefetch 1
+rdma/core/cache 1
+irqchip/git-v3-its 1
+s390, dcssblk 1
+genirq/irqdesc 1
+[documentation] mm/hmm 1
+x86/intel_pstate 1
+drm/nouveau/gk20a 1
+time/tick-broadcast 1
+sched/rt, mm 1
+bpf, powerpc 1
+iomap/gfs2 1
+amdgpu/nv.c 1
+if_link 1
+x86/events/intel 1
+net-ethtool 1
+[x86] x86/kexec/64 1
+radeon 1
+big.little 1
+cgroup1_get_tree() 1
+drm/i195 1
+filename_lookup() 1
+[netdrv] ice 1
+bpf_load 1
+x86/corruption-check 1
+genirq/matrix 1
+cls_rsvp 1
+drm/amdgpu/jpeg2.0 1
+zswap 1
+[scsi] scsi 1
+md/raid5-log 1
+mm, migrate 1
+quatech2 1
+fault-injection 1
+seqlock,lockdep 1
+xfrm4 1
+wait_on_bit 1
+rdma/ulp 1
+ultravisor 1
+dm switch 1
+selftests/net/fib_tests 1
+openat2 1
+swap, blkcg 1
+net/decnet 1
+uapi/auxvec 1
+virito_pci libray 1
+include/list 1
+kabi, x86/paravirt 1
+locking/atomics, asm-generic/bitops/lock.h 1
+pci/vga 1
+documentation/sysctl 1
+mm, kasan 1
+kmap 1
+lib/kconfig 1
+drm/admgpu 1
+include/linux/kernel.h 1
+edac/mc_sysfs 1
+sched,psci 1
+mm/hugetlb_cgroup 1
+sfc-falcon 1
+fs/fs-writeback.c 1
+ipv4/icmp 1
+wusb 1
+powerpc/mmu_gather 1
+i40e_txrx 1
+netprio 1
+drivers/misc/sgi-xp 1
+s390/tools 1
+powerpc/ftrace 1
+perf metrictroup 1
+ipmr_base 1
+net/sfc 1
+fs/kernel_read_file 1
+flow 1
+readahead 1
+devtmpfs regression fix 1
+powernv/iov 1
+fs/nfsd 1
+do_last() 1
+kernel/sched 1
+s390, kexec_file 1
+afs 1
+mm, kmemleak 1
+rdma/hw/mlx5/qp 1
+io_wq 1
+dcdbas 1
+vfio iommu type1 1
+dm space map metadata 1
+8021q 1
+powerpc/embedded6xx/linkstation 1
+hci_bcsp 1
+drivers/base/component.c 1
+efi/arm/libstub 1
+rdma/{cma, core} 1
+rmda/sw 1
+rdma/{cxgb3, cxgb4, i40iw} 1
+rcu/exp 1
+sound/soc 1
+s390/keyboard 1
+cap 1
+mm, debug_pagelloc 1
+perf/arm_dmc620_pmu 1
+perf scripting engines 1
+iommu/arm 1
+virtio-rng 1
+net/bpf_jit 1
+apple 1
+new helpers 1
+napi 1
+x86/mds 1
+perf metricgroups 1
+perf arm spe 1
+hv/netvsc 1
+acpi/drivers/thermal 1
+hdlc frame relay 1
+hid-ntrig 1
+vdp/mlx5 1
+drm/i915/glk 1
+skb_scrub_packet() 1
+s390/nvme 1
+string 1
+mm/mempool 1
+s390/pv 1
+drivers/vhost 1
+include/linux/memcontrol.h 1
+perf test 6 1
+vmscan 1
+tools/include 1
+fs, mm 1
+x86/audit 1
+lib/dynamic_debug.c 1
+copy_xstate_to_kernel 1
+rculist.h 1
+ipc/sem.c 1
+rcu/torture.txt 1
+powercap/intel_rapl_msr 1
+dm io tracker 1
+ipmr,ip6mr 1
+locking/spinlock, sched/core 1
+zfcp 1
+mm/page_owner.c 1
+of_graph 1
+net/bridge/br_multicast 1
+mm, drm/i915 1
+sata, highbank 1
+driver_find_device 1
+acpi / lpit 1
+tracing/makefile 1
+cma 1
+multicast 1
+powerpc/pasemi 1
+drm/nouveau/privring 1
+perf addr_location 1
+sched/sysctl 1
+x86/cpu/vmware 1
+fs/seq_file.c 1
+convenience helpers 1
+kernel/sched/ 1
+x86/virtio 1
+rdma/core/restrack 1
+perf trace arm64 1
+fix null ptr dereference crash due to premature release of ndlp. upstream status 1
+rdma/hw/i40iw/i40iw_virtchnl 1
+misdn 1
+perf timechart 1
+ib/{core, hw} 1
+drm/mipi-dsi 1
+x86/ia32 1
+virtio/vdpa 1
+perf beauty prctl 1
+perf tests arm 1
+powerpc/52xx/mpc5200_simple 1
+mm/kasan/common.c 1
+cputime, cpuacct 1
+mm/mremap.c 1
+torturescript 1
+vio 1
+gre6 1
+pid_namespace 1
+ext 1
+nfs_clone_sb_security() 1
+s390/cio, s390/qeth 1
+pm / suspend 1
+drm/i915/dp/tgl+ 1
+ulp 1
+tools thermal tmon 1
+selftests/vm/write_to_hugetlbfs.c 1
+drivers/acpi 1
+tools headers powerpc 1
+x86/kaslr 1
+virtio_input 1
+bonding/xfrm 1
+checkpatch.pl 1
+misc/sgi-gru/grufault 1
+drm/nouveau/bios/ga10 1
+fcnal-test 1
+apic/uv 1
+s390/paes 1
+s390/smp,vdso 1
+oprofile 1
+selftest/firmware 1
+locking/atomics/arm64, arm64/bitops 1
+codecs 1
+tools lib api 1
+time/timekeeping 1
+hrtimer/treewide 1
+mem-hotplug 1
+perf/arm-dsu 1
+x86/uaccess, kasan 1
+selftests/eeh 1
+[netdrv]  be2net 1
+arch/x86/kvm/svm/sev.c 1
+mm/swap_slots.c 1
+x86/tboot 1
+fs/dcache.c 1
+lib/scatterlist.c 1
+iommu/irq_remapping 1
+sched,timer 1
+drm/amdgpu/sdma_v4_0 1
+x86/qspinlock 1
+rdma/hw/hfi1/netdev_rx 1
+drm/nouveau/volt 1
+perf test maps__merge_in 1
+documentation/admin-guide/mm/damon 1
+block/partitions/msdos 1
+powerpc/pseries/hibernation 1
+efi/x86/add missing error handling to old_memmap 1 1
+errata 1
+s390/cmm 1
+nf_tables 1
+mutex 1
+drm/i915/gen11 1
+mm, notifier 1
+base/node.c 1
+myri10ge 1
+include/linux/swap.h 1
+dm ps io affinity 1
+include/linux/sched/mm.h 1
+firmware/efi 1
+nl82011 1
+ib/{hfi1, qib} 1
+cryptoloop 1
+perf/arch 1
+powerpc64/ftrace 1
+net, skbuff 1
+net/core/filter.c 1
+fs/iomap.c 1
+compat_sys_ioctl() 1
+workqueue, kasan 1
+drivers, ixgbe 1
+x86/cc 1
+drm/i915/wm 1
+mm,page_alloc 1
+x86/asm/suspend 1
+s390/netiuvc 1
+capability 1
+perf/tests 1
+perf build-test 1
+mm, fault_around 1
+x86/pti/64 1
+bpf, tracex3_user 1
+driver code 1
+overflow 1
+tpm/tpm_tis 1
+maintaiers 1
+sched,fair 1
+net/l2tp 1
+tunnel4 1
+sched/topology, drivers/base/arch_topology 1
+include/linux 1
+cb710 1
+livepatch/selftest 1
+net, sockmap 1
+iommu/s390 1
+vtime 1
+pci_endpoint_test 1
+x86, fakenuma 1
+mm/notifier 1
+powerpc/chrp 1
+lib/math 1
+ena_netdev 1
+gfs 1
+bpf_helpers.h 1
+tools, build 1
+s390/maccess 1
+hwpoison, memory_hotplug 1
+x86/intel/lpss 1
+perf tests attr 1
+mm/frame-vector 1
+powerpc/mm/numa 1
+locking/atomics, asm-generic/bitops/atomic.h 1
+rdma/hw/hfi1/qp 1
+tools/testing/selftests/vm/map_fixed_noreplace.c 1
+mt76x02 1
+drm/i915/gen8+ 1
+drm/i915/kvmgt 1
+rdma/hw/hfi1/pcie 1
+x86/acpi/x86/boot 1
+mm/mprotect.c 1
+pty 1
+trace/events/block.h 1
+acpi / resources 1
+lib/test_scanf 1
+iio/hid-sensors 1
+ib/hfi1,pci 1
+mm cma 1
+md raid0/linear 1
+proc/mounts 1
+tools/headers 1
+virtio-gpu 1
+ib/{hfi1,qib} 1
+redhat/kernel.spec.template 1
+memcg, kmem 1
+tracepoints 1
+partitions/msdos 1
+drivers/dax/device.c 1
+sgx 1
+tools/testing/selftests/vm 1
+sdhci 1
+cpupowerutils 1
+x86/sched 1
+.gitignore 1
+bpf/tests 1
+rpm 1
+memory-hotplug.rst 1
+gpio.h 1
+htb 1
+vmw_balloon 1
+kernel/bpf/verifier 1
+hwmon/k10temp 1
+drm/lease 1
+[scsi] aacraid 1
+s390/cpum_cf, perf 1
+perf events parser 1
+ipc sem 1
+iommu/vtd 1
+net/aquantia 1
+sched/stats 1
+pcpu_ref 1
+tools include arch 1
+target/loop 1
+rdma/hw/hfi1/intr 1
+powerpc/perf/24x7 1
+mm/memblock 1
+btrsi 1
+s390/ap_bus 1
+perf build tests 1
+drm/mipi-dbi 1
+cpuidle,intel_idle 1
+isert 1
+include/linux/vmstat.h 1
+edac, mellanox 1
+s390/jump_label 1
+x86/boot/compressed 1
+mm/large system hash 1
+usb/image 1
+init/main.c 1
+drm/i915/display/ehl 1
+fs/quota 1
+efi/libstub/x86 1
+bpf, sched 1
+do_wait 1
+lib/linear_ranges 1
+types 1
+s390/cpumsf 1
+udp, bpf 1
+powerpc/book3s64/mm 1
+arm64/io 1
+powerpc/bpf_jit 1
+arm64, numa 1
+net, xdp, xsk 1
+drm/nouveau/mmu 1
+powerpc64s 1
+vhost-iotlb 1
+pci/acs 1
+smsc75xx 1
+{nl,mac}80211 1
+rpminspect 1
+virtio_config 1
+dma-buf-map 1
+sample/bpf 1
+include/bpf.h 1
+configs/generic 1
+rdma/ib_srpt 1
+intel-lpss 1
+perf/drivers 1
+linux/memcontrol.h 1
+net/usb 1
+target/iscsi 1
+remoteproc 1
+icmpv6 1
+sh/stacktrace 1
+[acpi] acpi 1
+locking/atomics, asm-generic 1
+[crypto] md/raid5 1
+tools power x86_energy_perf_policy 1
+fs,nfs 1
+net/ibmnvic 1
+mm, vmacache 1
+iphase 1
+mm/memory-hotplug 1
+perf intel-pt/bts 1
+ehci-hcd 1
+clocksource/hyperv 1
+rdma/hw/hfi1/ruc 1
+drivers/counter 1
+memory-failure.c 1
+perf, pt, coresight 1
+t10-pi 1
+mspro_block 1
+page_frag 1
+lkdtm/heap 1
+stcp 1
+audit_update_watch() 1
+mm/mmzone.h 1
+oom 1
+rcu/rcuperf 1
+power turbostat 1
+sefltest/ima 1
+edac/altera, firmware/intel 1
+x86, acpi 1
+timekeeping.txt 1
+x86/common 1
+net/vdpa 1
+perf arch 1
+securityfs 1
+sunrpc/xprtrdma 1
+drm/amdgpu/vi 1
+seccomp, bpf 1
+kunit/kunit_tool_test 1
+tee/optee/shm_pool 1
+sched/idle, stop 1
+drm/i914 1
+ip defrag 1
+drm/i915/ggtt 1
+x86/pat 1
+platform 1
+schied/fair 1
+s390/early 1
+wl1251 1
+xen/netfront 1
+l2ip 1
+sched,rcutorture 1
+power/suspend 1
+md/raid0, raid10 1
+kaslr 1
+mm_zone 1
+ehci 1
+unwind/orc 1
+linux/const.h 1
+[net] tcp 1
+blk-mq/debugfs 1
+bpf, uapi 1
+mac80211-hwsim 1
+[scsi] lpfc 1
+x86/mm/fault 1
+x86/unwind 1
+edac, amd64 1
+scripts/spelling.txt 1
+notifier 1
+locking/rwlock 1
+squashfs 1
+getxattr 1
+sch_sfq 1
+perf test bpf 1
+usb/ohci-tmio 1
+rdma/sa_query 1
+drm/amd/amdkfd 1
+x86/retbleed 1
+fpu/types.h 1
+binder 1
+fibmap 1
+perf vendor events powerpc 1
+md-raid10 1
+drm/aspeed 1
+mm, pcp 1
+usb_wwan 1
+list.h 1
+bpf,x64 1
+lib/ 1
+powerpc/mm/book3s 1
+perf beauty waitid options 1
+nvme-fc nvmet-fc 1
+sched,locktorture 1
+lib/string.c 1
+net, sctp, filter 1
+wireles 1
+tools/power turbosat 1
+x86/decoder 1
+kernel/makefile 1
+lib/ubsan.c 1
+picolcd 1
+mm/mremap_pages 1
+drm/tee_shm 1
+[drm] radeon 1
+perf/x86/amd/power 1
+ip6 1
+net/skbuff 1
+fix backport powerpc/uaccess 1
+x86/kvm/hyperv 1
+tty_io 1
+[redhat] redhat/configs 1
+tools/cgroup 1
+drm/i915/tgl, rkl 1
+tests/cgroup 1
+fs/cifs/cifssmb.c 1
+drm/nouveau/sec2/gv100- 1
+perf pmu-events x86 1
+hv_debugfs 1
+locking/seqlock, headers 1
+vmx 1
+drm/amdgpu/jpeg3 1
+dwc3 1
+sched/toplogy 1
+x86/stackframe, x86/kprobes 1
+fs/cifs/sess.c 1
+list_bl 1
+ib/qedr 1
+irqtime 1
+ssu100 1
+ib{cm, core} 1
+sched/cputime, proc/stat 1
+linux/netlink.h 1
+thermal/drivers/cpufreq_cooling 1
+cypress_m8 1
+powerpc/mm/mce 1
+sched,rcu,tracing 1
+irq 1
+ibverbs/rxe 1
+perf libdw 1
+linux/time.h 1
+perf beauty ioctl 1
+libnvdimm/nvdimm/flush 1
+restore docs "rcu 1
+sched,acpi_pad 1
+ipv6/tcp 1
+iommu/arm-smmu-v3-sva 1
+keys-encrypted 1
+drm/msm 1
+genalloc 1
+xen/manage 1
+watchdog/sbsa 1
+efi/esrt 1
+carl9170 1
+dm,dax 1
+integrity, keys 1
+skbuff.h 1
+pwerpc/vas 1
+pm / wakeirq 1
+rdma/hw/hfi1/sdma 1
+perf/intel 1
+pci/quirks 1
+x86/fpu/64 1
+pmu/smmuv3 1
+x86/percpu, sched/fair 1
+mm/damon/core-test 1
+docs/vm 1
+ioat 1
+drivers/pci/pci-driver.c 1
+ubsan 1
+blk-settings 1
+btmrvl_sdio 1
+phy.h 1
+fbdev/defio 1
+nvmet-passthru 1
+freezer 1
+drm/amdgpu/discovery 1
+asix 1
+powerpc/crashkernel 1
+edac, ghes 1
+drm/i915/whl 1
+sched, idle, rcu 1
+s390/cpum_sf 1
+bpf, udp 1
+tools, bpf/build 1
+taskstats 1
+cpusets 1
+iommu/sysfs 1
+vga-switcheroo 1
+acpi/adxl 1
+ib/hfi1, ib/rdmavt 1
+act_bpf 1
+locking/qspinlock, x86 1
+whack-a-mole 1
+drm/fsl-dcu 1
+fault-inject 1
+intel/igbvf 1
+dwc2 1
+ioremap 1
+mm, thp, proc 1
+x86/spec_ctrl/compat 1
+nfs/nfsd/sunrpc 1
+ipv6/flowlabel 1
+x86/speculataion 1
+arm64/dma-mapping 1
+scsi sg 1
+timestamp_truncate 1
+kprobes/x86/xen 1
+documentation/dev-tools 1
+pm core 1
+perf annotate tui browser 1
+fix 1
+ip_tunnel_core 1
+perf intlist 1
+powernv/ioda 1
+x86, hibernate 1
+iommu/mediatek 1
+rdma/iw_cgxb4 1
+lib/test_hmm 1
+/proc/meminfo 1
+indirect_call_wrapper 1
+kernel/power 1
+ib core 1
+drm/nouveau/i2c/ga10 1
+s390/virtio 1
+selftests/ima 1
+loopback 1
+page pool 1
+qed/qed_ll2 1
+drm/nouveau/acr 1
+book3s64/hash 1
+mm/vmpressure.c 1
+timens 1
+redhat/configs/editconfig 1
+s390/uv_uapi 1
+perf bpf-event 1
+cgroup, blkcg 1
+include/ntb 1
+mm/process_vm_access 1
+ftrace/x86_32 1
+padata, pcrypt 1
+mm, hugetlb 1
+drm/amdgpu/uvd6 1
+x86/amd 1
+perf test shell 1
+indirect call wrappers 1
+drm/i915/display/dmc 1
+kernel/kexec_file.c 1
+drm/nouveau/dmaobj/ga10 1
+tools headers kvm s390 1
+fs/writeback.c 1
+arch/x86/boot/compressed 1
+ubsan, x86 1
+lib/cmdline.c 1
+livepatch/samples/selftest 1
+perf kallsyms 1
+inet_csk 1
+x86/cache 1
+documentation/filesystems 1
+mm,hugetlb 1
+kernel/dma 1
+flow_offload.h 1
+irq-chip/gic-v3-its 1
+kvm x86 1
+signal/genwqe 1
+x86/fpu/core 1
+kernel-doc 1
+powerpc/spinlock 1
+perf mem/c2c 1
+irqchip/ls-scfg-msi 1
+s390/hibernate 1
+crush 1
+parisc/stacktrace 1
+asm-gemeric/tlb 1
+mnt_init() 1
+mm,thp,compaction,cma 1
+cleanup 1
+amd/display/dc/basics/logger.c 1
+gso_segment 1
+rdma/hw/hfi1/tid_rdma 1
+tools/ 1
+ethernet/realtek 1
+x86/mcelog 1
+libbf 1
+drm/i915/step 1
+dm block manager 1
+ib_srp 1
+drm/amd/dc/dce120 1
+vfio, mm 1
+acpi / mmc 1
+x86/io 1
+perf examples bpf 1
+drm/nouveau/clk 1
+x86/mmiotrace 1
+drm/amdgpu/powerplay/psm 1
+drm/nouveau/kms/nv50 1
+backlight/fbcon 1
+perf jitdump 1
+x86/uaccess, signal 1
+sock_diag 1
+mm/hmm.c 1
+intel/e1000e 1
+perf bench futex-wake 1
+pcie 1
+lib/crc32.c 1
+ucounts 1
+cec 1
+mt76x2 1
+arch/x86/amd/ibs 1
+usb/atm 1
+um/stacktrace 1
+thermal/intel_powerclamp 1
+drivers/hid/hid-multitouch.c 1
+mm/vmsan 1
+x86/function_graph 1
+act_pedit 1
+perf-probe 1
+8250_lpss 1
+tools/perf 1
+net-af_xdp 1
+ocelot 1
+inotify_handle_event() 1
+libnvdimm, dimm 1
+linux/clocksource.h 1
+fpga-manager 1
+qedi 1
+rdma/siw,rxe 1
+mm/mmu_gather 1
+[arm64] arm64, vmcoreinfo 1
+peak_usb 1
+sched,rcuperf 1
+powerpc/powernv/eeh/npu 1
+hwmon/k10temp, x86/amd_nb 1
+powerpc/memhotplug 1
+sunrpc/nfs 1
+s390/dasd, zfcp 1
+mm/pgtable 1
+csky 1
+arch_numa 1
+dma-coherent 1
+ia64/tlb 1
+clockevents/drivers/i8253 1
+netdevice.h 1
+pm / reboot 1
+ib/{core, uverbs} 1
+drivers/base/arch_topology.c 1
+centaur 1
+qlogic/qed 1
+perf map_symbol 1
+dmaengine dw 1
+rdma/cache 1
+hfs 1
+fs/proc/uptime.c 1
+legacy_get_tree() 1
+ftrace/x86_64 1
+s390/netiucv 1
+lib/radix-tree 1
+ata/libata 1
+usb-pd tcpm 1
+mq-deadline 1
+namei.h 1
+powerpc/mmiowb 1
+powerpc/82xx/* 1
+qdisc 1
+md/r5cache 1
+rdma/bnxt_en 1
+lib/string 1
+edac/ie31200 1
+arch/arm64/kvm 1
+intel/igc 1
+drm/amd/powerpaly 1
+sh 1
+bpf, tnums 1
+arm64, kaslr 1
+drm/i915/migrate 1
+ip_gre, ip6_gre 1
+dump_common_audit_data() 1
+alloc_file() 1
+centrino 1
+tracing/doc 1
+e_powersaver 1
+libnvdimm, bus 1
+virtio_iommu 1
+kallsyms, x86 1
+vdpa/vdpa_sim_net 1
+hyperv/vmbus 1
+locking/spinlock/debug 1
+rpc_pipefs 1
+security/selinux 1
+sysinfo 1
+rdma/hw/hfi1/verbs 1
+nfsacl 1
+mlx4/en_netdev 1
+edac, {skx,i10nm} 1
+bpf/benchs/bench_ringbufs 1
+runqslower 1
+locking/atomics/arm64 1
+cmtp 1
+x66/vdso 1
+conservative 1
+lpfc_debugfs 1
+ifcvf/vdpa 1
+powerpc/embedded6xx/mpc7448 1
+include/linux/list.h 1
+lib/bitmap.c 1
+perf/x86/amd/iommu 1
+kernel/fork 1
+cipso 1
+bpf, preload 1
+intel-iommu 1
+linux/parser.h 1
+net/netif_receive_skb_core 1
+aux 1
+tpm/tpm_i2c_atmel 1
+x86/pci/xen 1
+include/linux/dmaengine 1
+docs, af_xdp 1
+drm/i915/gen11+ 1
+sched, cpuset 1
+apci 1
+software nodes 1
+wlcore 1
+bpf/btf 1
+v4l2-controls 1
+libbpf bpf_helpers 1
+fixed phy 1
+linkmode 1
+lib/idr.c 1
+kgdboc 1
+usnic_verbs 1
+acpi / ac 1
+asm-generic, x86 1
+powerpc/mm/64s/hash 1
+driver/dma/ioat 1
+memcg, fsnotify 1
+signal/bpfilter 1
+tools/selftest/vm 1
+memmap_init 1
+intel_speed_select 1
+hwtracing/intel_th/msu.c 1
+cxgb4/libcxgb/cxgb4i/cxgbit 1
+security_file_open() 1
+page_poison 1
+xen/arm 1
+sched/clock 1
+balloon 1
+x86/numa_emulation 1
+perf powerpc kvm-stat 1
+hid-logitech-hidpp 1
+tools bitmap 1
+uapi/bpf 1
+perf/uprobes 1
+cgroup_do_mount() 1
+rbtree, sched/deadline 1
+linux/jiffies.h 1
+mm/debug 1
+powerpc/pseries/lparcfg 1
+drm/i915/icp+ 1
+powerpc/iommu_api 1
+lib/test_hexdump.c 1
+kexec_load 1
+fbdev/atyfb 1
+block/bsg-lib 1
+idsn 1
+cpu/topology 1
+tools lib traceevent, tools lib lockdep 1
+ps3disk 1
+drm/nouveau/kms/tu102 1
+md-linear 1
+trivial 1
+selftests/tdx 1
+megaraid_sas(treewide) 1
+tools x86 machine 1
+iommu/dma-iommu.c 1
+soundwire/asoc 1
+drivers/block/aoe/aoedev 1
+fs/super.c 1
+uuid 1
+sched/kcpustat 1
+firmware/qcom_scm 1
+drm/fb 1
+x86/init 1
+perf/doc 1
+pci/edr 1
+drm/amdgpu/atomfirmware 1
+powerpc/powernv-eeh 1
+renesas 1
+rdma/rxe,siw 1
+powerpc/mm/hash/4k 1
+signal/arm 1
+drm/nouveau/gr/gp107, gp108 1
+powerpc/include 1
+documentation/locking/lockdep 1
+init/config 1
+drivers/firmware 1
+netxen_nic 1
+iommu/shmobile 1
+[netdrv] net/intel 1
+perf tests vmlinux-kallsyms 1
+x86/mm/kmmio 1
+signal/arm/kvm 1
+pnfs/blocklayout 1
+tools/selftests/damon 1
+mm/s390 1
+drm, iommu 1
+cgroup/tracing 1
+tee/shm 1
+blok, bfq 1
+iommm/amd 1
+[infiniband] ib/usnic 1
+drm/i915/tgl+ 1
+drm/amdgpu/powerplay/vega10 1
+tty/ldsem, locking/rwsem 1
+audit_compare_dname_path() 1
+assembler 1
+do_move_mount() 1
+bpf, test_offload.py 1
+x86/mmu 1
+drm/nouveau/timer/ga10 1
+samples/kobject 1
+stop_machine, rcu 1
+[scsi] mpt3sas 1
+of/iommu 1
+lockdep/selftest 1
+ipmi_si_intf 1
+ath10k/ath11k 1
+selftests/txtimestamp 1
+edac/skx 1
+fs/io_uring.c 1
+powerpc/book3s 1
+powerpc/book3s64/hash 1
+mm, mempolicy 1
+net/cxgb4 1
+kvm_hv_set_msr() 1
+x86/alternatives, jumplabel 1
+cgroup, netclassid 1
+dma-noncoherent 1
+gadget 1
+exofs 1
+sysctl.c 1
+mm, thp, swap 1
+add a new realtek 8723de id 0bda 1
+magicmouse 1
+drm/tinydrm/kconfig 1
+dax/super 1
+fsnotify/fdinfo 1
+perf python scripting 1
+bpf/preload 1
+perf.data documentation 1
+irq_work, smp 1
+mm, soft-offline 1
+bnep 1
+ch_ipsec 1
+powerpc/qspinlock 1
+lib/test_printf.c 1
+kasan/arm64 1
+net/hyperv 1
+fib_rules 1
+gma500 1
+drm/amd/powerplay/smu7 1
+powerpc/book3s/64 1
+pptp 1
+allocate_flower_entry 1
+s390/pci_mmio 1
+usb-misc 1
+audit_alloc_mark() 1
+perf trace-event-info 1
+drm/i915/pmu 1
+drm/nouveau/mc/ga10 1
+i915_vma 1
+sata_sil24 1
+nvme/tcp 1
+redhat spec 1
+serial_core 1
+mdio, phy 1
+hid-bigbenff 1
+xen-platform 1
+turbostat/.gitignore 1
+x86/hpet 1
+ib/mlx5, ib_post_send(), ib_wr_reg_sig_mr 1
+selftests/run_kselftest.sh 1
+x86/bugs, kvm 1
+regmap/soundwire 1
+x86/{cpufeatures, msr} 1
+tools/testing/selftests/cgroup/cgroup_util.c 1
+hrtimers 1
+include/trace/events/writeback.h 1
+powerpc/amigaone 1
+powerpc/powernv/opal-dump 1
+hmon 1
+documentation/lockstat 1
+sys/sysinfo 1
+bugs 1
+[usb] usb 1
+uapi/linux/stddef.h 1
+powerpc/52xx/lite5200 1
+powerpc/vnic 1
+fs/proc/page.c 1
+libperf evlist 1
+intel/igb 1
+cpuid 1
+drm/nouveau/kms/nv04 1
+iscsi 1
+proc, time/namespace 1
+[net] net 1
+fnic 1
+drm/radeon/dpm 1
+powerpc/signal 1
+x86/xen/32 1
+failover 1
+fou 1
+tools build feature tests 1
+selftest/net 1
+shmem_parse_one() 1
+usermodehelper 1
+s390/head 1
+vulcan 1
+drm/i915/pm 1
+kvm_host 1
+nohz/full, sched/rt 1
+tua6100 1
+s390/idle 1
+arch/kunmap_atomic 1
+[scsi] qla4xxx 1
+x86,swiotlb 1
+acpi / extlog 1
+drm/amdgpu/soc15 1
+hpet 1
+dax, pmem 1
+perf/x86/pmu-events 1
+fs/core/vmcore 1
+ti_usb_3410_5052 1
+merge tag 'nfs-rdma-for-5.1-1' of git 1
+[scsi] megaraid_sas 1
+vmcore 1
+drivers/s390/char 1
+qedf 1
+drm/ioctl 1
+locking/lockdep, cpu/hotplug 1
+selftests/ptrace 1
+book3s64 1
+ipmb 1
+fbdev/sysfs 1
+mm/error_inject 1
+drm/nouveau/nouveau_bo 1
+locking/refcounts 1
+drm/display/dp_mst 1
+perf/callchain 1
+parisc/kmap 1
+perf bench mem 1
+x86/segments 1
+drm/vgem 1
+udp_gso 1
+cpumask/hotplug 1
+clocksource/drivers/hyperv 1
+arm64/x86 1
+dm raid1 1
+powerpc/signal64 1
+binfmt 1
+smp, cpumask 1
+chardev 1
+packets 1
+tools features 1
+usbfs 1
+include/rdma/opa_addr.h 1
+kvm, x86, mmu 1
+mm/slb 1
+scsi_ioctl.c 1
+powerpc/52xx/media5200 1
+bpf, sockmap, udp 1
+[infiniband] rdma/hns 1
+iversion 1
+ip_tunnels 1
+docs/kunit/start 1
+ib/i40iw 1
+drm/cirrus 1
+perf/uapi 1
+selftest/tls 1
+dccp 1
+[x86] x86/boot 1
+perf/core, perf/x86 1
+efi-stub 1
+perf regs 1
+md-cluster/bitmap 1
+dm sysfs 1
+x86/stackframe, x86/ftrace 1
+uprobes/sdt 1
+drm/msm/dsi 1
+fs/userfaultfd.c 1
+dc.c 1
+mac8211 1
+kms 1
+cw1200 1
+copy_mount_string 1
+rdma/uapi 1
+timers/sched_clock 1
+x86/vdso/32 1
+memcontrol.h 1
+perf/cgroups 1
+get_maintainer.conf 1
+drm/amdgpu/jpeg2 1
+filter 1
+mm/memremap.c 1
+io_ti 1
+selftest/x86/signal 1
+perf tests shell 1
+acpi / pci 1
+block/wbt 1
+md/raid 1
+agp/intel 1
+mm, shmem 1
+perf block 1
+net/core/filter 1
+irq/64 1
+bpf, sockmap, tcp 1
+rmi 1
+libbpf, doc 1
+mmu 1
+snd/hda, drm/i915 1
+apei/ghes 1
+fs/proc/kcore.c 1
+proc/page.c 1
+x86/segments/64 1
+dm multipath 1
+net/core/skmsg 1
+bpf/libbpf 1
+rdma/core/roce_gid_mgmt 1
+hci_uart 1
+mm/kasan/quarantine.c 1
+db 1
+boost 1
+documentation pci 1
+triggers 1
+hvsock 1
+act_ct 1
+mm/hibernation 1
+include/linux/compiler.h 1
+h8300 1
+merge tag 'pci-v5.10-changes' of git 1
+net/amazon 1
+nfsd/nfs3 1
+rdma/opa 1
+mm/sl?b.c 1
+docs-rst 1
+kseltest/cgroup 1
+kasan, mm, arm64 1
