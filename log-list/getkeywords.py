@@ -30,9 +30,6 @@ with open(log_file_name,mode="r") as file:
                         if( "revert" in string or "reinstate" in string):
                             print(string)
                             string = string.split('"')[1]
-                            if( "[" in string):
-                                string = string.split('[')[1]
-                                string = string.split(']')[0]
                             print(string)
                     elif(len(result_list) == 0 ):
                         #print(string)
